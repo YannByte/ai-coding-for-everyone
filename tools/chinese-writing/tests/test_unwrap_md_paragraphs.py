@@ -350,10 +350,13 @@ class IgnoreMarkerScopeTest(unittest.TestCase):
             _, joins = process_file(path)
             self.assertEqual(len(joins), 1)
 
-    def test_readme_is_not_exempt_from_check(self):
-        readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("<!-- unwrap-disable-file -->", readme)
-        self.assertFalse(has_file_ignore_marker(readme))
+    def test_documented_marker_does_not_exempt_document(self):
+        document = "# Usage\n\n```markdown\n<!-- unwrap-disable-file -->\n```\n\n第一行\n第二行\n"
+        self.assertFalse(has_file_ignore_marker(document))
+        result, joins = unwrap_text(document)
+        self.assertEqual(len(joins), 1)
+        self.assertIn("第一行第二行", result)
+        self.assertIn("```markdown\n<!-- unwrap-disable-file -->\n```", result)
 
 
 class UnwrapCliTest(unittest.TestCase):

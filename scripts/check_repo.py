@@ -158,18 +158,17 @@ def main():
     if errors:
         print("\n".join(errors), file=sys.stderr)
         return 1
-    skill = ".agents/skills/tech-doc-style-chinese"
+    copy_tools = "tools/chinese-writing"
     prose = [
         name for name in sorted(files)
         if name.endswith(".md") and not name.endswith("AGENTS.md")
         and (name == "README.zh-CN.md" or name == "CONTRIBUTING.md"
-             or name.startswith(("book/zh-CN/", "docs/", "examples/", "translations/",
-                                 ".agents/skills/tech-doc-style-chinese/references/book-")))
+             or name.startswith(("book/zh-CN/", "docs/", "examples/", "translations/")))
     ]
     commands = [
         [sys.executable, "-B", "-m", "unittest", "discover", "-s", "scripts", "-p", "test_*.py"],
-        [sys.executable, "-B", "-m", "unittest", "discover", "-s", f"{skill}/tests", "-p", "test_*.py"],
-        [sys.executable, "-B", f"{skill}/scripts/lint_copy_rules.py", *prose],
+        [sys.executable, "-B", "-m", "unittest", "discover", "-s", f"{copy_tools}/tests", "-p", "test_*.py"],
+        [sys.executable, "-B", f"{copy_tools}/scripts/lint_copy_rules.py", *prose],
     ]
     for command in commands:
         result = subprocess.run(command, cwd=ROOT, timeout=60)

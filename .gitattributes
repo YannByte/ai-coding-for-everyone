@@ -9,5 +9,3 @@
 *.pptx binary
 *.docx binary
 *.zip binary
-# Preserve the upstream README's intentional Markdown hard break.
-.agents/skills/tech-doc-style-chinese/README.md whitespace=-blank-at-eol

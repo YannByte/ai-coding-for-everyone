@@ -1,6 +1,6 @@
 # Example instructions
 
-Follow [root instructions](../AGENTS.md). Each case README owns its purpose, first useful outcome, and acceptance criteria. Apply the [Chinese writing skill](../.agents/skills/tech-doc-style-chinese/SKILL.md) to explanations, prompts, instructions, and exercises. Use the [terminology table](../docs/terminology.md).
+Follow [root instructions](../AGENTS.md). Each case README owns its purpose, first useful outcome, and acceptance criteria. Apply the [writing method](../docs/writing-method.md) and [Chinese writing rules](../docs/chinese-writing.md) to explanations, prompts, instructions, and exercises. Use the [terminology table](../docs/terminology.md).
 
 - Keep design, runnable implementation, and tested result distinct. Do not mark a case ready merely because code runs or a UI exists.
 - Runnable examples must include prerequisites, supported environments actually tested, a command or clear entry, teaching inputs, expected results, and recovery guidance for common failures. Keep these beside the example.

@@ -2,7 +2,7 @@
 
 Follow [root instructions](../AGENTS.md). The [Chinese outline](zh-CN/README.md) owns the book's sequence.
 
-Use the repository's [Chinese writing skill](../.agents/skills/tech-doc-style-chinese/SKILL.md) with [book-specific overrides](../docs/chinese-writing.md) for arguments, cases, instructions, exercises, and review. Use the [terminology table](../docs/terminology.md). Keep upstream defaults separate from this book's narrative voice.
+Follow [Chinese writing rules](../docs/chinese-writing.md), [writing method](../docs/writing-method.md), and [review rules](../docs/review.md) for arguments, cases, instructions, exercises, and review. Use the [terminology table](../docs/terminology.md).
 
 - Before drafting, identify the work problem, the reader's decision, the intended result, prior knowledge, and evidence gaps. Follow the review criteria in the writing method before marking a chapter reviewed.
 - Each chapter develops an argument through a concrete work problem, a choice, an observable result, and an explanation. Avoid turning the book into a sequence of software screens or prompt templates.
