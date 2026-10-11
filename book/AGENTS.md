@@ -2,8 +2,9 @@
 
 Follow [root instructions](../AGENTS.md). The [Chinese outline](zh-CN/README.md) owns the book's sequence.
 
-For Chinese prose, use the repository's [Chinese writing skill](../.agents/skills/tech-doc-style-chinese/SKILL.md) with [book-specific overrides](../docs/chinese-writing.md). Keep upstream defaults separate from this book's narrative voice.
+For Chinese prose, use the repository's [Chinese writing skill](../.agents/skills/tech-doc-style-chinese/SKILL.md) with [book-specific overrides](../docs/chinese-writing.md). Apply the [book-writing skill](../.agents/skills/book-writing/SKILL.md) to arguments, cases, instructions, exercises, and review. Use the [terminology table](../docs/terminology.md). Keep upstream defaults separate from this book's narrative voice.
 
+- Before drafting, identify the work problem, the reader's decision, the intended result, prior knowledge, and evidence gaps. Follow the review criteria in the writing method before marking a chapter reviewed.
 - Each chapter develops an argument through a concrete work problem, a choice, an observable result, and an explanation. Avoid turning the book into a sequence of software screens or prompt templates.
 - Assume everyday computer experience. Explain technical terms at the point of need. Keep consequential operations and judgment in the prose; place volatile installation details beside the runnable example when it exists.
 - Write clear, connected Chinese prose. Use familiar words, precise verbs, and restrained emphasis. Keep each prose paragraph on one source line; preserve code, tables, and quotations. Do not impose a fixed article-length limit on chapters.

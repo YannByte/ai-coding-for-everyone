@@ -18,6 +18,8 @@ By contributing, you agree to license your contribution under the applicable ter
 
 中文撰写、改写与审阅使用仓库内的 [中文写作技能](.agents/skills/tech-doc-style-chinese/SKILL.md) 和 [本书覆盖说明](docs/chinese-writing.md)，无需另行安装全局技能。上游技能保留原 MIT 许可，本书的语气和案例要求在覆盖说明中维护。
 
+书稿、案例和练习按 [本书的写作方法](docs/writing-method.md) 起草与审阅，用 [术语表](docs/terminology.md) 保持概念一致。提交正文修改时，说明影响的读者判断或操作；涉及试读、试做时，记录验证范围和仍未解决的问题。
+
 修改现有仓库使用独立分支，只提交本次任务文件。提交前在仓库根目录运行：
 
 ```sh

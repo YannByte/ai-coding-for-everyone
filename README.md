@@ -31,6 +31,7 @@ The audience, premise, five-part outline, and three cases are established. Chapt
 - [Book outline in Chinese](book/zh-CN/README.md)
 - [Case briefs](examples/README.md)
 - [Project scope and roadmap](docs/project.md)
+- [Writing method in Chinese](docs/writing-method.md)
 - [Sources and their limits](docs/sources.md)
 - [Translation status](translations/README.md)
 - [Contributing](CONTRIBUTING.md)

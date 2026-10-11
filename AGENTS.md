@@ -7,7 +7,7 @@ Follow the user's current instructions. Preserve unrelated work. This repository
 | Task | Read |
 | --- | --- |
 | Scope and current progress | [Project](docs/project.md) |
-| Chapters and prose | [Book instructions](book/AGENTS.md), [outline](book/zh-CN/README.md) |
+| Chapters and prose | [Book instructions](book/AGENTS.md), [book-writing skill](.agents/skills/book-writing/SKILL.md), [outline](book/zh-CN/README.md) |
 | Chinese writing or editing | [Chinese writing skill](.agents/skills/tech-doc-style-chinese/SKILL.md), [book-specific overrides](docs/chinese-writing.md) |
 | Examples and teaching files | [Example instructions](examples/AGENTS.md), the relevant case README |
 | Translation | [Translation instructions](translations/AGENTS.md), including translations under book/ |
@@ -16,7 +16,7 @@ Follow the user's current instructions. Preserve unrelated work. This repository
 
 ## Standing rules
 
-- Keep one authoritative home for each rule or fact. Project scope belongs in docs/project.md; chapter sequence in book/zh-CN/README.md; case requirements in each case README; public-material policy in docs/publication-scope.md; license terms in LICENSE.md. Entry pages summarize and link. Update affected summaries when their owner changes.
+- Keep one authoritative home for each rule or fact. Project scope belongs in docs/project.md; chapter sequence in book/zh-CN/README.md; case requirements in each case README; public-material policy in docs/publication-scope.md; license terms in LICENSE.md; writing and review method in .agents/skills/book-writing/; preferred terms in docs/terminology.md. Entry pages summarize and link. Update affected summaries when their owner changes.
 - Write for people without programming experience who know their own computer work. Keep the three established cases and their roles unless the user changes scope. Wombat may inform repository practices but is not a book case.
 - Teaching characters, data, and edited dialogue are allowed when labeled. Distinguish a plan, an author's claim, author testing, and reader testing. Do not invent quotations, measurements, user outcomes, or completed milestones.
 - Reuse mature, maintained, license-compatible libraries where they fit. Let AI help select them; explain only the choices a reader needs. Add dependencies and abstractions for a demonstrated need, not an imagined future platform.

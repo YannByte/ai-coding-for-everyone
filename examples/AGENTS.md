@@ -1,6 +1,6 @@
 # Example instructions
 
-Follow [root instructions](../AGENTS.md). Each case README owns its purpose, first useful outcome, and acceptance criteria.
+Follow [root instructions](../AGENTS.md). Each case README owns its purpose, first useful outcome, and acceptance criteria. Apply the [book-writing skill](../.agents/skills/book-writing/SKILL.md) to explanations, prompts, instructions, and exercises. Use the [terminology table](../docs/terminology.md).
 
 - Keep design, runnable implementation, and tested result distinct. Do not mark a case ready merely because code runs or a UI exists.
 - Runnable examples must include prerequisites, supported environments actually tested, a command or clear entry, teaching inputs, expected results, and recovery guidance for common failures. Keep these beside the example.
