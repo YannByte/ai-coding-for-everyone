@@ -32,6 +32,7 @@
 - [案例与材料计划](examples/README.md)
 - [内容范围与后续工作](docs/project.md)
 - [写作方法](docs/writing-method.md)
+- [写作工程与当前任务](docs/production.md)
 - [参考来源](docs/sources.md)
 - [参与贡献](CONTRIBUTING.md)
 

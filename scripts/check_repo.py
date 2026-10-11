@@ -163,9 +163,10 @@ def main():
         name for name in sorted(files)
         if name.endswith(".md") and not name.endswith("AGENTS.md")
         and (name == "README.zh-CN.md" or name == "CONTRIBUTING.md"
-             or name.startswith(("book/zh-CN/", "docs/", "examples/", "translations/")))
+             or name.startswith(("book/zh-CN/", "book/plans/", "docs/", "examples/", "translations/")))
     ]
     commands = [
+        [sys.executable, "-B", "scripts/check_workflow.py"],
         [sys.executable, "-B", "-m", "unittest", "discover", "-s", "scripts", "-p", "test_*.py"],
         [sys.executable, "-B", "-m", "unittest", "discover", "-s", f"{copy_tools}/tests", "-p", "test_*.py"],
         [sys.executable, "-B", f"{copy_tools}/scripts/lint_copy_rules.py", *prose],

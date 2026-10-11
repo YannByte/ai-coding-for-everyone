@@ -20,6 +20,8 @@ By contributing, you agree to license your contribution under the applicable ter
 
 书稿、案例和练习按 [本书的写作方法](docs/writing-method.md) 起草与审阅，用 [术语表](docs/terminology.md) 保持概念一致。提交正文修改时，说明影响的读者判断或操作；涉及试读、试做时，记录验证范围和仍未解决的问题。
 
+写作任务按 [工程流程](docs/production.md) 推进，当前任务见 [工作状态](book/workflow.json)。先读已有决定与材料卡，补齐具体缺口。查看状态可运行 `python3 scripts/check_workflow.py --status`。
+
 修改现有仓库使用独立分支，只提交本次任务文件。提交前在仓库根目录运行：
 
 ```sh

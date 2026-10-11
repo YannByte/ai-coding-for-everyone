@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "claims": [
+    {
+      "id": "report-design-one-page",
+      "claim": "主案例先更新一页，再扩展到整份汇报；这是案例设计。",
+      "kind": "design",
+      "status": "planned",
+      "source": "examples/recurring-report/README.md",
+      "locator": "递进安排"
+    },
+    {
+      "id": "report-external-need",
+      "claim": "公开讨论中有人描述每月更新 Excel 与 PowerPoint 的重复工作；拟用于说明需求，尚待逐条复核原文。",
+      "kind": "external",
+      "status": "pending",
+      "source": "https://www.reddit.com/r/excel/comments/1rrsyo5/cleaning_up_excel_powerpoint_workflow_for_monthly/",
+      "locator": null
+    },
+    {
+      "id": "report-observed-output",
+      "claim": "待验证：本书工具能以自制教学输入正确更新一页，并保留版式与原件。",
+      "kind": "observation",
+      "status": "pending",
+      "source": null,
+      "locator": null
+    }
+  ]
+}
