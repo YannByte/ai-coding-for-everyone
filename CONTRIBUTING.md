@@ -16,7 +16,7 @@ By contributing, you agree to license your contribution under the applicable ter
 
 协作规则从 [AGENTS.md](AGENTS.md) 按任务读取。书稿、案例和翻译各有范围内的说明，公共材料政策见 [公开内容范围](docs/publication-scope.md)。
 
-中文撰写、改写与审阅使用仓库内的 [中文写作技能](.agents/skills/tech-doc-style-chinese/SKILL.md) 和 [本书覆盖说明](docs/chinese-writing.md)，无需另行安装全局技能。上游技能保留原 MIT 许可，本书的语气和案例要求在覆盖说明中维护。
+中文撰写、改写与审阅使用仓库内的 [中文写作技能](.agents/skills/tech-doc-style-chinese/SKILL.md) 和 [本书覆盖说明](docs/chinese-writing.md)，无需另行安装全局技能。中文技能保留上游 MIT 许可，并记录本仓库的修改；本书写作流程已纳入技能参考资料，语气和案例要求在覆盖说明中维护。
 
 书稿、案例和练习按 [本书的写作方法](docs/writing-method.md) 起草与审阅，用 [术语表](docs/terminology.md) 保持概念一致。提交正文修改时，说明影响的读者判断或操作；涉及试读、试做时，记录验证范围和仍未解决的问题。
 

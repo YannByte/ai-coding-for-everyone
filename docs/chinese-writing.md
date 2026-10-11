@@ -1,6 +1,6 @@
 # 本书的中文写作约定
 
-本项目使用随仓库提供的 [中文写作技能](../.agents/skills/tech-doc-style-chinese/SKILL.md)。本文件是该技能的项目覆盖说明。[本书写作技能](../.agents/skills/book-writing/SKILL.md) 将 ASD-STE100 的可迁移原则用于全书写作与审稿；书稿结构仍以 [书稿规则](../book/AGENTS.md) 为准。
+本项目使用随仓库提供的 [中文写作技能](../.agents/skills/tech-doc-style-chinese/SKILL.md)。本文件是该技能的项目覆盖说明。技能内的 [本书写作流程](../.agents/skills/tech-doc-style-chinese/references/book-workflow.md) 将 ASD-STE100 的可迁移原则用于全书写作与审稿；书稿结构仍以 [书稿规则](../book/AGENTS.md) 为准。
 
 ## 按内容应用
 

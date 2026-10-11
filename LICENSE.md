@@ -6,7 +6,7 @@ Copyright © 2026 YannByte and contributors.
 - Original software source code, including instructional code snippets, is licensed under the [MIT License](LICENSES/MIT.txt), unless a file states otherwise.
 - Third-party works remain subject to their own licenses. Linking to a work does not place it under this repository's licenses.
 
-Included third-party component: [tech-doc-style-chinese](.agents/skills/tech-doc-style-chinese/UPSTREAM.md), copyright © 2026 Fenng, under its retained [MIT license](.agents/skills/tech-doc-style-chinese/LICENSE). Its text, references, scripts, and tests remain MIT-licensed; they are not relicensed as book text.
+Included third-party component: [tech-doc-style-chinese](.agents/skills/tech-doc-style-chinese/UPSTREAM.md), copyright © 2026 Fenng, under its retained [MIT license](.agents/skills/tech-doc-style-chinese/LICENSE). The imported files, and local changes to its entry and agent metadata, remain MIT-licensed; they are not relicensed as book text. The locally added `references/book-workflow.md`, `references/book-writing-guide.md`, and `references/book-review-guide.md` are original book documentation under CC BY-SA 4.0. See the provenance note for the import baseline and local changes.
 
 For attribution, identify this project, credit the contributors where applicable, link to the source and license, and indicate changes. See the full license texts for the governing terms.
 

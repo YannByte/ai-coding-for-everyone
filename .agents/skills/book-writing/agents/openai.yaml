@@ -1,4 +1,0 @@
-interface:
-  display_name: "普通人的 AI 编程：书籍写作"
-  short_description: "借鉴受控语言原则，完成本书的论述、案例、练习、改写与审稿"
-  default_prompt: "使用 $book-writing 处理本书的写作任务，明确读者判断、操作条件和结果依据，保留自然叙述并标明未验证内容。"

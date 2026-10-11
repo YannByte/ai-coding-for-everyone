@@ -164,7 +164,7 @@ def main():
         if name.endswith(".md") and not name.endswith("AGENTS.md")
         and (name == "README.zh-CN.md" or name == "CONTRIBUTING.md"
              or name.startswith(("book/zh-CN/", "docs/", "examples/", "translations/",
-                                 ".agents/skills/book-writing/")))
+                                 ".agents/skills/tech-doc-style-chinese/references/book-")))
     ]
     commands = [
         [sys.executable, "-B", "-m", "unittest", "discover", "-s", "scripts", "-p", "test_*.py"],
