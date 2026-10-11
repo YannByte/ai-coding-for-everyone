@@ -8,6 +8,7 @@ Follow the user's current instructions. Preserve unrelated work. This repository
 | --- | --- |
 | Scope and current progress | [Project](docs/project.md) |
 | Chapters and prose | [Book instructions](book/AGENTS.md), [outline](book/zh-CN/README.md) |
+| Chinese writing or editing | [Chinese writing skill](.agents/skills/tech-doc-style-chinese/SKILL.md), [book-specific overrides](docs/chinese-writing.md) |
 | Examples and teaching files | [Example instructions](examples/AGENTS.md), the relevant case README |
 | Translation | [Translation instructions](translations/AGENTS.md), including translations under book/ |
 | Publication and sources | [Publication scope](docs/publication-scope.md), [license](LICENSE.md) |

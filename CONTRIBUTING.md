@@ -16,6 +16,8 @@ By contributing, you agree to license your contribution under the applicable ter
 
 协作规则从 [AGENTS.md](AGENTS.md) 按任务读取。书稿、案例和翻译各有范围内的说明，公共材料政策见 [公开内容范围](docs/publication-scope.md)。
 
+中文撰写、改写与审阅使用仓库内的 [中文写作技能](.agents/skills/tech-doc-style-chinese/SKILL.md) 和 [本书覆盖说明](docs/chinese-writing.md)，无需另行安装全局技能。上游技能保留原 MIT 许可，本书的语气和案例要求在覆盖说明中维护。
+
 修改现有仓库使用独立分支，只提交本次任务文件。提交前在仓库根目录运行：
 
 ```sh

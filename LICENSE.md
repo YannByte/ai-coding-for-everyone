@@ -6,6 +6,8 @@ Copyright © 2026 YannByte and contributors.
 - Original software source code, including instructional code snippets, is licensed under the [MIT License](LICENSES/MIT.txt), unless a file states otherwise.
 - Third-party works remain subject to their own licenses. Linking to a work does not place it under this repository's licenses.
 
+Included third-party component: [tech-doc-style-chinese](.agents/skills/tech-doc-style-chinese/UPSTREAM.md), copyright © 2026 Fenng, under its retained [MIT license](.agents/skills/tech-doc-style-chinese/LICENSE). Its text, references, scripts, and tests remain MIT-licensed; they are not relicensed as book text.
+
 For attribution, identify this project, credit the contributors where applicable, link to the source and license, and indicate changes. See the full license texts for the governing terms.
 
 Suggested attribution: “普通人的 AI 编程 — YannByte and contributors, https://github.com/YannByte/ai-coding-for-everyone, CC BY-SA 4.0.”
