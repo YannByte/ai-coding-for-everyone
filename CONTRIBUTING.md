@@ -11,3 +11,18 @@ The book is in preparation. Feedback on everyday work problems, unclear explanat
 贡献须为你有权提交的内容。引用外部作品请注明来源与许可。被接纳的书稿、文档和教学素材遵循 CC BY-SA 4.0，代码遵循 MIT；第三方内容保留适用的原许可。
 
 By contributing, you agree to license your contribution under the applicable terms described in [LICENSE.md](LICENSE.md). Do not submit material you lack permission to share.
+
+## 仓库协作与检查
+
+协作规则从 [AGENTS.md](AGENTS.md) 按任务读取。书稿、案例和翻译各有范围内的说明，公共材料政策见 [公开内容范围](docs/publication-scope.md)。
+
+修改现有仓库使用独立分支，只提交本次任务文件。提交前在仓库根目录运行：
+
+```sh
+python3 scripts/check_repo.py
+git diff --check
+```
+
+检查需要 Git 与 Python 3.11 或以上版本，无需安装第三方依赖。它检查文件链接、指令篇幅、常见私人路径和凭据标记，以及案例素材登记，并运行检查器自身的回归测试。CI 使用同一入口。
+
+链接检查覆盖 Markdown 行内链接及引用定义中的相对文件目标，忽略代码围栏；不检查远程网址、页内锚点或 HTML 链接。自动检查不能判断事实、许可有效性、写作质量或实际使用效果，发布前仍需按任务审阅。
