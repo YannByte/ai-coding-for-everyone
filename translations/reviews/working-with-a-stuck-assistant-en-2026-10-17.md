@@ -1,5 +1,7 @@
 # Chapter 13 English translation review
 
+This record covers the [first English draft at commit 743a2a3](https://github.com/YannByte/ai-coding-for-everyone/blob/743a2a37f015f081df2ece73541ee506b5d6a431/book/en/13-working-with-a-stuck-assistant.md). For the current revision, see the [English readability and beginner review](working-with-a-stuck-assistant-en-reader-review-2026-10-17.md).
+
 Date: 2026-10-17. Reviewer: AI assistant. This is a source-comparison record, not human review or reader testing.
 
 - Source: [Chinese chapter](../../book/zh-CN/13-working-with-a-stuck-assistant.md), commit `8583912a01fcbc2a2da651b5acc41f11bf9d7d6f`.
