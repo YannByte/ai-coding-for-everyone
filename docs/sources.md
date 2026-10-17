@@ -24,3 +24,7 @@
 | --- | --- | --- |
 | [Claude Code 官方最佳实践](https://code.claude.com/docs/en/best-practices) | 可执行检查与验证结果 | 产品实践指导，不能推定所有助手具备相同条件 |
 | [Anthropic：长任务工程实践](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | 进度记录、版本历史与跨会话交接 | 特定工程实验，不是本书读者效果证据 |
+
+## 写作规范与术语来源
+
+ASD-STE100 的核对版本、范围和本书取舍见 [对照记录](ste100-review.md)。编程术语按 [术语表](terminology.md) 中逐项列出的官方资料核对；其中的新手解释为本项目改写，不冒充官方原文。机器词表保留来源定位，定期随产品与正文变化复核。

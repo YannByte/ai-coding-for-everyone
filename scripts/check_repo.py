@@ -57,6 +57,11 @@ def link_targets(text):
     return [target.strip("<>") for target in inline + references]
 
 
+def has_chinese_prose(text):
+    """Do not send wholly English review reports to the Chinese style checker."""
+    return bool(re.search(r"[\u3400-\u9fff]", prose_only(text)))
+
+
 def material_errors(root, files):
     errors = []
     if MATERIALS not in files:
@@ -164,9 +169,11 @@ def main():
         if name.endswith(".md") and not name.endswith("AGENTS.md")
         and (name == "README.zh-CN.md" or name == "CONTRIBUTING.md"
              or name.startswith(("book/zh-CN/", "book/plans/", "docs/", "examples/", "translations/")))
+        and has_chinese_prose((ROOT / name).read_text(encoding="utf-8"))
     ]
     commands = [
         [sys.executable, "-B", "scripts/check_workflow.py"],
+        [sys.executable, "-B", "scripts/check_writing.py"],
         [sys.executable, "-B", "-m", "unittest", "discover", "-s", "scripts", "-p", "test_*.py"],
         [sys.executable, "-B", "-m", "unittest", "discover", "-s", f"{copy_tools}/tests", "-p", "test_*.py"],
         [sys.executable, "-B", f"{copy_tools}/scripts/lint_copy_rules.py", *prose],

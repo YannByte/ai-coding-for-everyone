@@ -4,13 +4,13 @@
 >
 > AI-translated from the [Chinese chapter](../zh-CN/13-working-with-a-stuck-assistant.md) at source commit [`8583912`](https://github.com/YannByte/ai-coding-for-everyone/blob/8583912a01fcbc2a2da651b5acc41f11bf9d7d6f/book/zh-CN/13-working-with-a-stuck-assistant.md). Edited for English readers, with added explanations for beginners. Human translation review is pending. See [translation status](../../translations/README.md).
 
-You asked an AI coding agent to fix a tool that lists PDF files. It has tried several fixes, but a file is still missing. You tell it, “It still doesn't work.” It reads the code again and makes another change.
+You asked a coding agent to fix a tool that lists PDF files. It has tried several fixes, but a file is still missing. You tell it, “It still doesn't work.” It reads the code again and makes another change.
 
 First, check whether it has run the program with the files that caused the problem.
 
 If all it has done is read code, explain possible causes, and edit files, it is missing feedback from a running program. Asking it to keep fixing the problem may produce more changes that nobody has checked.
 
-An AI coding agent is a tool that can, with your permission, read and edit program files and run commands on your computer or in a separate environment. Its access depends on the tool and how it is set up. You can ask it to investigate a problem, fix the code, and check the result as one task.
+A coding agent is an AI tool that can, with your permission, read and edit program files and run commands on your computer or in a separate environment. Its access depends on the tool and how it is set up. You can ask it to investigate a problem, fix the code, and check the result as one task.
 
 To do that, it needs a clear description of the problem, access to the relevant files, a way to run the program, and an agreed way to tell when the work is done. If it gets stuck, look at what it has tried and what happened before deciding how to help.
 

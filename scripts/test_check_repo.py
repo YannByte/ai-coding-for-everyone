@@ -6,10 +6,15 @@ import subprocess
 import tempfile
 import unittest
 
-from check_repo import audit, tracked_and_new_files
+from check_repo import audit, has_chinese_prose, tracked_and_new_files
 
 
 class RepositoryChecks(unittest.TestCase):
+    def test_chinese_style_check_skips_wholly_english_reports(self):
+        self.assertFalse(has_chinese_prose('# Review\n“Check the files.”\n'))
+        self.assertFalse(has_chinese_prose('English prose.\n```text\n中文样本\n```\n'))
+        self.assertTrue(has_chinese_prose('## 审阅\n保留原意。\n'))
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
