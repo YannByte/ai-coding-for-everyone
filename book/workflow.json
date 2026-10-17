@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "units": [
+    {
+      "id": "working-with-a-stuck-assistant",
+      "title": "反复改不好，怎样停下来重新判断（样章讨论稿）",
+      "kind": "argument",
+      "case": null,
+      "part": 4,
+      "status": "revising",
+      "brief": "book/plans/working-with-a-stuck-assistant.md",
+      "manuscript": "book/zh-CN/13-working-with-a-stuck-assistant.md",
+      "claims": [
+        "assistant-repair-scenario",
+        "assistant-verification-guidance",
+        "assistant-handoff-guidance"
+      ],
+      "reviews": [
+        {
+          "kind": "language",
+          "result": "pass",
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-r2-language.md",
+          "manuscript_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f"
+        },
+        {
+          "kind": "structure",
+          "result": "needs-work",
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-r2-structure.md",
+          "manuscript_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f"
+        },
+        {
+          "kind": "facts",
+          "result": "needs-work",
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-r2-facts.md",
+          "manuscript_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f"
+        }
+      ],
+      "blockers": [
+        "选定具体工具与版本，完成教学情境的作者试做并保存执行证据",
+        "安排有无编程经验的目标读者试读；形成练习后另行安排读者试做",
+        "结合第 14、16 章实际正文复核验收与交接内容的分工"
+      ]
+    }
+  ]
+}

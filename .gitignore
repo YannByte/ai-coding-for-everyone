@@ -9,3 +9,13 @@ __pycache__/
 tmp/
 private/
 downloads/
+.npmrc
+*.pem
+*.key
+internal/
+.claude/settings.local.json
+.codex/
+.idea/
+.vscode/
+dist/
+build/

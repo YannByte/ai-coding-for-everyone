@@ -6,9 +6,11 @@ Copyright © 2026 YannByte and contributors.
 - Original software source code, including instructional code snippets, is licensed under the [MIT License](LICENSES/MIT.txt), unless a file states otherwise.
 - Third-party works remain subject to their own licenses. Linking to a work does not place it under this repository's licenses.
 
+Chinese writing rules in [docs/chinese-writing.md](docs/chinese-writing.md) are adapted from Fenng's tech-doc-style-chinese and remain MIT-licensed, including local changes. The standalone [Chinese writing helpers](tools/chinese-writing/UPSTREAM.md) and their tests retain the same [MIT license](LICENSES/Chinese-Writing-MIT.txt), copyright © 2026 Fenng. Original book writing and review methods remain under CC BY-SA 4.0. No skill package is included or required.
+
 For attribution, identify this project, credit the contributors where applicable, link to the source and license, and indicate changes. See the full license texts for the governing terms.
 
-Suggested attribution: “普通人的 AI 编程 — YannByte and contributors, https://github.com/YannByte/ai-coding-for-everyone, CC BY-SA 4.0.”
+Suggested attribution: “AI coding agent usage book (title pending) — YannByte and contributors, https://github.com/YannByte/ai-coding-for-everyone, CC BY-SA 4.0.”
 
 ## 中文说明
 

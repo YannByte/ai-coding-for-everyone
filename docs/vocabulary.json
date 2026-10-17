@@ -1,0 +1,398 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "claude-code-spelling",
+      "language": "all",
+      "kind": "spelling",
+      "level": "error",
+      "forms": [
+        "Claude code",
+        "claude code",
+        "ClaudeCode"
+      ],
+      "message": "Use the product name Claude Code outside quotations and code.",
+      "source": {
+        "url": "https://code.claude.com/docs/en/overview",
+        "locator": "Overview: product name",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "github-spelling",
+      "language": "all",
+      "kind": "spelling",
+      "level": "error",
+      "forms": [
+        "Github",
+        "Git hub"
+      ],
+      "message": "Use the product name GitHub outside quotations and code.",
+      "source": {
+        "url": "https://docs.github.com/en",
+        "locator": "GitHub Docs: product name",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "coding-agent-name",
+      "language": "en",
+      "kind": "preference",
+      "level": "advice",
+      "forms": [
+        "AI coding agent",
+        "AI coding agents"
+      ],
+      "message": "Prefer coding agent in ordinary prose; retain AI when introducing the concept or contrasting it with a human.",
+      "source": {
+        "url": "https://developers.openai.com/api/docs/guides/code-generation",
+        "locator": "Use Codex",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "coding-assistant-scope",
+      "language": "en",
+      "kind": "preference",
+      "level": "advice",
+      "forms": [
+        "coding assistant",
+        "coding assistants"
+      ],
+      "message": "Check the scope: this book usually means an agent that can act on a project. Do not rename a broader assistant category or official quotation.",
+      "source": {
+        "url": "https://code.claude.com/docs/en/overview",
+        "locator": "Overview: agentic coding tool and AI-powered coding assistant",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "zh-agent-name",
+      "language": "zh-CN",
+      "kind": "preference",
+      "level": "advice",
+      "forms": [
+        "AI 编程代理",
+        "编程智能体"
+      ],
+      "message": "本书普通叙述首选「AI 编程助手」；先核对概念或引用语境，不机械替换。",
+      "source": {
+        "url": "https://developers.openai.com/api/docs/guides/code-generation",
+        "locator": "Use Codex; Chinese name is a book editorial choice",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "plain-use",
+      "language": "en",
+      "kind": "preference",
+      "level": "advice",
+      "forms": [
+        "utilize",
+        "utilizes",
+        "utilized",
+        "utilizing"
+      ],
+      "message": "Consider use when the meaning is using something for a purpose. This is advice, not a replacement command.",
+      "source": {
+        "url": "https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf",
+        "locator": "Part 2, utilize (v)",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "plain-start",
+      "language": "en",
+      "kind": "preference",
+      "level": "advice",
+      "forms": [
+        "commence",
+        "commences",
+        "commenced",
+        "commencing"
+      ],
+      "message": "Consider start when describing the start of an action. This is advice, not a replacement command.",
+      "source": {
+        "url": "https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf",
+        "locator": "Part 2, commence (v)",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "plain-stop",
+      "language": "en",
+      "kind": "preference",
+      "level": "advice",
+      "forms": [
+        "terminate",
+        "terminates",
+        "terminated",
+        "terminating"
+      ],
+      "message": "Consider stop only when it means stopping; preserve exact process, protocol, API or legal terminology. This is advice, not a replacement command.",
+      "source": {
+        "url": "https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf",
+        "locator": "Part 2, terminate (v)",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "specific-check",
+      "language": "en",
+      "kind": "preference",
+      "level": "advice",
+      "forms": [
+        "verify the state",
+        "verify the current project state",
+        "optimize the workflow"
+      ],
+      "message": "Name what to inspect or change and the expected result; the phrase alone is not an observable task.",
+      "source": {
+        "url": "https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf",
+        "locator": "Part 1, rule 4.1; book-specific example",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "specific-action-zh",
+      "language": "zh-CN",
+      "kind": "preference",
+      "level": "advice",
+      "forms": [
+        "优化一下",
+        "智能处理",
+        "验证项目状态"
+      ],
+      "message": "补出对象、动作和核对依据；语境已有说明时可保留。",
+      "source": {
+        "url": "https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf",
+        "locator": "Part 1, rule 4.1; book-specific Chinese adaptation",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-test",
+      "language": "en",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "test",
+        "tests",
+        "test case",
+        "test cases"
+      ],
+      "message": "首次可见用例：请人工确认已解释测试是什么、输入是什么、什么结果算通过。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://docs.python.org/3/library/unittest.html",
+        "locator": "test case; Basic example",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-dependency",
+      "language": "en",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "dependency",
+        "dependencies"
+      ],
+      "message": "首次可见用例：请人工确认已解释程序依赖哪些其他软件，以及为何需要它们。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://packaging.python.org/en/latest/specifications/dependency-specifiers/",
+        "locator": "Dependency specifiers: dependency constraints",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-runtime",
+      "language": "en",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "runtime",
+        "runtimes"
+      ],
+      "message": "首次可见用例：请人工确认已解释这里指执行程序的软件环境还是运行时阶段。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+        "locator": "Introduction to Node.js: JavaScript runtime environment",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-repository",
+      "language": "en",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "repository",
+        "repositories"
+      ],
+      "message": "首次可见用例：请人工确认已解释这里指 Git 的版本历史存储，而非任意文件夹。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://git-scm.com/docs/gitglossary",
+        "locator": "repository",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-commit",
+      "language": "en",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "commit",
+        "commits"
+      ],
+      "message": "首次可见用例：请人工确认已解释提交保存什么版本；本地提交不等于上传或发布。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://git-scm.com/docs/gitglossary",
+        "locator": "commit (noun and verb)",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-logs",
+      "language": "en",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "log",
+        "logs"
+      ],
+      "message": "首次可见用例：请人工确认已解释这里指程序记录的事件；日志本身不保证定位原因。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://docs.python.org/3/howto/logging.html",
+        "locator": "Basic Logging Tutorial: logging events",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-regression",
+      "language": "en",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "regression test",
+        "regression tests",
+        "regression testing"
+      ],
+      "message": "首次可见用例：请人工确认已解释检查修改是否破坏原有行为，而非只运行一次新功能。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://docs.python.org/3/library/doctest.html",
+        "locator": "Regression testing",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-test-zh",
+      "language": "zh-CN",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "自动测试",
+        "测试用例"
+      ],
+      "message": "首次可见用例：请人工确认已解释测试是什么、输入是什么、什么结果算通过。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://docs.python.org/3/library/unittest.html",
+        "locator": "test case; Basic example",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-dependency-zh",
+      "language": "zh-CN",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "安装依赖",
+        "依赖项",
+        "依赖包"
+      ],
+      "message": "首次可见用例：请人工确认已解释程序依赖哪些其他软件，以及为何需要它们。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://packaging.python.org/en/latest/specifications/dependency-specifiers/",
+        "locator": "Dependency specifiers: dependency constraints",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-runtime-zh",
+      "language": "zh-CN",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "运行环境"
+      ],
+      "message": "首次可见用例：请人工确认已解释这里指执行程序的软件环境还是运行时阶段。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+        "locator": "Introduction to Node.js: JavaScript runtime environment",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-repository-zh",
+      "language": "zh-CN",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "Git 仓库"
+      ],
+      "message": "首次可见用例：请人工确认已解释这里指 Git 的版本历史存储，而非任意文件夹。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://git-scm.com/docs/gitglossary",
+        "locator": "repository",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-commit-zh",
+      "language": "zh-CN",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "Git 提交"
+      ],
+      "message": "首次可见用例：请人工确认已解释提交保存什么版本；本地提交不等于上传或发布。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://git-scm.com/docs/gitglossary",
+        "locator": "commit (noun and verb)",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-logs-zh",
+      "language": "zh-CN",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "日志"
+      ],
+      "message": "首次可见用例：请人工确认已解释这里指程序记录的事件；日志本身不保证定位原因。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://docs.python.org/3/howto/logging.html",
+        "locator": "Basic Logging Tutorial: logging events",
+        "checked": "2026-10-17"
+      }
+    },
+    {
+      "id": "first-regression-zh",
+      "language": "zh-CN",
+      "kind": "first-use",
+      "level": "advice",
+      "forms": [
+        "回归测试",
+        "回归检查"
+      ],
+      "message": "首次可见用例：请人工确认已解释检查修改是否破坏原有行为，而非只运行一次新功能。此提示不表示缺少解释。",
+      "source": {
+        "url": "https://docs.python.org/3/library/doctest.html",
+        "locator": "Regression testing",
+        "checked": "2026-10-17"
+      }
+    }
+  ]
+}

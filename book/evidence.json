@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "claims": [
+    {
+      "id": "assistant-repair-scenario",
+      "claim": "样章中的 PDF 清单遗漏、筛选条件排除子文件夹文件及修复反馈均为教学设计，尚未实测，不代表工具普遍行为或已取得结果。",
+      "kind": "design",
+      "status": "planned",
+      "source": "book/plans/working-with-a-stuck-assistant.md",
+      "locator": "材料与证据；验收与待补工作"
+    },
+    {
+      "id": "assistant-verification-guidance",
+      "claim": "Claude Code 官方最佳实践建议提供可执行的检查并查看验证证据；这是产品实践指导，不保证本书教学情境成功或所有工具都具备相同执行能力。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://code.claude.com/docs/en/best-practices",
+      "locator": "Give Claude a way to verify its work；2026-10-17 核对相关官方正文"
+    },
+    {
+      "id": "assistant-handoff-guidance",
+      "claim": "Anthropic 的长任务工程文章介绍用进度记录与 Git 历史帮助后续会话了解状态；这是特定工程实验中的经验，不是所有读者项目的效果证据。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+      "locator": "Incremental progress；Getting up to speed；2026-10-17 核对相关官方正文"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "translations": [
+    {
+      "language": "en",
+      "source": "book/zh-CN/13-working-with-a-stuck-assistant.md",
+      "translation": "book/en/13-working-with-a-stuck-assistant.md",
+      "source_commit": "0e5d7f367fcdf409335f369f2ac3676ed3e3e1ef",
+      "source_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f",
+      "translation_sha256": "587ec304ea797857a23ae1f68f8f38f11ba4226353aaf6af1f5e662a2e8db56f",
+      "review": "translations/reviews/working-with-a-stuck-assistant-en-r2-2026-10-17.md",
+      "human_review": "pending"
+    }
+  ]
+}

@@ -1,46 +1,33 @@
-# AI Coding for Everyone
+# Using Coding Agents Effectively (scope description, title pending)
 
-[简体中文](README.zh-CN.md) · [Chinese book outline](book/zh-CN/README.md)
+[简体中文](README.zh-CN.md) · [English sample chapter](book/en/13-working-with-a-stuck-assistant.md) · [Chinese outline](book/zh-CN/README.md)
 
-A book in progress helping people without a programming background build tools for their everyday computer work with AI.
+A book in preparation for people with or without programming experience who want to use coding agents to build, check, and maintain useful software.
 
-The Chinese title is **《普通人的 AI 编程》**, with the subtitle **做出适合自己的工作工具**. The English project name follows the repository name; the published English book title is still to be decided.
+A coding agent is an AI tool that can read project files, edit code, and run checks within its permissions. Readers will use existing coding agents to understand codebases, implement features, fix bugs, check changes, and deliver working software. The book explains how to define tasks, provide context, guide execution, recover from problems, and build reusable working habits. It does not teach readers to build an agent system.
 
-## Who this book is for
-
-You use a computer for work. You know how a task should be done, but existing software leaves you repeatedly copying, checking, formatting, or sorting files. This book explores how to turn that knowledge into a tool you can use again.
-
-It assumes everyday computer skills, not experience with code, terminals, or development environments. Technical concepts will be introduced when a task needs them.
-
-## What the book follows
-
-| Case | Role | Intended result |
-| --- | --- | --- |
-| Updating a recurring report | Main case | Update a fixed PowerPoint presentation from new Excel data while retaining its layout |
-| Processing work screenshots in batches | Starter case | Export images with suitable formats, sizes, and readable text |
-| Organizing expense documents | Transfer case | Arrange files into a usable PDF and an accompanying list |
-
-The chapters will follow how a need becomes clearer, how a first version is checked, what happens when inputs change, and how a tool becomes useful over repeated use. Existing software and mature libraries are part of that process. A script, skill, or small app is chosen to fit the task.
-
-Cases may use explicitly labeled teaching data and scenarios based on real work. Measured results and reader testing will be reported separately from intended outcomes.
+Effectiveness includes correctness, maintainability, human effort, waiting, rework, and model usage. Generation speed and token counts alone do not establish improvement.
 
 ## Current state
 
-The audience, premise, five-part outline, and three cases are established. Chapters, runnable examples, and reader testing are still to come. This repository currently contains the project plan and case briefs, not a finished book or tested course.
+On October 17, 2026, the user clarified the scope as using coding agents. The earlier interpretation about developing a first agent application has been corrected. Programming experience is not a prerequisite. The original fixed office-work cases remain as historical material.
 
-- [Book outline in Chinese](book/zh-CN/README.md)
-- [Case briefs](examples/README.md)
-- [Project scope and roadmap](docs/project.md)
-- [Sources and their limits](docs/sources.md)
+The audience and purpose are established. The provisional outline has five parts and twenty chapters. The formal title, teaching project, and coding tools are undecided. The [Chinese sample chapter](book/zh-CN/13-working-with-a-stuck-assistant.md) is included and tracked as revising. An [English translation](book/en/13-working-with-a-stuck-assistant.md) is also available, pending human review. The teaching scenario has not been tested. No chapter is final, and no runnable exercise or reader trial is complete. The repository retains its original name for now.
+
+Wombat may inform research into coding-agent use, but is not the teaching project or a required tool.
+
+- [Project scope and open decisions](docs/project.md)
+- [English sample chapter: When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md)
+- [Chinese sample chapter: working with a stuck coding assistant](book/zh-CN/13-working-with-a-stuck-assistant.md)
+- [Outline](book/zh-CN/README.md)
+- [Case status](examples/README.md)
+- [Writing workflow](docs/production.md)
+- [Sources and limits](docs/sources.md)
 - [Translation status](translations/README.md)
 - [Contributing](CONTRIBUTING.md)
 
-Chinese is the initial writing language. Other language editions are planned; an English introduction does not mean an English manuscript is available.
+Chinese is the initial manuscript language. Chapter 13 has an English discussion draft; a complete English edition is not yet available. See [translation status](translations/README.md) for the source revision and review limits.
 
 ## License
 
-Original book text, documentation, and teaching assets: [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt).
-
-Original code: [MIT](LICENSES/MIT.txt).
-
-See [LICENSE.md](LICENSE.md) for scope and attribution. External works remain under their own terms.
+Original prose, documentation, and teaching assets: [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt). Original code: [MIT](LICENSES/MIT.txt). See [LICENSE.md](LICENSE.md) for scope and attribution. Third-party works retain their own terms.
