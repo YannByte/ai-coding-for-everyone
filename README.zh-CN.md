@@ -21,6 +21,7 @@
 读者与目标已明确，大纲是编辑草案。正式书名、教学项目和采用工具尚未确定。[第 13 章样章](book/zh-CN/13-working-with-a-stuck-assistant.md) 已入库，处于修订阶段，教学情境尚未实测。没有定稿章节、可运行练习或读者试做结果。
 
 - [阅读样章：反复改不好，怎样停下来重新判断](book/zh-CN/13-working-with-a-stuck-assistant.md)
+- [英文样章：When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md)
 - [全书脉络](book/zh-CN/README.md)
 - [当前决定与待定事项](docs/project.md)
 - [案例状态](examples/README.md)
@@ -31,4 +32,4 @@
 
 ## 多语言与许可
 
-中文先行，原文与案例稳定后再推进其他语言。原创书稿、文档及教学素材采用 CC BY-SA 4.0，原创代码采用 MIT；第三方内容保留原许可。详见 [许可说明](LICENSE.md)。
+中文先行，第 13 章已提供英文讨论稿，待人工校对；完整英文版尚未完成。原文版本和审阅状态见 [翻译状态](translations/README.md)。原创书稿、文档及教学素材采用 CC BY-SA 4.0，原创代码采用 MIT；第三方内容保留原许可。详见 [许可说明](LICENSE.md)。
