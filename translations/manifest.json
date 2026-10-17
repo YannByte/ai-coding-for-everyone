@@ -5,10 +5,10 @@
       "language": "en",
       "source": "book/zh-CN/13-working-with-a-stuck-assistant.md",
       "translation": "book/en/13-working-with-a-stuck-assistant.md",
-      "source_commit": "8583912a01fcbc2a2da651b5acc41f11bf9d7d6f",
-      "source_sha256": "ce71901338417536423c2496a3b7140e79b58415bf69753b387238b5543615bd",
-      "translation_sha256": "861aee4cc3e1e9f4b44eee41754648a1b675639882ab77c7ecf6dedaff8a869f",
-      "review": "translations/reviews/working-with-a-stuck-assistant-en-terminology-2026-10-17.md",
+      "source_commit": "0e5d7f367fcdf409335f369f2ac3676ed3e3e1ef",
+      "source_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f",
+      "translation_sha256": "587ec304ea797857a23ae1f68f8f38f11ba4226353aaf6af1f5e662a2e8db56f",
+      "review": "translations/reviews/working-with-a-stuck-assistant-en-r2-2026-10-17.md",
       "human_review": "pending"
     }
   ]

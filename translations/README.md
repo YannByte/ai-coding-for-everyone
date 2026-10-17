@@ -14,11 +14,11 @@
 | --- | --- |
 | Translation | [When Repeated Fixes Don't Work](../book/en/13-working-with-a-stuck-assistant.md) |
 | Source file | [book/zh-CN/13-working-with-a-stuck-assistant.md](../book/zh-CN/13-working-with-a-stuck-assistant.md) |
-| Source commit | [`8583912a01fcbc2a2da651b5acc41f11bf9d7d6f`](https://github.com/YannByte/ai-coding-for-everyone/blob/8583912a01fcbc2a2da651b5acc41f11bf9d7d6f/book/zh-CN/13-working-with-a-stuck-assistant.md) |
-| Review | AI source comparison and English readability revision completed on October 17, 2026; human translation review and target-reader review pending |
-| Review record | [Current terminology review](reviews/working-with-a-stuck-assistant-en-terminology-2026-10-17.md); [earlier readability review](reviews/working-with-a-stuck-assistant-en-reader-review-2026-10-17.md) |
+| Source commit | [`0e5d7f367fcdf409335f369f2ac3676ed3e3e1ef`](https://github.com/YannByte/ai-coding-for-everyone/blob/0e5d7f367fcdf409335f369f2ac3676ed3e3e1ef/book/zh-CN/13-working-with-a-stuck-assistant.md) |
+| Review | Second AI bilingual review against the updated writing rules completed on October 17, 2026; human translation review and target-reader review pending |
+| Review record | [Current bilingual review](reviews/working-with-a-stuck-assistant-en-r2-2026-10-17.md); earlier [terminology](reviews/working-with-a-stuck-assistant-en-terminology-2026-10-17.md) and [readability](reviews/working-with-a-stuck-assistant-en-reader-review-2026-10-17.md) reviews |
 
-The English draft preserves the six sections, teaching scenario, expected results, task boundaries, recovery precautions, and source links. File and folder names remain in Chinese with English labels beside them so both editions refer to the same sample. The English revision adds explanations of terms and concrete ways to inspect results for beginners; these are editorial clarifications, not new observed outcomes. The handoff note is translated as prose. No runnable exercise or successful trial is implied.
+The English draft preserves the six sections, teaching scenario, expected results, task boundaries, recovery precautions, and source links. File and folder names remain in Chinese with English labels beside them so both editions refer to the same sample. Both drafts now explain key terms, make file comparisons explicit, and distinguish recovery methods. These are editorial clarifications, not new observed outcomes. The handoff note is translated as prose. No runnable exercise or successful trial is implied.
 
 Recheck the translation when the Chinese source changes. A repository check does not certify translation fidelity or reader understanding. The repository name is not a finalized English book title.
 
