@@ -2,25 +2,43 @@
   "version": 1,
   "units": [
     {
-      "id": "report-one-page",
-      "title": "固定汇报的一页更新（样章工作题）",
-      "kind": "practice",
-      "case": "recurring-report",
-      "part": 2,
-      "status": "preparing",
-      "brief": "book/plans/report-one-page.md",
-      "manuscript": null,
+      "id": "working-with-a-stuck-assistant",
+      "title": "反复改不好，怎样停下来重新判断（样章讨论稿）",
+      "kind": "argument",
+      "case": null,
+      "part": 4,
+      "status": "revising",
+      "brief": "book/plans/working-with-a-stuck-assistant.md",
+      "manuscript": "book/zh-CN/13-working-with-a-stuck-assistant.md",
       "claims": [
-        "report-design-one-page",
-        "report-external-need",
-        "report-observed-output"
+        "assistant-repair-scenario",
+        "assistant-verification-guidance",
+        "assistant-handoff-guidance"
       ],
-      "reviews": [],
+      "reviews": [
+        {
+          "kind": "language",
+          "result": "pass",
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-language.md",
+          "manuscript_sha256": "ce71901338417536423c2496a3b7140e79b58415bf69753b387238b5543615bd"
+        },
+        {
+          "kind": "structure",
+          "result": "needs-work",
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-structure.md",
+          "manuscript_sha256": "ce71901338417536423c2496a3b7140e79b58415bf69753b387238b5543615bd"
+        },
+        {
+          "kind": "facts",
+          "result": "needs-work",
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-facts.md",
+          "manuscript_sha256": "ce71901338417536423c2496a3b7140e79b58415bf69753b387238b5543615bd"
+        }
+      ],
       "blockers": [
-        "制作可公开的 Excel 输入、单页 PPT 模板与独立对照结果",
-        "复核公开需求来源及其可支持的表述范围",
-        "完成作者试做并保留真实操作与失败记录",
-        "根据材料起草样章，再安排目标读者试读和试做"
+        "选定具体工具与版本，完成教学情境的作者试做并保存执行证据",
+        "安排有无编程经验的目标读者试读；形成练习后另行安排读者试做",
+        "结合第 14、16 章实际正文复核验收与交接内容的分工"
       ]
     }
   ]

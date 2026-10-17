@@ -10,7 +10,7 @@ Chinese writing rules in [docs/chinese-writing.md](docs/chinese-writing.md) are 
 
 For attribution, identify this project, credit the contributors where applicable, link to the source and license, and indicate changes. See the full license texts for the governing terms.
 
-Suggested attribution: “普通人的 AI 编程 — YannByte and contributors, https://github.com/YannByte/ai-coding-for-everyone, CC BY-SA 4.0.”
+Suggested attribution: “AI coding agent usage book (title pending) — YannByte and contributors, https://github.com/YannByte/ai-coding-for-everyone, CC BY-SA 4.0.”
 
 ## 中文说明
 

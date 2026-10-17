@@ -1,8 +1,8 @@
 # Contributing / 参与贡献
 
-The book is in preparation. Feedback on everyday work problems, unclear explanations, and case requirements is welcome in Chinese or English.
+The book is in preparation. Feedback on using coding agents in software work, unclear explanations, and reproducible collaboration problems is welcome in Chinese or English.
 
-欢迎通过 Issue 提出具体工作问题、纠错和阅读反馈。说明原来怎样处理、哪里反复费力、期望什么结果，以及已有软件为什么没有满足要求。
+欢迎通过 Issue 提出具体工作问题、纠错和阅读反馈。说明 AI 编程助手原本应完成哪项开发任务、实际发生什么、使用的工具与版本、人工帮助，以及能公开的最小复现材料。
 
 不要提交个人、客户或单位的非公开材料。需要样例时，使用明确标注的自制数据，保留问题的结构即可。
 

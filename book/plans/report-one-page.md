@@ -1,6 +1,6 @@
 # 样章材料卡：固定汇报的一页更新
 
-任务 ID：`report-one-page`。当前阶段、缺口和审阅记录以 [工作状态](../workflow.json) 为准。这里是编辑安排，不是已确认的正式章节标题。关联 [固定汇报案例](../../examples/recurring-report/README.md)，暂放全书第二部分。
+历史任务 ID：`report-one-page`。本任务已于 2026 年 10 月 17 日退出当前计划；当时阶段与缺口见 [历史工作状态](../workflow-2026-10-11.json)。下文保留原编辑安排和 [历史案例](../../examples/recurring-report/README.md)，不作为新方向的样章计划。
 
 ## 读者与本章判断
 

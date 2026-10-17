@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "units": [
+    {
+      "id": "report-one-page",
+      "title": "固定汇报的一页更新（样章工作题）",
+      "kind": "practice",
+      "case": "recurring-report",
+      "part": 2,
+      "status": "preparing",
+      "brief": "book/plans/report-one-page.md",
+      "manuscript": null,
+      "claims": [
+        "report-design-one-page",
+        "report-external-need",
+        "report-observed-output"
+      ],
+      "reviews": [],
+      "blockers": [
+        "制作可公开的 Excel 输入、单页 PPT 模板与独立对照结果",
+        "复核公开需求来源及其可支持的表述范围",
+        "完成作者试做并保留真实操作与失败记录",
+        "根据材料起草样章，再安排目标读者试读和试做"
+      ]
+    }
+  ]
+}

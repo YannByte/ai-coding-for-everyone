@@ -2,28 +2,28 @@
   "version": 1,
   "claims": [
     {
-      "id": "report-design-one-page",
-      "claim": "主案例先更新一页，再扩展到整份汇报；这是案例设计。",
+      "id": "assistant-repair-scenario",
+      "claim": "样章中的 PDF 清单遗漏、筛选条件排除子文件夹文件及修复反馈均为教学设计，尚未实测，不代表工具普遍行为或已取得结果。",
       "kind": "design",
       "status": "planned",
-      "source": "examples/recurring-report/README.md",
-      "locator": "递进安排"
+      "source": "book/plans/working-with-a-stuck-assistant.md",
+      "locator": "材料与证据；验收与待补工作"
     },
     {
-      "id": "report-external-need",
-      "claim": "公开讨论中有人描述每月更新 Excel 与 PowerPoint 的重复工作；拟用于说明需求，尚待逐条复核原文。",
+      "id": "assistant-verification-guidance",
+      "claim": "Claude Code 官方最佳实践建议提供可执行的检查并查看验证证据；这是产品实践指导，不保证本书教学情境成功或所有工具都具备相同执行能力。",
       "kind": "external",
-      "status": "pending",
-      "source": "https://www.reddit.com/r/excel/comments/1rrsyo5/cleaning_up_excel_powerpoint_workflow_for_monthly/",
-      "locator": null
+      "status": "verified",
+      "source": "https://code.claude.com/docs/en/best-practices",
+      "locator": "Give Claude a way to verify its work；2026-10-17 核对相关官方正文"
     },
     {
-      "id": "report-observed-output",
-      "claim": "待验证：本书工具能以自制教学输入正确更新一页，并保留版式与原件。",
-      "kind": "observation",
-      "status": "pending",
-      "source": null,
-      "locator": null
+      "id": "assistant-handoff-guidance",
+      "claim": "Anthropic 的长任务工程文章介绍用进度记录与 Git 历史帮助后续会话了解状态；这是特定工程实验中的经验，不是所有读者项目的效果证据。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+      "locator": "Incremental progress；Getting up to speed；2026-10-17 核对相关官方正文"
     }
   ]
 }

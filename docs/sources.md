@@ -1,13 +1,26 @@
 # 参考来源
 
-这些资料用于理解需求、文件结构与制作中的问题。外部作者的自述和作品，不等于本书已完成目标读者验证。此处只列链接和用途，不附外部文件。
+以下资料来自此前的方向研究，不能替代本书实验或目标读者验证。当前方向为有无编程经验的读者使用 AI 编程助手；Agent 系统开发书籍仅保留为背景对照，不再据此组织全书。具体产品的使用文档与实践来源须在选定任务和工具后补充核对。书籍核对范围为公开目录与介绍，教程和工程文章参考公开内容；尚未复现配套代码。旧办公案例的来源保留在 [历史来源索引](sources-2026-10-11.md)。
 
-| 来源 | 用途 | 证据边界 |
+| 来源 | 当前用途 | 证据边界 |
 | --- | --- | --- |
-| [每月 Excel 与 PowerPoint 工作流讨论](https://www.reddit.com/r/excel/comments/1rrsyo5/cleaning_up_excel_powerpoint_workflow_for_monthly/) | 理解固定汇报中的重复劳动 | 多人讨论，不拼接为一人的亲历 |
-| [固定月报自动化自述](https://www.reddit.com/r/FPandA/comments/1v54to7/finally_automated_my_monthly_deck_after_2_years/) | 理解链接失效、月份增加等变化 | 未核实作者背景或实际收益 |
-| [Stringfest：月度差异汇报教程](https://stringfestanalytics.com/how-to-automate-a-monthly-variance-deck-with-power-automate-and-copilot/) | 参考 Excel、PPT 模板与输出之间的关系 | 作者教学材料，不当作真实公司数据；附件未纳入本仓库 |
-| [Image Studio 制作记录](https://forum.trae.cn/t/topic/41324) | 了解工作图片处理和预览、设置等需求 | 作者发布记录；代码附件未纳入本仓库 |
-| [票易合](https://github.com/absolutelyZero/piaoyihe) | 参考混合文件合并、清单与排版需求 | 独立项目；其许可不自动适用于其他来源 |
+| [子木：AI 工具站 SEO 小册子](https://github.com/JeffLi1993/saas-seo-playbook) | 明确读者、按做事顺序组织章节、兼顾顺序阅读和问题查阅 | 参考已公开前言、章节与大纲；后续章节仍在补全，不代表效果验证 |
+| [AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) | 对照评估与 AI 系统工程范围 | 公开目录与介绍，不宣称已通读 |
+| [AI Agents in Action 第二版](https://www.manning.com/books/ai-agents-in-action-second-edition) | 对照从实现到评估的教学安排 | 公开内容，不证明本书需要重复其结构 |
+| [Multi-Agent AI Engineering](https://www.oreilly.com/library/view/multi-agent-ai-engineering/9781806690879/) | 对照评估、可观测性与改进的重合范围 | 对照目录；多 Agent 的结论需判断是否适用 |
+| [Hello-Agents](https://github.com/datawhalechina/hello-agents) | 对照中文原理、实践和评估教程 | 阅读公开目录和评估章节，未运行代码 |
+| [Hugging Face 观察与评估实践](https://huggingface.co/learn/agents-course/en/bonus-unit2/monitoring-and-evaluating-agents-notebook) | 研究观察与评估练习的组织方式 | 未复现实验 |
+| [Anthropic：Agent 评估](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) | 任务、轨迹、最终结果、重复运行与回归 | 团队实践与方法说明，不保证对所有项目有效 |
+| [Anthropic：工具设计与评估](https://www.anthropic.com/engineering/writing-tools-for-agents) | 工具契约、返回内容与独立评估 | 来源报告的实验不转写成本书亲历 |
+| [Engineering Reliable Coding Agents](https://arxiv.org/abs/2608.13867) | 编程 Agent 的系统可靠性研究线索 | 公开研究专著，需逐项核对证据和适用范围 |
 
-后续引用会尽量定位到具体文档或版本。本书自行设计的材料会注明教学性质；借用第三方代码或素材时另列许可和归属。
+章节起草时将实际引用的说法、具体定位和核实状态登记到证据清单，不能仅凭列入本页就标记 verified。引用第三方代码或素材另行核对许可。
+
+## 当前样章来源
+
+第 13 章讨论完整委托、执行反馈与交接。来源只支持相应实践建议，不证明教学情境已经运行成功。具体说法与核实范围登记在 [证据清单](../book/evidence.json)。
+
+| 来源 | 使用位置 | 限制 |
+| --- | --- | --- |
+| [Claude Code 官方最佳实践](https://code.claude.com/docs/en/best-practices) | 可执行检查与验证结果 | 产品实践指导，不能推定所有助手具备相同条件 |
+| [Anthropic：长任务工程实践](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | 进度记录、版本历史与跨会话交接 | 特定工程实验，不是本书读者效果证据 |
