@@ -2,7 +2,7 @@
 
 > Discussion draft, under revision. The file-listing tool, agent actions, and feedback below are teaching scenarios that have not been tested. This example has not been selected as the book's main project.
 >
-> AI-translated from the [Chinese chapter](../zh-CN/13-working-with-a-stuck-assistant.md) at source commit [`0e5d7f3`](https://github.com/YannByte/ai-coding-for-everyone/blob/0e5d7f367fcdf409335f369f2ac3676ed3e3e1ef/book/zh-CN/13-working-with-a-stuck-assistant.md). Edited for English readers, with added explanations for beginners. Human translation review is pending. See [translation status](../../translations/README.md).
+> AI-translated from the [Chinese chapter](../zh-CN/13-working-with-a-stuck-assistant.md) at source commit [`d683396`](https://github.com/YannByte/ai-coding-for-everyone/blob/d683396ba38f59850eb5b4cb1c23c7055d8c6693/book/zh-CN/13-working-with-a-stuck-assistant.md). Edited for English readers, with added explanations for beginners. Human translation review is pending. See [translation status](../../translations/README.md).
 
 You asked a coding agent to fix a tool that lists PDF files. It has tried several fixes, but a file is still missing. You tell it, “It still doesn't work.” It reads the code again and makes another change.
 
@@ -61,6 +61,8 @@ Installing packages, opening files outside the project, and changing access perm
 
 If the agent can run the program, let it run checks, read the output, and use the results to continue investigating. It needn't stop after every edit and wait for you to copy an error message back into the conversation.
 
+For example, if a run lists only two PDFs, the agent can inspect the scan results next. If the scan already found the third PDF, it can move on to filtering. Each tool result should inform its next action. Look at the records of file reads, program runs, and output to see whether it is doing this. Claude Code's documentation describes a repeating process of gathering context, taking action, and verifying results. Here, we apply that process to a missing file. [How Claude Code uses tool results](https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop)
+
 If it can check only part of the process, arrange a way to check the rest. For example, it might be able to inspect the scan results but unable to operate the interface. Let it complete the checks it can run, then give you specific steps for checking the interface. Run those steps and report what happened. In its final report, the agent should say which checks it ran, which you ran, and which still need to be done.
 
 Claude Code's official guidance recommends giving the agent checks it can run and looking at the results of those checks. In this example, the sample files and expected list make that check concrete. [Claude Code best practices](https://code.claude.com/docs/en/best-practices)
@@ -97,6 +99,8 @@ If it has reproduced the problem but keeps retrying old approaches, you could sa
 > Stop making changes for now. Summarize the checks you have actually run and their results. Separate causes you have ruled out from guesses you have not tested. Check whether recent edits introduced new problems, then suggest what to check next and explain how each possible result would help narrow down the cause. If you want to retry an approach that already failed, explain what new evidence justifies another attempt.
 
 The agent's next job is to review what it has learned before making another edit. It should explain its next step: “The scan found every file, so I'll inspect the filtering stage next.” A promise to “check again” or “analyze more deeply” leaves the next step unclear. Ask what it will inspect and what each result would tell it.
+
+Check whether its explanation agrees with the latest output. Suppose the scan list contains `旧版说明.pdf`, but the agent still says it did not scan the subfolder. Point out that result and ask it to revise its explanation. Asking it to “think harder” adds no new evidence. Identifying which output contradicts which claim gives it something concrete to investigate next.
 
 If the changes spread and break a feature that used to work, ask the agent to compare the versions before and after its edits. Have it identify which changes relate to the current problem, then decide which to keep or undo.
 
