@@ -19,20 +19,20 @@
         {
           "kind": "language",
           "result": "pass",
-          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-language.md",
-          "manuscript_sha256": "ce71901338417536423c2496a3b7140e79b58415bf69753b387238b5543615bd"
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-r2-language.md",
+          "manuscript_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f"
         },
         {
           "kind": "structure",
           "result": "needs-work",
-          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-structure.md",
-          "manuscript_sha256": "ce71901338417536423c2496a3b7140e79b58415bf69753b387238b5543615bd"
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-r2-structure.md",
+          "manuscript_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f"
         },
         {
           "kind": "facts",
           "result": "needs-work",
-          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-facts.md",
-          "manuscript_sha256": "ce71901338417536423c2496a3b7140e79b58415bf69753b387238b5543615bd"
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-r2-facts.md",
+          "manuscript_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f"
         }
       ],
       "blockers": [
