@@ -64,6 +64,14 @@
       "status": "verified",
       "source": "https://packaging.python.org/en/latest/specifications/dependency-specifiers/",
       "locator": "Dependency specifiers 介绍、版本约束与环境标记；2026-10-18 核读"
+    },
+    {
+      "id": "agent-tool-feedback-loop",
+      "claim": "Claude Code 官方说明以收集信息、采取行动、验证结果描述工作过程，并说明工具返回会影响后续处理。本书据此解释如何观察与调整助手的行动，不推断全部工具有相同能力或教学案例已经成功。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop",
+      "locator": "The agentic loop；Tools；2026-10-18 核读"
     }
   ]
 }

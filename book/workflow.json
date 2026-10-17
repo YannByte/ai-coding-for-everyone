@@ -13,26 +13,27 @@
       "claims": [
         "assistant-repair-scenario",
         "assistant-verification-guidance",
-        "assistant-handoff-guidance"
+        "assistant-handoff-guidance",
+        "agent-tool-feedback-loop"
       ],
       "reviews": [
         {
-          "kind": "language",
-          "result": "pass",
-          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-r2-language.md",
-          "manuscript_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f"
-        },
-        {
           "kind": "structure",
           "result": "needs-work",
-          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-r2-structure.md",
-          "manuscript_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f"
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-18-agent-focus-structure.md",
+          "manuscript_sha256": "b9a14e76e850e1fed6c6433537e0ea73d1e52f11798515255f41942aded8bfec"
         },
         {
           "kind": "facts",
           "result": "needs-work",
-          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-17-r2-facts.md",
-          "manuscript_sha256": "dd198c484168266ef5f40d490707b9ae85b232a7ad922c2c22f9ba47e141627f"
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-18-agent-focus-facts.md",
+          "manuscript_sha256": "b9a14e76e850e1fed6c6433537e0ea73d1e52f11798515255f41942aded8bfec"
+        },
+        {
+          "kind": "language",
+          "result": "pass",
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-18-agent-focus-language.md",
+          "manuscript_sha256": "b9a14e76e850e1fed6c6433537e0ea73d1e52f11798515255f41942aded8bfec"
         }
       ],
       "blockers": [
@@ -55,26 +56,27 @@
         "python-standard-file-traversal",
         "pypdf-text-capability",
         "pypdf-ocr-boundary",
-        "python-dependency-constraints"
+        "python-dependency-constraints",
+        "agent-tool-feedback-loop"
       ],
       "reviews": [
         {
           "kind": "structure",
           "result": "needs-work",
-          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-structure.md",
-          "manuscript_sha256": "1df3b62ecc048cd6965f3370d000ef414b4e8bf56d1341d55b48445b26482723"
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-agent-focus-structure.md",
+          "manuscript_sha256": "9feb7fcb8d63b9c65b86346f33fff32f269fa37ec913e13f44ed4771f1c981f7"
         },
         {
           "kind": "facts",
           "result": "needs-work",
-          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-facts.md",
-          "manuscript_sha256": "1df3b62ecc048cd6965f3370d000ef414b4e8bf56d1341d55b48445b26482723"
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-agent-focus-facts.md",
+          "manuscript_sha256": "9feb7fcb8d63b9c65b86346f33fff32f269fa37ec913e13f44ed4771f1c981f7"
         },
         {
           "kind": "language",
           "result": "pass",
-          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-language.md",
-          "manuscript_sha256": "1df3b62ecc048cd6965f3370d000ef414b4e8bf56d1341d55b48445b26482723"
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-agent-focus-language.md",
+          "manuscript_sha256": "9feb7fcb8d63b9c65b86346f33fff32f269fa37ec913e13f44ed4771f1c981f7"
         }
       ],
       "blockers": [

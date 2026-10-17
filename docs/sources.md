@@ -18,7 +18,7 @@
 
 ## 当前样章来源
 
-第 13 章讨论完整委托、执行反馈与交接。来源只支持相应实践建议，不证明教学情境已经运行成功。具体说法与核实范围登记在 [证据清单](../book/evidence.json)。
+第 13 章讨论让助手完成调查、修复、验证，以及根据执行反馈调整任务和交接。来源只支持相应实践建议，不证明教学情境已经运行成功。具体说法与核实范围登记在 [证据清单](../book/evidence.json)。
 
 | 来源 | 使用位置 | 限制 |
 | --- | --- | --- |
@@ -33,6 +33,8 @@
 | [pypdf 官方介绍](https://pypdf.readthedocs.io/en/stable/) | 将文字提取库列入调查候选 | 不等于完成维护、兼容性或许可审查 |
 | [pypdf 文字提取说明](https://pypdf.readthedocs.io/en/stable/user/extract-text.html) | 文字层、扫描图像与 OCR 的边界 | 未在教学样本上运行，不作效果承诺 |
 | [PyPA 依赖规范](https://packaging.python.org/en/latest/specifications/dependency-specifiers/) | 依赖的版本与环境要求 | 保存配置本身不保证可重复运行 |
+
+两篇样章另参考 [Claude Code 工作方式](https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop) 的工具反馈过程（2026 年 10 月 18 日核对）。用于说明助手怎样根据执行结果继续工作，不代表本书完成了行为实测。
 
 ## 写作规范与术语来源
 
