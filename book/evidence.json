@@ -24,6 +24,46 @@
       "status": "verified",
       "source": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
       "locator": "Incremental progress；Getting up to speed；2026-10-17 核对相关官方正文"
+    },
+    {
+      "id": "library-selection-scenario",
+      "claim": "PDF 正文搜索、三份单页样本和验收方式为教学设计，尚无代码、输入附件或运行记录；不表示已完成库的选型。",
+      "kind": "design",
+      "status": "planned",
+      "source": "book/plans/choosing-libraries-with-an-agent.md",
+      "locator": "材料与证据；验收与待补"
+    },
+    {
+      "id": "python-standard-file-traversal",
+      "claim": "Python 标准库 pathlib 提供按模式递归查找路径的 Path.rglob；这支持先查已有标准能力的例子，不代表它提供 PDF 正文提取或保证扫描完整。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.rglob",
+      "locator": "Path.rglob；2026-10-18 核读 Python 3.15.0 文档，未实测"
+    },
+    {
+      "id": "pypdf-text-capability",
+      "claim": "pypdf 官方介绍列出 PDF 文字提取能力；只据此列为调查候选，不证明适合本项目、支持全部 PDF 或完成维护与许可审查。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://pypdf.readthedocs.io/en/stable/",
+      "locator": "Welcome to pypdf；2026-10-18 核读 6.21.1 文档首页，未实测"
+    },
+    {
+      "id": "pypdf-ocr-boundary",
+      "claim": "pypdf 官方说明区分文字提取与 OCR；pypdf 不能从图像中识别文字，扫描件可能含已有文字层，且文字提取有局限。不能把未提取到文字等同于文档不存在某句话。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://pypdf.readthedocs.io/en/stable/user/extract-text.html",
+      "locator": "Why Text Extraction is hard；OCR vs. Text Extraction；Digitally-born vs. Scanned PDF files；2026-10-18 核读 6.21.1 文档"
+    },
+    {
+      "id": "python-dependency-constraints",
+      "claim": "PyPA 的依赖规范支持记录包依赖、版本与环境条件；本书据此建议保留安装要求，未断言仅记录版本即可保证结果可重复。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://packaging.python.org/en/latest/specifications/dependency-specifiers/",
+      "locator": "Dependency specifiers 介绍、版本约束与环境标记；2026-10-18 核读"
     }
   ]
 }

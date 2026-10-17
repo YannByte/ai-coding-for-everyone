@@ -59,6 +59,8 @@
 | 回归测试 / regression test | 修改后再次检查已有行为，帮助发现新改动造成的破坏；本书「回归检查」还可以包含人工核对 | [Python doctest：Regression testing](https://docs.python.org/3/library/doctest.html#regression-testing)；这是对该实践用途的解释 |
 | 撤销提交 / git revert | Git 通过新提交抵消已有提交引入的改动；不等于把全部文件恢复到某个旧版本 | [Git revert：DESCRIPTION](https://git-scm.com/docs/git-revert#_description)；普通叙述中的「回退」须另写具体对象与恢复方式 |
 
+第 9 章新增术语（2026 年 10 月 18 日核对）：光学字符识别 / optical character recognition，简称 OCR，指从图像中识别文字。首次解释时说明用途，后文可使用 OCR；不要与读取 PDF 已有文字层混用。依据 [pypdf 官方文档：OCR vs. Text Extraction](https://pypdf.readthedocs.io/en/stable/user/extract-text.html#ocr-vs-text-extraction)。这是能力类别，不能据此推定某个库支持 OCR。
+
 ## 词汇约束与程序检查
 
 [机器词表](vocabulary.json) 只维护匹配形式、提示等级、语境说明和来源，概念定义以本页为准。没有列入词表的词不自动成为禁词。普通词汇参考 STE，编程术语优先使用相关标准组织或项目的官方资料；找不到可靠依据时标记待核对，不把模型自拟解释登记为权威定义。

@@ -25,6 +25,15 @@
 | [Claude Code 官方最佳实践](https://code.claude.com/docs/en/best-practices) | 可执行检查与验证结果 | 产品实践指导，不能推定所有助手具备相同条件 |
 | [Anthropic：长任务工程实践](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | 进度记录、版本历史与跨会话交接 | 特定工程实验，不是本书读者效果证据 |
 
+第 9 章讨论由助手调查候选库、验证能力边界，再决定是否接入项目。以下资料用于核对能力与概念，不代表已完成本项目选型或试做。核对日期：2026 年 10 月 18 日。
+
+| 来源 | 使用位置 | 限制 |
+| --- | --- | --- |
+| [Python pathlib](https://docs.python.org/3/library/pathlib.html#pathlib.Path.rglob) | 先检查标准库已有能力 | 只说明文件遍历能力，不证明 PDF 全文搜索可用 |
+| [pypdf 官方介绍](https://pypdf.readthedocs.io/en/stable/) | 将文字提取库列入调查候选 | 不等于完成维护、兼容性或许可审查 |
+| [pypdf 文字提取说明](https://pypdf.readthedocs.io/en/stable/user/extract-text.html) | 文字层、扫描图像与 OCR 的边界 | 未在教学样本上运行，不作效果承诺 |
+| [PyPA 依赖规范](https://packaging.python.org/en/latest/specifications/dependency-specifiers/) | 依赖的版本与环境要求 | 保存配置本身不保证可重复运行 |
+
 ## 写作规范与术语来源
 
 ASD-STE100 的核对版本、范围和本书取舍见 [对照记录](ste100-review.md)。编程术语按 [术语表](terminology.md) 中逐项列出的官方资料核对；其中的新手解释为本项目改写，不冒充官方原文。机器词表保留来源定位，定期随产品与正文变化复核。

@@ -40,6 +40,48 @@
         "安排有无编程经验的目标读者试读；形成练习后另行安排读者试做",
         "结合第 14、16 章实际正文复核验收与交接内容的分工"
       ]
+    },
+    {
+      "id": "choosing-libraries-with-an-agent",
+      "title": "让 AI 编程助手帮你找到并用好成熟的库（样章讨论稿）",
+      "kind": "argument",
+      "case": null,
+      "part": 3,
+      "status": "revising",
+      "brief": "book/plans/choosing-libraries-with-an-agent.md",
+      "manuscript": "book/zh-CN/09-choosing-libraries-with-an-agent.md",
+      "claims": [
+        "library-selection-scenario",
+        "python-standard-file-traversal",
+        "pypdf-text-capability",
+        "pypdf-ocr-boundary",
+        "python-dependency-constraints"
+      ],
+      "reviews": [
+        {
+          "kind": "structure",
+          "result": "needs-work",
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-structure.md",
+          "manuscript_sha256": "1df3b62ecc048cd6965f3370d000ef414b4e8bf56d1341d55b48445b26482723"
+        },
+        {
+          "kind": "facts",
+          "result": "needs-work",
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-facts.md",
+          "manuscript_sha256": "1df3b62ecc048cd6965f3370d000ef414b4e8bf56d1341d55b48445b26482723"
+        },
+        {
+          "kind": "language",
+          "result": "pass",
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-language.md",
+          "manuscript_sha256": "1df3b62ecc048cd6965f3370d000ef414b4e8bf56d1341d55b48445b26482723"
+        }
+      ],
+      "blockers": [
+        "制作可公开样本，选定工具和运行环境，完成候选库与完整流程的作者试做",
+        "邀请有无编程经验的目标读者试读，检查术语与判断方法是否清楚",
+        "结合第 7、8、10、11 章成稿复核章节衔接与重复"
+      ]
     }
   ]
 }
