@@ -2,7 +2,7 @@
 
 > Discussion draft. The tool, agent actions, and feedback are untested teaching scenarios. This example has not been selected as the book's main project.
 >
-> AI-translated from the [Chinese chapter](../zh-CN/13-working-with-a-stuck-assistant.md) at source commit [`190b17d`](https://github.com/YannByte/ai-coding-for-everyone/blob/190b17dc9f2bc8f402cd2f7b88368ab656a515af/book/zh-CN/13-working-with-a-stuck-assistant.md). Edited for English readers; human review is pending. See [translation status](../../translations/README.md).
+> AI-translated from the [Chinese chapter](../zh-CN/13-working-with-a-stuck-assistant.md) at source commit [`c066885`](https://github.com/YannByte/ai-coding-for-everyone/blob/c0668856ad738e66130b3463213538b1bc860123/book/zh-CN/13-working-with-a-stuck-assistant.md). Edited for English readers; human review is pending. See [translation status](../../translations/README.md).
 
 A coding agent has tried several fixes, but your file list still misses a PDF. You say, “It still doesn't work.” It reads the code again and makes another change.
 
@@ -37,7 +37,7 @@ A test gives a program an input and checks its response against an expected resu
 
 ## Let results guide the investigation
 
-Access to code does not guarantee that the agent can check the problem. It may lack the sample or software needed to run the program. It may be able to run the scan but unable to operate the interface. Ask it to identify the missing requirements and show any errors.
+If the agent cannot run the program, have it identify missing sample files or software and show any errors. Then address those gaps.
 
 Installing dependencies, meaning other software packages the program needs, must stay within your authorization. So must opening files outside the project and changing permissions. For anything beyond that scope, the agent should explain the purpose and impact before you decide. Checks already allowed can continue.
 
@@ -52,9 +52,7 @@ Here is a hypothetical investigation:
 | Compares lists before and after filtering and reads the relevant code | A rule excludes files in subfolders | Check the rule's purpose, then fix it |
 | Corrects the rule and runs the program again | All three PDFs appear; the PNG is excluded | Check existing features and copies of the files that originally failed |
 
-In this scenario, the scan was complete all along. Rewriting it could have changed the wrong part of the program. Your investigation may find a different cause; follow the results.
-
-The agent can add temporary logs, records written while the program runs, if needed. Look for evidence connecting its explanation to the failure. “It might be the filter” is a guess. “This file disappears after filtering when the program runs” gives you something to check. Ask it to save the results and identify the relevant code. If the output is hard to read, have it show the file lists before and after filtering side by side.
+In this scenario, the scan was complete all along. Rewriting it could have changed the wrong part of the program. Your investigation may find a different cause. If needed, have the agent add logs: records written while the program runs. Ask it to save the results and identify the relevant code. If the output is hard to read, have it show the lists side by side to explain where the file disappears.
 
 If it cannot operate the interface, let it finish the checks it can run and give you specific steps for the rest. Run those steps and report what happened. The final report should distinguish checks run by the agent, checks run by you, and checks still pending. An explanation that has not been tested by running the program should be labeled as an inference.
 
@@ -62,41 +60,18 @@ If it cannot operate the interface, let it finish the checks it can run and give
 
 If the agent keeps editing without reproducing the failure, have it check the sample and how it runs the program first. If it has reproduced the problem but keeps retrying old approaches, change the task to reviewing evidence. Have it list completed checks, ruled-out causes, remaining guesses, and what the next check would distinguish. Retrying a failed approach needs new evidence.
 
-Check whether its conclusion uses the latest result. If the scan list includes `旧版说明.pdf` but the agent still says it did not scan the subfolder, point out the contradiction. A specific result gives it more to work with than “think harder.”
+For example, if the scan list includes `旧版说明.pdf` but the agent still says it did not scan the subfolder, point out the contradiction. Have it revise its explanation using the result it just obtained.
 
-If edits spread and break existing features, ask the agent to compare the versions before and after its changes. Identify which edits relate to the problem, then decide which to keep or undo.
+If edits spread and break existing features, have the agent compare versions and identify changes related to the failure. Ask which files it proposes to restore, how, and what else would be affected. You decide whether to proceed. First save a recoverable version, including edits not yet recorded in version history. Keep separate backups of code and data: restoring code will not recover overwritten data.
 
-Before undoing anything, save a recoverable version, including edits not yet recorded in version history. Ask which files would change, how they would be restored, and what other work might be affected. Restoring selected files and undoing a recorded set of changes can have different effects. Keep separate backups of code and data: restoring code will not recover overwritten data.
+If you need a new conversation, another model, or a developer to take over, have the agent save a note. Include the goal, sample and expected result, completed checks, failed attempts, and next step. Add the project location, how to run it, the current version, edits not yet in version history, and where to find check results. In the new conversation, have the agent compare the note with the current files before continuing. [Anthropic’s guidance for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
 
 ## Check that tests still express the requirement
 
-The agent may write both the program and its tests, and both may accept the same mistake. This example needs three PDFs. A test might check only the two PDFs in the main folder, or lower the expected count from three to two. It could then pass while the file is still missing.
-
-Agree on the sample and expected result before the fix. The agent can add checks and propose corrections to faulty tests, but it should not quietly relax the requirement. Resolve conflicts by comparing the test, actual behavior, and original requirement.
+The agent may write both the program and its tests, and both may accept the same mistake. This example needs three PDFs, but a test could pass while checking only the two in the main folder. Lowering the expected count to two would also hide the omission. Keep the sample and expected result agreed before the fix. If the agent proposes corrections to a faulty test, judge them against the actual behavior and original requirement. It should not quietly relax that requirement.
 
 Ask for a reusable automated test using this sample. It should fail because the file is missing in the faulty version, then pass after the fix. Failure because the program cannot start does not show that the test detects the missing file.
 
-Compare the expected and actual lists:
-
-- `使用说明.pdf`, `申请表.pdf`, and `往年资料/旧版说明.pdf` must all appear.
-- `封面.png` must be absent.
-
-A count of three is not enough; they must be the right files. The agent writes and runs the test, while you check the requirement it expresses. Running it after later changes to check that existing behavior still works is one form of a regression check.
+Check the requirement expressed by the test, then compare the expected and actual lists file by file. `使用说明.pdf`, `申请表.pdf`, and `往年资料/旧版说明.pdf` must all appear; `封面.png` must be absent. A count of three is not enough. Running the same check after later changes to confirm that existing behavior still works is one form of a regression check.
 
 The completion report should identify the cause, code changes, checks actually run, saved results, and anything left unverified. Then use your normal workflow to check the formerly missing file and existing features. Decide whether any remaining gaps affect your use of the tool.
-
-## Leave notes before changing conversations
-
-Before starting a new conversation, switching models, or asking a developer to take over, have the agent save its progress in a file. If it has reproduced the problem but not found the cause, the note could read:
-
-```text
-Goal: List the PDFs in a chosen folder and all its subfolders.
-Sample: 测试资料; expect three PDFs and no PNG.
-Executed: Ran the current program and confirmed that the PDF in the subfolder is missing from the list.
-Unknown: Whether the file disappears during scanning, filtering, or display.
-Next: Read the relevant code and inspect the file list at each stage.
-```
-
-Add the project location, how to run it, the saved version, edits not yet in version history, failed attempts, and where to find check results. Progress notes and version history can help the next conversation pick up the work. [Anthropic's guidance for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
-
-In the new conversation, provide the note's location. Ask the agent to check that it matches the current files before continuing the unfinished investigation.

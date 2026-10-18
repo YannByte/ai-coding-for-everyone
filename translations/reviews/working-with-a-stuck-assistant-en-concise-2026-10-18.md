@@ -1,22 +1,22 @@
-# Chapter 13: concise bilingual revision
+# Chapter 13: focused bilingual revision
 
 Reviewer: AI assistant (Codex). Date: 2026-10-18. Human translation review and target-reader review remain pending.
 
-- Source: [Chinese chapter](../../book/zh-CN/13-working-with-a-stuck-assistant.md), commit `190b17dc9f2bc8f402cd2f7b88368ab656a515af`.
-- Source SHA-256: `65de42b130c75228cd7af3f2d972c9e27c3721e1abf7a681681556ad281a685c`.
+- Source: [Chinese chapter](../../book/zh-CN/13-working-with-a-stuck-assistant.md), commit `c0668856ad738e66130b3463213538b1bc860123`.
+- Source SHA-256: `eed921cd1bf7dc2674c9eb272dc7b38d1f050ef33d7d56d5adb1f67fe463dd34`.
 - Translation: [English chapter](../../book/en/13-working-with-a-stuck-assistant.md).
-- Translation SHA-256: `6226e68c44b8d30268b07aefd0880ba1ffb1d585cd4275a726b133b5d7488788`.
+- Translation SHA-256: `761cd44335f04f18a90138f748b219ec082d0b1f0d4a4c30e268273dace7f74f`.
 
 ## Scope and findings
 
-Compared all six sections with the shortened Chinese source and the previous English draft. Removed repeated explanations, the sample completion report, and long intervention and handoff prompts in both editions. Retained the sample tree, evidence table, exact expected filenames, and handoff note.
+Compared both editions against their previous versions at `c6ebd95`. Both now use four sections: describe the problem, investigate from results, intervene when fixes fail, and verify the requirement. Merged the log explanation with the investigation table commentary. Folded recovery and handoff into the intervention section, removing the separate handoff section and template. Consolidated test expectations without removing the exact filenames.
 
-Conditions remain aligned: preserve samples, follow existing authorization, distinguish agent checks from user checks and pending work, save unrecorded edits before recovery, and back up code separately from data. Tests must detect the omission rather than merely fail to start; the expected count cannot be relaxed, and filenames must be checked as well as totals. The next conversation must compare notes with current files.
+The sample, hypothetical filtering failure, permissions, and task boundaries remain aligned. Both distinguish agent checks, user checks, and pending work. Recovery still requires saving unrecorded edits and backing up data separately from code. Handoff retains the goal, sample, expected result, checks, failed attempts, next step, project location, run instructions, version, unrecorded edits, and result locations; the next conversation checks these against current files.
 
-The teaching scenario, official source links, and uncertainty remain unchanged. No executed result or new product capability has been added. English retains explanatory labels beside the Chinese filenames and explains project, sample, test, dependency, log, and regression check where needed. Headings and sentences use natural English rather than following Chinese word order.
+Tests must detect the missing file rather than fail to start. Neither edition allows quietly lowering expectations or checking only the count. Both require checking the normal entry point and existing features. English keeps the Chinese filenames with explanatory labels and explains project, sample, reproduction, test, dependency, log, and regression check. The prose follows natural English sentence structure; the condensed handoff is expressed as several sentences rather than one long Chinese-style list.
 
-The length review prompted two final edits: combine a string of short questions into one request, and split a sentence about a test accepting the wrong count. Conditions and meaning remain aligned. First-use terminology hints were checked against the nearby explanations.
+The paragraph-length hint led to removing a repeated sentence about a passing test while preserving the wrong-count example. Remaining terminology hints have explanations nearby.
 
 ## Remaining limits
 
-AI review found no blocking alignment or language issue. The scenario is untested, and no target reader has validated comprehension. This record does not certify translation quality or STE compliance. Earlier review records remain historical.
+No new observed outcome or product claim was added; existing source claims were not rechecked online in this edit. AI review found no blocking alignment or language issue. The scenario is untested and target-reader comprehension remains unverified. This is not STE certification or human translation review. Earlier review versions remain in Git history.
