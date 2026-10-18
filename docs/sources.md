@@ -33,7 +33,6 @@
 | [Anthropic：上下文工程](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | 当前信息、主动检索与上下文管理 | 工程指导，不直接证明教学情境中的错误原因 |
 | [pypdf 测试文档](https://pypdf.readthedocs.io/en/stable/dev/testing.html) | 样本测试与旧问题编号关联 | 未运行项目测试，不证明所有输入已覆盖 |
 | [GitHub：仓库许可](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) | 区分公开可见与许可授权 | 不能替代具体项目许可核查 |
-| [Python pathlib](https://docs.python.org/3/library/pathlib.html#pathlib.Path.rglob) | 先检查标准库已有能力 | 只说明文件遍历能力，不证明 PDF 全文搜索可用 |
 | [pypdf 官方介绍](https://pypdf.readthedocs.io/en/stable/) | 将文字提取库列入调查候选 | 不等于完成维护、兼容性或许可审查 |
 | [pypdf 文字提取说明](https://pypdf.readthedocs.io/en/stable/user/extract-text.html) | 文字层、扫描图像与 OCR 的边界 | 未在教学样本上运行，不作效果承诺 |
 | [PyPA 依赖规范](https://packaging.python.org/en/latest/specifications/dependency-specifiers/) | 依赖的版本与环境要求 | 保存配置本身不保证可重复运行 |
