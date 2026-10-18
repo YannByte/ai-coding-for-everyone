@@ -32,7 +32,7 @@
 
 ## 当前推进安排
 
-[全书脉络](../book/zh-CN/README.md) 暂定五部分、二十章，从第一版实践推进到原理、项目组织、修改交付和方法复用。[第 6 章上下文样章](../book/zh-CN/06-what-the-agent-knows.md)、[第 9 章复用开源实现样章](../book/zh-CN/09-choosing-libraries-with-an-agent.md) 与 [第 13 章故障处理样章](../book/zh-CN/13-working-with-a-stuck-assistant.md) 已入库，状态为修订中，教学情境尚未实测。下一步通过可公开的教学项目试做检验大纲，具体项目和工具仍未确定。
+[全书脉络](../book/zh-CN/README.md) 暂定五部分、十九章，从第一版实践推进到原理、项目组织、修改交付和方法复用。[第 6 章上下文样章](../book/zh-CN/06-what-the-agent-knows.md)、[第 9 章复用开源实现样章](../book/zh-CN/09-choosing-libraries-with-an-agent.md) 与 [第 13 章故障处理样章](../book/zh-CN/13-working-with-a-stuck-assistant.md) 已入库，状态为修订中，教学情境尚未实测。下一步通过可公开的教学项目试做检验大纲，具体项目和工具仍未确定。
 
 [工作状态](../book/workflow.json) 已登记第 6、9、13 章样章任务、材料卡及版本绑定的 AI 审阅记录；[证据清单](../book/evidence.json) 已登记教学设计及对应官方来源。结构与事实审阅仍有待补工作，语言审阅通过不代表案例有效。研究来源不能自动变为效率改善或读者成功的证据。
 

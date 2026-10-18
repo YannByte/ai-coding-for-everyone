@@ -10,7 +10,7 @@ Effectiveness includes correctness, maintainability, human effort, waiting, rewo
 
 ## Current state
 
-The audience and purpose are established. The provisional outline has five parts and twenty chapters. The formal title, teaching project, and coding tools are undecided. Three Chinese discussion drafts are available: [what an agent knows and forgets](book/zh-CN/06-what-the-agent-knows.md), [reusing established code with an agent](book/zh-CN/09-choosing-libraries-with-an-agent.md) and [working with a stuck agent](book/zh-CN/13-working-with-a-stuck-assistant.md). All are tracked as revising.
+The audience and purpose are established. The provisional outline has five parts and nineteen chapters. The formal title, teaching project, and coding tools are undecided. Three Chinese discussion drafts are available: [what an agent knows and forgets](book/zh-CN/06-what-the-agent-knows.md), [reusing established code with an agent](book/zh-CN/09-choosing-libraries-with-an-agent.md) and [working with a stuck agent](book/zh-CN/13-working-with-a-stuck-assistant.md). All are tracked as revising.
 
 Chapter 13 has an [English translation](book/en/13-working-with-a-stuck-assistant.md), pending human review. The teaching scenarios have not been tested. No chapter is final, and no runnable exercise or reader trial is complete. The repository retains its original name for now.
 

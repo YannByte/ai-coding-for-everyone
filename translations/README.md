@@ -2,7 +2,7 @@
 
 | Language | Status |
 | --- | --- |
-| 简体中文 | Scope, provisional five-part, twenty-chapter outline and Chapters 6, 9, and 13 discussion drafts available; sample scenarios untested |
+| 简体中文 | Scope, provisional five-part, nineteen-chapter outline and Chapters 6, 9, and 13 discussion drafts available; sample scenarios untested |
 | English | Project introduction and Chapter 13 discussion draft available; AI translation revised for natural English and beginner comprehension; human review pending |
 | Other languages | Planned; not yet selected |
 
