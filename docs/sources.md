@@ -5,6 +5,7 @@
 | 来源 | 当前用途 | 证据边界 |
 | --- | --- | --- |
 | [子木：AI 工具站 SEO 小册子](https://github.com/JeffLi1993/saas-seo-playbook) | 明确读者、按做事顺序组织章节、兼顾顺序阅读和问题查阅 | 参考已公开前言、章节与大纲；后续章节仍在补全，不代表效果验证 |
+| [Tw93：你不知道的 AI Coding：非技术人的上手、场景与实战](https://tw93.fun/2026-04-26/ai-coding.html) | 2026 年 10 月 18 日核读；参考「做一个只给你一个人用的软件」「怎么确认它真的做对了」及排版实例，从手头材料进入对话、试做和核对 | 作者经验与示例，未复现；本书从对话逐步澄清需求，不要求新手预先写出技术规格，不采用固定完成时间或必定正确的表述 |
 | [AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) | 对照评估与 AI 系统工程范围 | 公开目录与介绍，不宣称已通读 |
 | [AI Agents in Action 第二版](https://www.manning.com/books/ai-agents-in-action-second-edition) | 对照从实现到评估的教学安排 | 公开内容，不证明本书需要重复其结构 |
 | [Multi-Agent AI Engineering](https://www.oreilly.com/library/view/multi-agent-ai-engineering/9781806690879/) | 对照评估、可观测性与改进的重合范围 | 对照目录；多 Agent 的结论需判断是否适用 |
