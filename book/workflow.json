@@ -87,6 +87,48 @@
         "邀请有无编程经验的目标读者试读，检查术语与判断方法是否清楚",
         "结合第 7、8、10、11 章成稿复核章节衔接与重复"
       ]
+    },
+    {
+      "id": "what-the-agent-knows",
+      "title": "它现在知道什么，又会忘掉什么（样章讨论稿）",
+      "kind": "argument",
+      "case": null,
+      "part": 2,
+      "status": "revising",
+      "brief": "book/plans/what-the-agent-knows.md",
+      "manuscript": "book/zh-CN/06-what-the-agent-knows.md",
+      "claims": [
+        "agent-context-scenario",
+        "agent-context-information",
+        "context-compaction-limits",
+        "long-context-position-study",
+        "project-memory-not-enforcement"
+      ],
+      "reviews": [
+        {
+          "kind": "structure",
+          "result": "needs-work",
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-structure.md",
+          "manuscript_sha256": "a022ab68e30f0eb605411698292c9661d9740c30dc24f3872601950e1201221f"
+        },
+        {
+          "kind": "facts",
+          "result": "needs-work",
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-facts.md",
+          "manuscript_sha256": "a022ab68e30f0eb605411698292c9661d9740c30dc24f3872601950e1201221f"
+        },
+        {
+          "kind": "language",
+          "result": "pass",
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-language.md",
+          "manuscript_sha256": "a022ab68e30f0eb605411698292c9661d9740c30dc24f3872601950e1201221f"
+        }
+      ],
+      "blockers": [
+        "选定工具和版本，准备公开样本，实测信息读取、规则使用与界面核对",
+        "邀请有无编程经验的读者试读，检查上下文概念和材料选择是否易懂",
+        "结合第 4、5、10、16 章成稿复核解释与衔接"
+      ]
     }
   ]
 }

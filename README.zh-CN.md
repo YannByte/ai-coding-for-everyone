@@ -18,8 +18,9 @@
 
 2026 年 10 月 17 日，用户明确方向为使用 AI 编程助手，并确认编程经验不作为门槛。此前关于开发第一个 Agent 项目的解释与大纲已修正。原固定办公工具案例保留为历史；仓库名暂未调整。
 
-读者与目标已明确，大纲是编辑草案。正式书名、教学项目和采用工具尚未确定。[第 9 章](book/zh-CN/09-choosing-libraries-with-an-agent.md) 与 [第 13 章](book/zh-CN/13-working-with-a-stuck-assistant.md) 两篇中文样章已入库，处于修订阶段，教学情境尚未实测。没有定稿章节、可运行练习或读者试做结果。
+读者与目标已明确，大纲是编辑草案。正式书名、教学项目和采用工具尚未确定。[第 6 章](book/zh-CN/06-what-the-agent-knows.md)、[第 9 章](book/zh-CN/09-choosing-libraries-with-an-agent.md) 与 [第 13 章](book/zh-CN/13-working-with-a-stuck-assistant.md) 三篇中文样章已入库，处于修订阶段，教学情境尚未实测。没有定稿章节、可运行练习或读者试做结果。
 
+- [阅读样章：它现在知道什么，又会忘掉什么](book/zh-CN/06-what-the-agent-knows.md)
 - [阅读样章：先找成熟实现，再让 AI 补上需要的部分](book/zh-CN/09-choosing-libraries-with-an-agent.md)
 - [阅读样章：反复改不好，怎样停下来重新判断](book/zh-CN/13-working-with-a-stuck-assistant.md)
 - [英文样章：When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md)

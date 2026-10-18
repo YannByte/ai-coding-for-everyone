@@ -64,6 +64,8 @@
 
 第 9 章新增术语（2026 年 10 月 18 日核对）：光学字符识别 / optical character recognition，简称 OCR，指从图像中识别文字。首次解释时说明用途，后文可使用 OCR；不要与读取 PDF 已有文字层混用。依据 [pypdf 官方文档：OCR vs. Text Extraction](https://pypdf.readthedocs.io/en/stable/user/extract-text.html#ocr-vs-text-extraction)。这是能力类别，不能据此推定某个库支持 OCR。
 
+第 6 章新增概念（2026 年 10 月 18 日核对）：上下文 / context 指模型生成时可用的信息；上下文窗口 / context window 指一次可容纳信息的范围；对话压缩 / compaction 指把旧信息整理压缩后继续使用，摘要可能遗漏细节。依据 [Anthropic 上下文工程](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) 的定义、长任务与 Compaction 段落。以上解释不表示项目全部文件已加载，也不表示所有产品有相同压缩与持久记录机制。
+
 ## 词汇约束与程序检查
 
 [机器词表](vocabulary.json) 只维护匹配形式、提示等级、语境说明和来源，概念定义以本页为准。没有列入词表的词不自动成为禁词。普通词汇参考 STE，编程术语优先使用相关标准组织或项目的官方资料；找不到可靠依据时标记待核对，不把模型自拟解释登记为权威定义。
