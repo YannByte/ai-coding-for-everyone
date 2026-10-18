@@ -34,14 +34,6 @@
       "locator": "材料与证据；验收与待补"
     },
     {
-      "id": "python-standard-file-traversal",
-      "claim": "Python 标准库 pathlib 提供按模式递归查找路径的 Path.rglob；这支持先查已有标准能力的例子，不代表它提供 PDF 正文提取或保证扫描完整。",
-      "kind": "external",
-      "status": "verified",
-      "source": "https://docs.python.org/3/library/pathlib.html#pathlib.Path.rglob",
-      "locator": "Path.rglob；2026-10-18 核读 Python 3.15.0 文档，未实测"
-    },
-    {
       "id": "pypdf-text-capability",
       "claim": "pypdf 官方介绍列出 PDF 文字提取能力；只据此列为调查候选，不证明适合本项目、支持全部 PDF 或完成维护与许可审查。",
       "kind": "external",

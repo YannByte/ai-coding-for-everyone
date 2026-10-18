@@ -16,7 +16,6 @@ STAGES = {
     "reader-testing": "读者验证", "ready": "本轮可交付",
 }
 REVIEW_KINDS = {"structure", "facts", "language", "author-trial", "reader-trial", "reader-review"}
-CASES = {"recurring-report", "work-screenshots", "expense-documents"}
 
 
 def nonempty(value):
@@ -104,8 +103,11 @@ def audit_workflow(root, files):
         if not isinstance(kind, str) or kind not in {"practice", "argument"}:
             errors.append(f"{label}: invalid unit kind")
             continue
-        if (not isinstance(unit.get("case"), str) or unit["case"] not in CASES) and unit.get("case") is not None:
-            errors.append(f"{label}: unknown case")
+        case = unit.get("case")
+        if case is not None and (not isinstance(case, str)
+                or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", case)
+                or not local_file(root, files, f"examples/{case}/README.md", ".md")):
+            errors.append(f"{label}: case needs a lowercase id and an included examples/<id>/README.md")
         if kind == "practice" and unit.get("case") is None:
             errors.append(f"{label}: practice unit needs a case")
         if type(unit.get("part")) is not int or unit["part"] not in range(1, 6):

@@ -34,6 +34,6 @@
 python3 -c "import hashlib,pathlib; print(hashlib.sha256(pathlib.Path('book/zh-CN/chapter.md').read_bytes()).hexdigest())"
 ```
 
-不要只更新哈希沿用旧结论。修改正文后复核影响，保留原记录并建立新的记录；未完成复核时退回 revising。
+不要只更新哈希沿用旧结论。修改正文后复核影响，建立新版本的记录；旧记录按 [清理规则](production.md#清理过期内容) 留在 Git 历史中。未完成复核时退回 revising。
 
 结构审稿先检查论点、材料与顺序；事实审阅逐条查证据；语言校对最后进行。整稿审阅只提供成稿和读者能获得的配套资料，另行报告书的整体问题。

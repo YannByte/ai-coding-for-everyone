@@ -90,10 +90,10 @@ class RepositoryChecks(unittest.TestCase):
         self.assertTrue(any("manifest must be included" in e for e in self.errors()))
 
     def test_original_asset_requires_manifest_and_can_pass(self):
-        self.write("examples/recurring-report/input.csv", "month,count\nJanuary,3\n")
+        self.write("examples/sample-tool/input.csv", "month,count\nJanuary,3\n")
         self.assertTrue(any("register teaching" in e for e in self.errors()))
         self.write("examples/materials.json", json.dumps([{
-            "path": "examples/recurring-report/input.csv", "origin": "original",
+            "path": "examples/sample-tool/input.csv", "origin": "original",
             "license": "CC-BY-SA-4.0", "description": "Synthetic teaching input",
         }]))
         self.assertEqual(self.errors(), [])

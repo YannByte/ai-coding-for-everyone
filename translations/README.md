@@ -18,7 +18,7 @@
 | Source file | [book/zh-CN/13-working-with-a-stuck-assistant.md](../book/zh-CN/13-working-with-a-stuck-assistant.md) |
 | Source commit | [`190b17dc9f2bc8f402cd2f7b88368ab656a515af`](https://github.com/YannByte/ai-coding-for-everyone/blob/190b17dc9f2bc8f402cd2f7b88368ab656a515af/book/zh-CN/13-working-with-a-stuck-assistant.md) |
 | Review | AI bilingual review of the shortened drafts completed on October 18, 2026; human translation review and target-reader review pending |
-| Review record | [Current concise-draft review](reviews/working-with-a-stuck-assistant-en-concise-2026-10-18.md); [previous review](reviews/working-with-a-stuck-assistant-en-agent-focus-2026-10-18.md) |
+| Review record | [Current concise-draft review](reviews/working-with-a-stuck-assistant-en-concise-2026-10-18.md) |
 
 The English draft preserves the six sections, teaching scenario, expected results, task boundaries, recovery precautions, and source links. File and folder names remain in Chinese with English labels beside them so both editions refer to the same sample. Both drafts remove repeated explanations and long prompts while retaining key terms, explicit file comparisons, and recovery conditions. These are editorial changes, not new observed outcomes. The handoff note is translated as prose. No runnable exercise or successful trial is implied.
 

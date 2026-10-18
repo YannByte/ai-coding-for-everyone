@@ -16,10 +16,11 @@ class WritingChecks(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.files = set()
         self.write("book/plans/sample.md", "# Teaching plan\n")
+        self.write("examples/sample-tool/README.md", "# Teaching case\n")
         self.claim = {"id": "sample-design", "claim": "Teaching design, not observed success.",
                       "kind": "design", "status": "planned", "source": "book/plans/sample.md", "locator": "Teaching plan"}
         self.unit = {"id": "sample", "title": "Sample", "part": 2, "kind": "practice",
-                     "case": "recurring-report", "status": "preparing", "brief": "book/plans/sample.md",
+                     "case": "sample-tool", "status": "preparing", "brief": "book/plans/sample.md",
                      "manuscript": None, "claims": ["sample-design"], "reviews": [], "blockers": ["Prepare inputs"]}
         self.claims = [self.claim]
         self.units = [self.unit]
@@ -55,6 +56,29 @@ class WritingChecks(unittest.TestCase):
 
     def test_preparing_is_valid_without_fabricated_manuscript_or_reviews(self):
         self.assertEqual(self.errors(), [])
+
+    def test_new_case_is_accepted_when_its_readme_is_included(self):
+        self.unit["case"] = "another-tool"
+        self.write("examples/another-tool/README.md", "# Another case\n")
+        self.assertEqual(self.errors(), [])
+
+    def test_case_requires_an_existing_included_readme(self):
+        name = "examples/sample-tool/README.md"
+        self.files.remove(name)
+        self.assertIn("case needs", "\n".join(self.errors()))
+        self.files.add(name)
+        (self.root / name).unlink()
+        self.assertIn("case needs", "\n".join(self.errors()))
+
+    def test_malformed_case_ids_are_rejected(self):
+        for case in ("../sample-tool", "/tmp/sample-tool", "a/b", "", [], "Sample-Tool"):
+            with self.subTest(case=case):
+                self.unit["case"] = case
+                self.assertIn("case needs", "\n".join(self.errors()))
+
+    def test_practice_still_requires_a_case(self):
+        self.unit["case"] = None
+        self.assertIn("practice unit needs a case", "\n".join(self.errors()))
 
     def test_missing_and_malformed_registers_fail(self):
         self.assertTrue(audit_workflow(self.root, self.files))
