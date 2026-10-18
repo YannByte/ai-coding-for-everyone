@@ -51,6 +51,16 @@
 
 两篇样章另参考 [Claude Code 工作方式](https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop) 的工具反馈过程（2026 年 10 月 18 日核对）。用于说明助手怎样根据执行结果继续工作，不代表本书完成了行为实测。
 
+## 现代编程助手的工作方式
+
+2026 年 10 月 18 日核读以下官方资料，用于校正全书的对话与执行分工。文档描述的能力受产品、运行模式、工具和权限限制，不代表本书案例已实测，也不推断所有助手支持相同功能。
+
+| 来源与定位 | 写作用途 |
+| --- | --- |
+| [Claude Code：工作方式](https://code.claude.com/docs/en/how-claude-code-works)，The agentic loop、Tools、It's a conversation、Delegate, don't dictate | 一次请求包含多轮工具调用；助手收集上下文、执行、检查，读者给出目标并按需要补充信息，不必预先设计全部步骤 |
+| [Cursor：Agent 概览](https://cursor.com/docs/agent/overview)，Tools；[浏览器工具](https://cursor.com/docs/agent/tools/browser) | 助手可通过文件、终端及浏览器工具调查和验证；具备相应工具时，可使用页面操作、截图、控制台和网络记录检查结果 |
+| [GitHub：Copilot agents](https://docs.github.com/en/copilot/concepts/agent-capabilities/about-agents/about-github-copilot-agents)，工作方式与运行形式 | 区分对话入口与任务执行；协作、异步和自动触发等形式，不要求读者始终在线逐步指挥 |
+
 ## 项目规则、文档与 Skill
 
 2026 年 10 月 18 日核对以下公开资料，用于补强第 10、17 章，并衔接已有的上下文、交接和效果复盘内容。共同的教学取舍是：从实际工作提炼必要记录，用后续任务检验，再合并或删除无效内容。尚未完成本书练习或读者验证；章节起草时再登记具体引用的证据。
