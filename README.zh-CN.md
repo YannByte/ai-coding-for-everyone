@@ -10,14 +10,15 @@
 
 ## 内容安排
 
-暂定五部分、二十章：先做出并检查第一版，再理解助手的工作机制，随后学习项目组织、修改与交付，最后形成自己的协作方法。正文可以顺序阅读，也会提供按问题查阅的入口。
+暂定五部分、十九章：先做出并检查第一版，再理解助手的工作机制，随后学习项目组织、修改与交付，最后形成自己的协作方法。正文可以顺序阅读，也会提供按问题查阅的入口。
 
 高效既看结果质量，也看人工投入、等待、返工与模型用量。不会把生成速度或 Token 数量当成唯一标准。
 
 ## 当前进度
 
-读者与目标已明确，大纲是编辑草案。正式书名、教学项目和采用工具尚未确定。[第 6 章](book/zh-CN/06-what-the-agent-knows.md)、[第 9 章](book/zh-CN/09-choosing-libraries-with-an-agent.md) 与 [第 13 章](book/zh-CN/13-working-with-a-stuck-assistant.md) 三篇中文样章已入库，处于修订阶段，教学情境尚未实测。没有定稿章节、可运行练习或读者试做结果。
+读者与目标已明确，大纲是编辑草案。正式书名、教学项目和采用工具尚未确定。[第 1 章](book/zh-CN/01-start-with-your-problem.md)、[第 6 章](book/zh-CN/06-what-the-agent-knows.md)、[第 9 章](book/zh-CN/09-choosing-libraries-with-an-agent.md) 与 [第 13 章](book/zh-CN/13-working-with-a-stuck-assistant.md) 四篇中文样章已入库，处于修订阶段，教学情境尚未实测。没有定稿章节、可运行练习或读者试做结果。
 
+- [阅读样章：把眼前的麻烦告诉它](book/zh-CN/01-start-with-your-problem.md)
 - [阅读样章：它现在知道什么，又会忘掉什么](book/zh-CN/06-what-the-agent-knows.md)
 - [阅读样章：先找成熟实现，再让 AI 补上需要的部分](book/zh-CN/09-choosing-libraries-with-an-agent.md)
 - [阅读样章：反复改不好，怎样停下来重新判断](book/zh-CN/13-working-with-a-stuck-assistant.md)

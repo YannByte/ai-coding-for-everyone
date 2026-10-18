@@ -5,6 +5,7 @@
 | 来源 | 当前用途 | 证据边界 |
 | --- | --- | --- |
 | [子木：AI 工具站 SEO 小册子](https://github.com/JeffLi1993/saas-seo-playbook) | 明确读者、按做事顺序组织章节、兼顾顺序阅读和问题查阅 | 参考已公开前言、章节与大纲；后续章节仍在补全，不代表效果验证 |
+| [Tw93：你不知道的 AI Coding：非技术人的上手、场景与实战](https://tw93.fun/2026-04-26/ai-coding.html) | 2026 年 10 月 18 日核读；参考「做一个只给你一个人用的软件」「怎么确认它真的做对了」及排版实例，从手头材料进入对话、试做和核对 | 作者经验与示例，未复现；本书从对话逐步澄清需求，不要求新手预先写出技术规格，不采用固定完成时间或必定正确的表述 |
 | [AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) | 对照评估与 AI 系统工程范围 | 公开目录与介绍，不宣称已通读 |
 | [AI Agents in Action 第二版](https://www.manning.com/books/ai-agents-in-action-second-edition) | 对照从实现到评估的教学安排 | 公开内容，不证明本书需要重复其结构 |
 | [Multi-Agent AI Engineering](https://www.oreilly.com/library/view/multi-agent-ai-engineering/9781806690879/) | 对照评估、可观测性与改进的重合范围 | 对照目录；多 Agent 的结论需判断是否适用 |
@@ -17,6 +18,8 @@
 章节起草时将实际引用的说法、具体定位和核实状态登记到证据清单，不能仅凭列入本页就标记 verified。引用第三方代码或素材另行核对许可。
 
 ## 当前样章来源
+
+第 1 章从不会编程的读者找培训通知的情境进入，文件和对话均为未实测教学设计。起步组织参考上述 Tw93 文章；工具执行与反馈依据 [Claude Code 工作方式](https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop) 的 The agentic loop、Tools 部分（2026 年 10 月 18 日核读），不推断所有产品具有相同访问范围或文件处理能力。
 
 第 6 章讨论当前上下文、按需读取、对话压缩和冲突规则。2026 年 10 月 18 日核对以下来源；同名文件情境仍为未实测的教学设计。
 
@@ -47,6 +50,20 @@
 | [PyPA 依赖规范](https://packaging.python.org/en/latest/specifications/dependency-specifiers/) | 依赖的版本与环境要求 | 保存配置本身不保证可重复运行 |
 
 两篇样章另参考 [Claude Code 工作方式](https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop) 的工具反馈过程（2026 年 10 月 18 日核对）。用于说明助手怎样根据执行结果继续工作，不代表本书完成了行为实测。
+
+## 项目规则、文档与 Skill
+
+2026 年 10 月 18 日核对以下公开资料，用于补强第 10、17 章，并衔接已有的上下文、交接和效果复盘内容。共同的教学取舍是：从实际工作提炼必要记录，用后续任务检验，再合并或删除无效内容。尚未完成本书练习或读者验证；章节起草时再登记具体引用的证据。
+
+| 来源与定位 | 用途 | 证据边界 |
+| --- | --- | --- |
+| [OpenAI：Best practices](https://learn.chatgpt.com/guides/best-practices)，AGENTS.md 与持续改进部分 | 根据反复出现的问题修正规则，短入口引用专门文档 | 产品实践建议，不把每次纠正都升级为长期规则 |
+| [OpenAI：AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)，指令发现与合并部分；[Claude Code：最佳实践](https://code.claude.com/docs/en/best-practices)，Write an effective CLAUDE.md | 核对文件名、作用范围及加载方式；区分长期约定与详细资料 | 分别适用于对应产品；不假设任意文件名会自动加载，修改后须核对是否生效 |
+| [OpenAI：Harness engineering](https://openai.com/index/harness-engineering/)，We made repository knowledge the system of record | 简短规则入口、按需查阅文档、用程序检查可明确判断的要求 | 团队工程实践；只借鉴按需组织知识的办法，不照搬其工程规模 |
+| [Agent Skills：Best practices](https://agentskills.io/skill-creation/best-practices)，从实际任务提取与渐进改进部分 | 从成功步骤、纠正记录和项目资料提炼 Skill，保留必要知识 | 规范项目的实践指南，不证明本书读者必然受益 |
+| [Agent Skills：Evaluating skill output quality](https://agentskills.io/skill-creation/evaluating-skills)，Designing test cases、Running evals、Iterating on the skill | 新会话中换输入验证，比较使用与不使用或新旧版本的结果，按失败证据改进 | 方法参考；少量练习不能证明普遍有效，客观检查仍需人工核对适用性 |
+| [Agent Skills：Optimizing skill descriptions](https://agentskills.io/skill-creation/optimizing-descriptions)，Designing trigger eval queries | 分别检查该调用与不该调用的任务，区分选用正确与执行成功 | 触发机制依客户端而异；不照搬建议次数和阈值作为读者门槛 |
+| [Evaluating AGENTS.md](https://arxiv.org/abs/2602.11988v3)，v3 摘要；[On the Impact of AGENTS.md Files](https://arxiv.org/abs/2601.20404v2)，v2 摘要 | 提醒作者区分任务成功、执行时间与成本，用实际任务验证规则价值 | 仅核读摘要，未复现实验；研究的任务、配置和指标不同，不合并为统一效果，也不据此宣称规则必然有效或无效 |
 
 ## 写作规范与术语来源
 
