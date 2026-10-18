@@ -136,6 +136,14 @@
       "status": "verified",
       "source": "https://code.claude.com/docs/en/memory",
       "locator": "CLAUDE.md vs auto memory；Write effective instructions；2026-10-18 核读"
+    },
+    {
+      "id": "stale-instructions-reentry",
+      "claim": "Claude Code 文档说明项目规则、导入内容和部分记忆可在会话开始或按需读取，并建议清理过期或矛盾指令。本章据此推演旧要求重新进入上下文的可能路径；不声称所有文件都会加载、归档或重开会话能自动隔离，未实测教学情境。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://code.claude.com/docs/en/memory",
+      "locator": "CLAUDE.md vs auto memory；Write effective instructions；Import additional files；How it works；2026-10-18 核读"
     }
   ]
 }

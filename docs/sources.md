@@ -24,7 +24,7 @@
 | --- | --- | --- |
 | [Anthropic：上下文工程](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | 当前信息、按需读取、压缩与持久记录 | 不断言全部工具采用同一方式，不给出效果承诺 |
 | [Lost in the Middle](https://arxiv.org/abs/2307.03172) | 可容纳信息不等于能稳定使用 | 核读 2023 年论文摘要；多文档问答与键值检索，不推断当前编程故障原因 |
-| [Claude Code：项目记忆](https://code.claude.com/docs/en/memory) | 规则冲突与非强制执行性质 | 产品实践说明，具体加载行为另按版本检查 |
+| [Claude Code：项目记忆](https://code.claude.com/docs/en/memory) | 规则与记忆加载、过期要求和非强制执行性质 | 产品实践说明；清理与验证办法为编辑建议，具体加载行为另按版本检查 |
 
 第 13 章讨论让助手完成调查、修复、验证，以及根据执行反馈调整任务和交接。来源只支持相应实践建议，不证明教学情境已经运行成功。具体说法与核实范围登记在 [证据清单](../book/evidence.json)。
 

@@ -102,30 +102,31 @@
         "agent-context-information",
         "context-compaction-limits",
         "long-context-position-study",
-        "project-memory-not-enforcement"
+        "project-memory-not-enforcement",
+        "stale-instructions-reentry"
       ],
       "reviews": [
         {
           "kind": "structure",
           "result": "needs-work",
-          "report": "book/reviews/what-the-agent-knows-2026-10-18-structure.md",
-          "manuscript_sha256": "a022ab68e30f0eb605411698292c9661d9740c30dc24f3872601950e1201221f"
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-stale-docs-structure.md",
+          "manuscript_sha256": "a42eff265e0bed1bea98b363e403a9d2093a37c697a1a676ddc07eee6c1641cd"
         },
         {
           "kind": "facts",
           "result": "needs-work",
-          "report": "book/reviews/what-the-agent-knows-2026-10-18-facts.md",
-          "manuscript_sha256": "a022ab68e30f0eb605411698292c9661d9740c30dc24f3872601950e1201221f"
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-stale-docs-facts.md",
+          "manuscript_sha256": "a42eff265e0bed1bea98b363e403a9d2093a37c697a1a676ddc07eee6c1641cd"
         },
         {
           "kind": "language",
           "result": "pass",
-          "report": "book/reviews/what-the-agent-knows-2026-10-18-language.md",
-          "manuscript_sha256": "a022ab68e30f0eb605411698292c9661d9740c30dc24f3872601950e1201221f"
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-stale-docs-language.md",
+          "manuscript_sha256": "a42eff265e0bed1bea98b363e403a9d2093a37c697a1a676ddc07eee6c1641cd"
         }
       ],
       "blockers": [
-        "选定工具和版本，准备公开样本，实测信息读取、规则使用与界面核对",
+        "选定工具和版本，准备公开样本，实测信息读取、过期规则清理及界面核对",
         "邀请有无编程经验的读者试读，检查上下文概念和材料选择是否易懂",
         "结合第 4、5、10、16 章成稿复核解释与衔接"
       ]
