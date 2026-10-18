@@ -19,19 +19,19 @@
           "kind": "structure",
           "result": "needs-work",
           "report": "book/reviews/start-with-your-problem-2026-10-18.md",
-          "manuscript_sha256": "59842fa534d5f3f69ac49218ef4c0c87dfe17e364dfb68b210e4e1b7b368d0fb"
+          "manuscript_sha256": "c3fa7c3364bba2021b53e7c9491cc152958611403a1ec733f1ca64ea0f3cedf4"
         },
         {
           "kind": "facts",
           "result": "needs-work",
           "report": "book/reviews/start-with-your-problem-2026-10-18.md",
-          "manuscript_sha256": "59842fa534d5f3f69ac49218ef4c0c87dfe17e364dfb68b210e4e1b7b368d0fb"
+          "manuscript_sha256": "c3fa7c3364bba2021b53e7c9491cc152958611403a1ec733f1ca64ea0f3cedf4"
         },
         {
           "kind": "language",
           "result": "pass",
           "report": "book/reviews/start-with-your-problem-2026-10-18.md",
-          "manuscript_sha256": "59842fa534d5f3f69ac49218ef4c0c87dfe17e364dfb68b210e4e1b7b368d0fb"
+          "manuscript_sha256": "c3fa7c3364bba2021b53e7c9491cc152958611403a1ec733f1ca64ea0f3cedf4"
         }
       ],
       "blockers": [
