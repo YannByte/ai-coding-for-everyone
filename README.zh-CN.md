@@ -20,7 +20,7 @@
 
 读者与目标已明确，大纲是编辑草案。正式书名、教学项目和采用工具尚未确定。[第 9 章](book/zh-CN/09-choosing-libraries-with-an-agent.md) 与 [第 13 章](book/zh-CN/13-working-with-a-stuck-assistant.md) 两篇中文样章已入库，处于修订阶段，教学情境尚未实测。没有定稿章节、可运行练习或读者试做结果。
 
-- [阅读样章：让 AI 编程助手帮你找到并用好成熟的库](book/zh-CN/09-choosing-libraries-with-an-agent.md)
+- [阅读样章：先找成熟实现，再让 AI 补上需要的部分](book/zh-CN/09-choosing-libraries-with-an-agent.md)
 - [阅读样章：反复改不好，怎样停下来重新判断](book/zh-CN/13-working-with-a-stuck-assistant.md)
 - [英文样章：When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md)
 - [全书脉络](book/zh-CN/README.md)

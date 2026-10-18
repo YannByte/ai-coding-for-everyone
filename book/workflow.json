@@ -44,7 +44,7 @@
     },
     {
       "id": "choosing-libraries-with-an-agent",
-      "title": "让 AI 编程助手帮你找到并用好成熟的库（样章讨论稿）",
+      "title": "先找成熟实现，再让 AI 补上需要的部分（样章讨论稿）",
       "kind": "argument",
       "case": null,
       "part": 3,
@@ -57,30 +57,34 @@
         "pypdf-text-capability",
         "pypdf-ocr-boundary",
         "python-dependency-constraints",
-        "agent-tool-feedback-loop"
+        "agent-tool-feedback-loop",
+        "code-generation-functional-evaluation",
+        "agent-context-information",
+        "pypdf-regression-tests",
+        "public-code-license"
       ],
       "reviews": [
         {
           "kind": "structure",
           "result": "needs-work",
-          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-agent-focus-structure.md",
-          "manuscript_sha256": "9feb7fcb8d63b9c65b86346f33fff32f269fa37ec913e13f44ed4771f1c981f7"
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-reuse-structure.md",
+          "manuscript_sha256": "7d15037fa2f2044815ba9f76e5ccb56175b3f91503bd1f4be236da370680e1cd"
         },
         {
           "kind": "facts",
           "result": "needs-work",
-          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-agent-focus-facts.md",
-          "manuscript_sha256": "9feb7fcb8d63b9c65b86346f33fff32f269fa37ec913e13f44ed4771f1c981f7"
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-reuse-facts.md",
+          "manuscript_sha256": "7d15037fa2f2044815ba9f76e5ccb56175b3f91503bd1f4be236da370680e1cd"
         },
         {
           "kind": "language",
           "result": "pass",
-          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-agent-focus-language.md",
-          "manuscript_sha256": "9feb7fcb8d63b9c65b86346f33fff32f269fa37ec913e13f44ed4771f1c981f7"
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-reuse-language.md",
+          "manuscript_sha256": "7d15037fa2f2044815ba9f76e5ccb56175b3f91503bd1f4be236da370680e1cd"
         }
       ],
       "blockers": [
-        "制作可公开样本，选定工具和运行环境，完成候选库与完整流程的作者试做",
+        "制作可公开样本，选定工具和运行环境，比较完整工具与库的可行路径，完成采用方案和完整流程的作者试做",
         "邀请有无编程经验的目标读者试读，检查术语与判断方法是否清楚",
         "结合第 7、8、10、11 章成稿复核章节衔接与重复"
       ]

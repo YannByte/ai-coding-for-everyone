@@ -25,10 +25,14 @@
 | [Claude Code 官方最佳实践](https://code.claude.com/docs/en/best-practices) | 可执行检查与验证结果 | 产品实践指导，不能推定所有助手具备相同条件 |
 | [Anthropic：长任务工程实践](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) | 进度记录、版本历史与跨会话交接 | 特定工程实验，不是本书读者效果证据 |
 
-第 9 章讨论由助手调查候选库、验证能力边界，再决定是否接入项目。以下资料用于核对能力与概念，不代表已完成本项目选型或试做。核对日期：2026 年 10 月 18 日。
+第 9 章讨论为什么复杂能力应优先复用成熟开源实现，再由助手补齐需求。区分生成、执行反馈与项目测试积累，解释复用的依据和局限。以下资料用于核对能力与概念，不代表已完成本项目选型或试做。核对日期：2026 年 10 月 18 日。
 
 | 来源 | 使用位置 | 限制 |
 | --- | --- | --- |
+| [Chen 等：代码模型研究，第 2 节](https://arxiv.org/html/2107.03374v2) | 区分代码生成与通过运行测试评价功能 | 2021 年研究，不据其成绩评价当前工具 |
+| [Anthropic：上下文工程](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | 当前信息、主动检索与上下文管理 | 工程指导，不直接证明教学情境中的错误原因 |
+| [pypdf 测试文档](https://pypdf.readthedocs.io/en/stable/dev/testing.html) | 样本测试与旧问题编号关联 | 未运行项目测试，不证明所有输入已覆盖 |
+| [GitHub：仓库许可](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) | 区分公开可见与许可授权 | 不能替代具体项目许可核查 |
 | [Python pathlib](https://docs.python.org/3/library/pathlib.html#pathlib.Path.rglob) | 先检查标准库已有能力 | 只说明文件遍历能力，不证明 PDF 全文搜索可用 |
 | [pypdf 官方介绍](https://pypdf.readthedocs.io/en/stable/) | 将文字提取库列入调查候选 | 不等于完成维护、兼容性或许可审查 |
 | [pypdf 文字提取说明](https://pypdf.readthedocs.io/en/stable/user/extract-text.html) | 文字层、扫描图像与 OCR 的边界 | 未在教学样本上运行，不作效果承诺 |

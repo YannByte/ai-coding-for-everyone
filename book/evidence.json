@@ -27,7 +27,7 @@
     },
     {
       "id": "library-selection-scenario",
-      "claim": "PDF 正文搜索、三份单页样本和验收方式为教学设计，尚无代码、输入附件或运行记录；不表示已完成库的选型。",
+      "claim": "PDF 正文搜索、三份单页样本、边界遗漏及配置、接入、扩展的选择为教学设计或编辑建议，尚无代码、输入附件或运行记录；不表示已完成开源项目或库的选型，不声称测得复用优于自写。",
       "kind": "design",
       "status": "planned",
       "source": "book/plans/choosing-libraries-with-an-agent.md",
@@ -72,6 +72,38 @@
       "status": "verified",
       "source": "https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop",
       "locator": "The agentic loop；Tools；2026-10-18 核读"
+    },
+    {
+      "id": "code-generation-functional-evaluation",
+      "claim": "Chen 等 2021 年代码模型研究将生成程序与执行测试评价功能区分开；本章引用这一方法区别，不用旧模型成绩判断当前产品，不把生成过程视为正确性证明。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://arxiv.org/html/2107.03374v2",
+      "locator": "第 2.1 节 Functional Correctness、第 2.2 节 HumanEval；2026-10-18 核读"
+    },
+    {
+      "id": "agent-context-information",
+      "claim": "Anthropic 上下文工程文章将上下文描述为生成时可用的信息，并说明通过工具按需获取信息；本章据此解释应让助手主动调查，不将此作为特定教学错误或发生频率的证据。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "locator": "Context engineering vs. prompt engineering；Context retrieval and agentic search；2026-10-18 核读"
+    },
+    {
+      "id": "pypdf-regression-tests",
+      "claim": "pypdf 测试文档说明样本文件测试，并要求回归测试关联问题编号；只证明存在文档规定的测试实践，不表示已运行这些测试、验证维护质量或证明所有 PDF 可用。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://pypdf.readthedocs.io/en/stable/dev/testing.html",
+      "locator": "Deselecting groups of tests；Docstrings in Unit tests；2026-10-18 核读 6.21.1 文档"
+    },
+    {
+      "id": "public-code-license",
+      "claim": "GitHub 仓库许可说明区分公开可见与许可授权；本章要求查明具体许可，不对候选项目作已完成许可审查的结论。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+      "locator": "页面介绍；Choosing the right license；2026-10-18 核读"
     }
   ]
 }

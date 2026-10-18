@@ -21,6 +21,7 @@
 | 试做 | author trial | 作者按案例操作并核对结果；不能替代目标读者验证 |
 | 试读 | reader review | 符合定位的读者阅读并反馈理解情况；不表示执行过操作 |
 | 读者试做 | reader trial | 符合定位的读者动手完成案例；记录是否获得帮助 |
+| 开源软件 | open source software | 按许可允许使用、修改和分发的软件；公开可见代码不等于获得任意使用授权，也不保证成熟度。依据 [GitHub 仓库许可说明](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)，2026 年 10 月 18 日核对 |
 | 库 | library | 程序可以复用的现成代码；首次出现时结合所解决的工作解释 |
 | skill | skill | 供 AI 工具按任务使用的指令及配套资源；具体用途和支持环境随案例说明 |
 
