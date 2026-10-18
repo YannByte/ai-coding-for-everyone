@@ -103,26 +103,28 @@
         "context-compaction-limits",
         "long-context-position-study",
         "project-memory-not-enforcement",
-        "stale-instructions-reentry"
+        "stale-instructions-reentry",
+        "git-record-selected-content",
+        "git-restore-recorded-file"
       ],
       "reviews": [
         {
           "kind": "structure",
           "result": "needs-work",
-          "report": "book/reviews/what-the-agent-knows-2026-10-18-stale-docs-structure.md",
-          "manuscript_sha256": "a42eff265e0bed1bea98b363e403a9d2093a37c697a1a676ddc07eee6c1641cd"
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-git-history-structure.md",
+          "manuscript_sha256": "e340e4cd00b7754ac6498ea8fb4a95c69244612b52d762f890b3745d40a1d950"
         },
         {
           "kind": "facts",
           "result": "needs-work",
-          "report": "book/reviews/what-the-agent-knows-2026-10-18-stale-docs-facts.md",
-          "manuscript_sha256": "a42eff265e0bed1bea98b363e403a9d2093a37c697a1a676ddc07eee6c1641cd"
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-git-history-facts.md",
+          "manuscript_sha256": "e340e4cd00b7754ac6498ea8fb4a95c69244612b52d762f890b3745d40a1d950"
         },
         {
           "kind": "language",
           "result": "pass",
-          "report": "book/reviews/what-the-agent-knows-2026-10-18-stale-docs-language.md",
-          "manuscript_sha256": "a42eff265e0bed1bea98b363e403a9d2093a37c697a1a676ddc07eee6c1641cd"
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-git-history-language.md",
+          "manuscript_sha256": "e340e4cd00b7754ac6498ea8fb4a95c69244612b52d762f890b3745d40a1d950"
         }
       ],
       "blockers": [

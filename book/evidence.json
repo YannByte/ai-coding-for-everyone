@@ -144,6 +144,22 @@
       "status": "verified",
       "source": "https://code.claude.com/docs/en/memory",
       "locator": "CLAUDE.md vs auto memory；Write effective instructions；Import additional files；How it works；2026-10-18 核读"
+    },
+    {
+      "id": "git-record-selected-content",
+      "claim": "Git commit 保存选定内容及提交说明；本章据此要求删除前确认待保留内容已记录，不将未提交的新文件或修改视为已在提交历史中保存。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://git-scm.com/docs/git-commit",
+      "locator": "DESCRIPTION；2026-10-18 核读"
+    },
+    {
+      "id": "git-restore-recorded-file",
+      "claim": "Git restore 可从指定提交恢复文件；本章说明在保留的历史中找回已记录文档，不宣称删除当前文件会清除对话、记忆或历史访问。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://git-scm.com/docs/git-restore",
+      "locator": "DESCRIPTION；OPTIONS --source；2026-10-18 核读"
     }
   ]
 }

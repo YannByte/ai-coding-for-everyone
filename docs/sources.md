@@ -23,6 +23,7 @@
 | 来源 | 使用位置 | 限制 |
 | --- | --- | --- |
 | [Anthropic：上下文工程](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | 当前信息、按需读取、压缩与持久记录 | 不断言全部工具采用同一方式，不给出效果承诺 |
+| [Git commit](https://git-scm.com/docs/git-commit)、[Git restore](https://git-scm.com/docs/git-restore) | 用提交保留历史，从当前项目移除过期文档 | 仅能据保留的历史找回已记录内容，不覆盖未提交的新文件或修改 |
 | [Lost in the Middle](https://arxiv.org/abs/2307.03172) | 可容纳信息不等于能稳定使用 | 核读 2023 年论文摘要；多文档问答与键值检索，不推断当前编程故障原因 |
 | [Claude Code：项目记忆](https://code.claude.com/docs/en/memory) | 规则与记忆加载、过期要求和非强制执行性质 | 产品实践说明；清理与验证办法为编辑建议，具体加载行为另按版本检查 |
 
