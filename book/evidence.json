@@ -152,6 +152,14 @@
       "status": "verified",
       "source": "https://git-scm.com/docs/git-restore",
       "locator": "DESCRIPTION；OPTIONS --source；2026-10-18 核读"
+    },
+    {
+      "id": "book-repository-cleanup",
+      "claim": "2026 年 10 月 18 日，Codex 按用户要求清理本书仓库，删除前逐一核对 38 份过期文件已保存在 Git 中，修正引用及检查脚本的旧案例限制，自动检查通过。仅为实际维护观察，未测量后续误读率，也不是目标读者试做。",
+      "kind": "observation",
+      "status": "verified",
+      "source": "book/reviews/repository-cleanup-2026-10-18.md",
+      "locator": "操作与可核对依据；结论与限制；提交 8d264e5d6374e3fdb8e89c7176666ff1f9c33162"
     }
   ]
 }

@@ -105,30 +105,31 @@
         "project-memory-not-enforcement",
         "stale-instructions-reentry",
         "git-record-selected-content",
-        "git-restore-recorded-file"
+        "git-restore-recorded-file",
+        "book-repository-cleanup"
       ],
       "reviews": [
         {
           "kind": "structure",
           "result": "needs-work",
-          "report": "book/reviews/what-the-agent-knows-2026-10-18-git-history-structure.md",
-          "manuscript_sha256": "e340e4cd00b7754ac6498ea8fb4a95c69244612b52d762f890b3745d40a1d950"
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-cleanup-case-structure.md",
+          "manuscript_sha256": "2137116a5f411fe19eb18ec90d2f6df245fb15bddd08a6a1ac0455a6429509a8"
         },
         {
           "kind": "facts",
           "result": "needs-work",
-          "report": "book/reviews/what-the-agent-knows-2026-10-18-git-history-facts.md",
-          "manuscript_sha256": "e340e4cd00b7754ac6498ea8fb4a95c69244612b52d762f890b3745d40a1d950"
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-cleanup-case-facts.md",
+          "manuscript_sha256": "2137116a5f411fe19eb18ec90d2f6df245fb15bddd08a6a1ac0455a6429509a8"
         },
         {
           "kind": "language",
           "result": "pass",
-          "report": "book/reviews/what-the-agent-knows-2026-10-18-git-history-language.md",
-          "manuscript_sha256": "e340e4cd00b7754ac6498ea8fb4a95c69244612b52d762f890b3745d40a1d950"
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-cleanup-case-language.md",
+          "manuscript_sha256": "2137116a5f411fe19eb18ec90d2f6df245fb15bddd08a6a1ac0455a6429509a8"
         }
       ],
       "blockers": [
-        "选定工具和版本，准备公开样本，实测信息读取、过期规则清理及界面核对",
+        "针对同名文件教学情境选定工具和版本，准备公开样本，实测信息读取、过期显示规则清理及界面核对",
         "邀请有无编程经验的读者试读，检查上下文概念和材料选择是否易懂",
         "结合第 4、5、10、16 章成稿复核解释与衔接"
       ]
