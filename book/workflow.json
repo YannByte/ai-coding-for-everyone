@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "units": [
+    {
+      "id": "working-with-a-stuck-assistant",
+      "title": "反复改不好，怎样停下来重新判断（样章讨论稿）",
+      "kind": "argument",
+      "case": null,
+      "part": 4,
+      "status": "revising",
+      "brief": "book/plans/working-with-a-stuck-assistant.md",
+      "manuscript": "book/zh-CN/13-working-with-a-stuck-assistant.md",
+      "claims": [
+        "assistant-repair-scenario",
+        "assistant-verification-guidance",
+        "assistant-handoff-guidance",
+        "agent-tool-feedback-loop"
+      ],
+      "reviews": [
+        {
+          "kind": "structure",
+          "result": "needs-work",
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-18-concise-structure.md",
+          "manuscript_sha256": "eed921cd1bf7dc2674c9eb272dc7b38d1f050ef33d7d56d5adb1f67fe463dd34"
+        },
+        {
+          "kind": "facts",
+          "result": "needs-work",
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-18-concise-facts.md",
+          "manuscript_sha256": "eed921cd1bf7dc2674c9eb272dc7b38d1f050ef33d7d56d5adb1f67fe463dd34"
+        },
+        {
+          "kind": "language",
+          "result": "pass",
+          "report": "book/reviews/working-with-a-stuck-assistant-2026-10-18-concise-language.md",
+          "manuscript_sha256": "eed921cd1bf7dc2674c9eb272dc7b38d1f050ef33d7d56d5adb1f67fe463dd34"
+        }
+      ],
+      "blockers": [
+        "选定具体工具与版本，完成教学情境的作者试做并保存执行证据",
+        "安排有无编程经验的目标读者试读；形成练习后另行安排读者试做",
+        "结合第 14、16 章实际正文复核验收与交接内容的分工"
+      ]
+    },
+    {
+      "id": "choosing-libraries-with-an-agent",
+      "title": "先找成熟实现，再让 AI 补上需要的部分（样章讨论稿）",
+      "kind": "argument",
+      "case": null,
+      "part": 3,
+      "status": "revising",
+      "brief": "book/plans/choosing-libraries-with-an-agent.md",
+      "manuscript": "book/zh-CN/09-choosing-libraries-with-an-agent.md",
+      "claims": [
+        "library-selection-scenario",
+        "pypdf-text-capability",
+        "pypdf-ocr-boundary",
+        "python-dependency-constraints",
+        "agent-tool-feedback-loop",
+        "code-generation-functional-evaluation",
+        "agent-context-information",
+        "pypdf-regression-tests",
+        "public-code-license"
+      ],
+      "reviews": [
+        {
+          "kind": "structure",
+          "result": "needs-work",
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-concise-structure.md",
+          "manuscript_sha256": "d102e40c7ec98dc390e6cd22ed77dfd573ce097282cb09238a2422f76bfff90b"
+        },
+        {
+          "kind": "facts",
+          "result": "needs-work",
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-concise-facts.md",
+          "manuscript_sha256": "d102e40c7ec98dc390e6cd22ed77dfd573ce097282cb09238a2422f76bfff90b"
+        },
+        {
+          "kind": "language",
+          "result": "pass",
+          "report": "book/reviews/choosing-libraries-with-an-agent-2026-10-18-concise-language.md",
+          "manuscript_sha256": "d102e40c7ec98dc390e6cd22ed77dfd573ce097282cb09238a2422f76bfff90b"
+        }
+      ],
+      "blockers": [
+        "制作可公开样本，选定工具和运行环境，比较完整工具与库的可行路径，完成采用方案和完整流程的作者试做",
+        "邀请有无编程经验的目标读者试读，检查术语与判断方法是否清楚",
+        "结合第 7、8、10、11 章成稿复核章节衔接与重复"
+      ]
+    },
+    {
+      "id": "what-the-agent-knows",
+      "title": "它现在知道什么，又会忘掉什么（样章讨论稿）",
+      "kind": "argument",
+      "case": null,
+      "part": 2,
+      "status": "revising",
+      "brief": "book/plans/what-the-agent-knows.md",
+      "manuscript": "book/zh-CN/06-what-the-agent-knows.md",
+      "claims": [
+        "agent-context-scenario",
+        "agent-context-information",
+        "context-compaction-limits",
+        "long-context-position-study",
+        "project-memory-not-enforcement",
+        "stale-instructions-reentry",
+        "git-record-selected-content",
+        "git-restore-recorded-file",
+        "book-repository-cleanup"
+      ],
+      "reviews": [
+        {
+          "kind": "structure",
+          "result": "needs-work",
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-cleanup-case-structure.md",
+          "manuscript_sha256": "f7c155b0af2389e5dbe8f2e13305ca5c390438d2facf9a90d5e859027100e4b2"
+        },
+        {
+          "kind": "facts",
+          "result": "needs-work",
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-cleanup-case-facts.md",
+          "manuscript_sha256": "f7c155b0af2389e5dbe8f2e13305ca5c390438d2facf9a90d5e859027100e4b2"
+        },
+        {
+          "kind": "language",
+          "result": "pass",
+          "report": "book/reviews/what-the-agent-knows-2026-10-18-cleanup-case-language.md",
+          "manuscript_sha256": "f7c155b0af2389e5dbe8f2e13305ca5c390438d2facf9a90d5e859027100e4b2"
+        }
+      ],
+      "blockers": [
+        "针对同名文件教学情境选定工具和版本，准备公开样本，实测信息读取、过期显示规则清理及界面核对",
+        "邀请有无编程经验的读者试读，检查上下文概念和材料选择是否易懂",
+        "结合第 4、5、10、16 章成稿复核解释与衔接"
+      ]
+    }
+  ]
+}

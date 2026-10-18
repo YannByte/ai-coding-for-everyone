@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "claims": [
+    {
+      "id": "assistant-repair-scenario",
+      "claim": "样章中的 PDF 清单遗漏、筛选条件排除子文件夹文件及修复反馈均为教学设计，尚未实测，不代表工具普遍行为或已取得结果。",
+      "kind": "design",
+      "status": "planned",
+      "source": "book/plans/working-with-a-stuck-assistant.md",
+      "locator": "材料与证据；验收与待补工作"
+    },
+    {
+      "id": "assistant-verification-guidance",
+      "claim": "Claude Code 官方最佳实践建议提供可执行的检查并查看验证证据；这是产品实践指导，不保证本书教学情境成功或所有工具都具备相同执行能力。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://code.claude.com/docs/en/best-practices",
+      "locator": "Give Claude a way to verify its work；2026-10-17 核对相关官方正文"
+    },
+    {
+      "id": "assistant-handoff-guidance",
+      "claim": "Anthropic 的长任务工程文章介绍用进度记录与 Git 历史帮助后续会话了解状态；这是特定工程实验中的经验，不是所有读者项目的效果证据。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents",
+      "locator": "Incremental progress；Getting up to speed；2026-10-17 核对相关官方正文"
+    },
+    {
+      "id": "library-selection-scenario",
+      "claim": "PDF 正文搜索、三份单页样本、边界遗漏及配置、接入、扩展的选择为教学设计或编辑建议，尚无代码、输入附件或运行记录；不表示已完成开源项目或库的选型，不声称测得复用优于自写。",
+      "kind": "design",
+      "status": "planned",
+      "source": "book/plans/choosing-libraries-with-an-agent.md",
+      "locator": "材料与证据；验收与待补"
+    },
+    {
+      "id": "pypdf-text-capability",
+      "claim": "pypdf 官方介绍列出 PDF 文字提取能力；只据此列为调查候选，不证明适合本项目、支持全部 PDF 或完成维护与许可审查。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://pypdf.readthedocs.io/en/stable/",
+      "locator": "Welcome to pypdf；2026-10-18 核读 6.21.1 文档首页，未实测"
+    },
+    {
+      "id": "pypdf-ocr-boundary",
+      "claim": "pypdf 官方说明区分文字提取与 OCR；pypdf 不能从图像中识别文字，扫描件可能含已有文字层，且文字提取有局限。不能把未提取到文字等同于文档不存在某句话。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://pypdf.readthedocs.io/en/stable/user/extract-text.html",
+      "locator": "Why Text Extraction is hard；OCR vs. Text Extraction；Digitally-born vs. Scanned PDF files；2026-10-18 核读 6.21.1 文档"
+    },
+    {
+      "id": "python-dependency-constraints",
+      "claim": "PyPA 的依赖规范支持记录包依赖、版本与环境条件；本书据此建议保留安装要求，未断言仅记录版本即可保证结果可重复。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://packaging.python.org/en/latest/specifications/dependency-specifiers/",
+      "locator": "Dependency specifiers 介绍、版本约束与环境标记；2026-10-18 核读"
+    },
+    {
+      "id": "agent-tool-feedback-loop",
+      "claim": "Claude Code 官方说明以收集信息、采取行动、验证结果描述工作过程，并说明工具返回会影响后续处理。本书据此解释如何观察与调整助手的行动，不推断全部工具有相同能力或教学案例已经成功。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop",
+      "locator": "The agentic loop；Tools；2026-10-18 核读"
+    },
+    {
+      "id": "code-generation-functional-evaluation",
+      "claim": "Chen 等 2021 年代码模型研究将生成程序与执行测试评价功能区分开；本章引用这一方法区别，不用旧模型成绩判断当前产品，不把生成过程视为正确性证明。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://arxiv.org/html/2107.03374v2",
+      "locator": "第 2.1 节 Functional Correctness、第 2.2 节 HumanEval；2026-10-18 核读"
+    },
+    {
+      "id": "agent-context-information",
+      "claim": "Anthropic 上下文工程文章将上下文描述为生成时可用的信息，并说明通过工具按需获取信息；本章据此解释应让助手主动调查，不将此作为特定教学错误或发生频率的证据。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "locator": "Context engineering vs. prompt engineering；Context retrieval and agentic search；2026-10-18 核读"
+    },
+    {
+      "id": "pypdf-regression-tests",
+      "claim": "pypdf 测试文档说明样本文件测试，并要求回归测试关联问题编号；只证明存在文档规定的测试实践，不表示已运行这些测试、验证维护质量或证明所有 PDF 可用。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://pypdf.readthedocs.io/en/stable/dev/testing.html",
+      "locator": "Deselecting groups of tests；Docstrings in Unit tests；2026-10-18 核读 6.21.1 文档"
+    },
+    {
+      "id": "public-code-license",
+      "claim": "GitHub 仓库许可说明区分公开可见与许可授权；本章要求查明具体许可，不对候选项目作已完成许可审查的结论。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+      "locator": "页面介绍；Choosing the right license；2026-10-18 核读"
+    },
+    {
+      "id": "agent-context-scenario",
+      "claim": "隐藏路径导致同名 PDF 难以区分、旧草案与当前约定冲突，以及补充材料后的检查均为教学设计；未证明某次错误来自信息遗忘，未实测。",
+      "kind": "design",
+      "status": "planned",
+      "source": "book/plans/what-the-agent-knows.md",
+      "locator": "读者、问题与论点；材料与证据"
+    },
+    {
+      "id": "context-compaction-limits",
+      "claim": "Anthropic 上下文工程文章说明长任务中可以压缩旧信息并通过外部记录保留进度，过度压缩可能丢失细节；本章只解释机制，不断言所有产品采用相同方式或当前错误由压缩导致。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+      "locator": "Context engineering for long-horizon tasks；Compaction；Structured note-taking；2026-10-18 核读"
+    },
+    {
+      "id": "long-context-position-study",
+      "claim": "Lost in the Middle 的 2023 年论文摘要报告：在所测多文档问答与键值检索中，相关信息位置影响模型表现；不推广为当前产品的错误率、个案原因或固定提示词排序技巧。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://arxiv.org/abs/2307.03172",
+      "locator": "v3，2023-11-20；Abstract，两个任务及位置效应；2026-10-18 核读摘要，未复现实验"
+    },
+    {
+      "id": "project-memory-not-enforcement",
+      "claim": "Claude Code 官方文档说明项目规则和记忆作为上下文而非强制配置，并建议清理矛盾规则；本章不泛化具体自动加载方式，不把读入规则等同于执行成功。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://code.claude.com/docs/en/memory",
+      "locator": "CLAUDE.md vs auto memory；Write effective instructions；2026-10-18 核读"
+    },
+    {
+      "id": "stale-instructions-reentry",
+      "claim": "Claude Code 文档说明项目规则、导入内容和部分记忆可在会话开始或按需读取，并建议清理过期或矛盾指令。本章据此推演旧要求重新进入上下文的可能路径；不声称所有文件都会加载、归档或重开会话能自动隔离，未实测教学情境。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://code.claude.com/docs/en/memory",
+      "locator": "CLAUDE.md vs auto memory；Write effective instructions；Import additional files；How it works；2026-10-18 核读"
+    },
+    {
+      "id": "git-record-selected-content",
+      "claim": "Git commit 保存选定内容及提交说明；本章据此要求删除前确认待保留内容已记录，不将未提交的新文件或修改视为已在提交历史中保存。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://git-scm.com/docs/git-commit",
+      "locator": "DESCRIPTION；2026-10-18 核读"
+    },
+    {
+      "id": "git-restore-recorded-file",
+      "claim": "Git restore 可从指定提交恢复文件；本章说明在保留的历史中找回已记录文档，不宣称删除当前文件会清除对话、记忆或历史访问。",
+      "kind": "external",
+      "status": "verified",
+      "source": "https://git-scm.com/docs/git-restore",
+      "locator": "DESCRIPTION；OPTIONS --source；2026-10-18 核读"
+    },
+    {
+      "id": "book-repository-cleanup",
+      "claim": "2026 年 10 月 18 日，Codex 按用户要求清理本书仓库，删除前逐一核对 38 份过期文件已保存在 Git 中，修正引用及检查脚本的旧案例限制，自动检查通过。仅为实际维护观察，未测量后续误读率，也不是目标读者试做。",
+      "kind": "observation",
+      "status": "verified",
+      "source": "book/reviews/repository-cleanup-2026-10-18.md",
+      "locator": "操作与可核对依据；结论与限制；提交 8d264e5d6374e3fdb8e89c7176666ff1f9c33162"
+    }
+  ]
+}
