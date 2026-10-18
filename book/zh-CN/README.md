@@ -10,7 +10,7 @@
 
 开始只需准备一台电脑和一个已经能对话的编程助手。开篇导读提供获取并打开助手的最短路径，详细安装差异放入配套指南。命令行、编程环境和其他工具在任务需要时，由助手协助配置并随用随讲，不作为读者预先完成的功课。所选助手的使用条件与费用在入门指南中说明，数据、权限及可能后果在具体操作前解释。
 
-已有 [第 6 章](06-what-the-agent-knows.md)、[第 9 章](09-choosing-libraries-with-an-agent.md)、[第 13 章](13-working-with-a-stuck-assistant.md) 三篇中文样章及 [第 13 章英文译稿](../en/13-working-with-a-stuck-assistant.md)。样章仍在修订，教学情境尚未实测，英文稿待人工校对。当前进度以 [工作状态](../workflow.json) 为准。
+已有 [第 1 章](01-start-with-your-problem.md)、[第 6 章](06-what-the-agent-knows.md)、[第 9 章](09-choosing-libraries-with-an-agent.md)、[第 13 章](13-working-with-a-stuck-assistant.md) 四篇中文样章及 [第 13 章英文译稿](../en/13-working-with-a-stuck-assistant.md)。样章仍在修订，教学情境尚未实测，英文稿待人工校对。当前进度以 [工作状态](../workflow.json) 为准。
 
 ## 第一部分：先做成一件小事
 

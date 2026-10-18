@@ -8,7 +8,7 @@
 
 中文正文称呼与英文概念按 [术语表](../docs/terminology.md) 对应，产品名保留官方写法。[中文样章](../book/zh-CN/13-working-with-a-stuck-assistant.md) 和 [英文译稿](../book/en/13-working-with-a-stuck-assistant.md) 已入库，教学情境尚未实测。英文样章用于讨论，原文仍在修订；完整多语言版本待原文与案例稳定后推进。译文需要解释当地工具、日期与数字格式、文件习惯和流程差异。
 
-[第 6 章](../book/zh-CN/06-what-the-agent-knows.md) 与 [第 9 章](../book/zh-CN/09-choosing-libraries-with-an-agent.md) 中文样章已入库，尚无英文译稿。
+[第 1 章](../book/zh-CN/01-start-with-your-problem.md)、[第 6 章](../book/zh-CN/06-what-the-agent-knows.md) 与 [第 9 章](../book/zh-CN/09-choosing-libraries-with-an-agent.md) 中文样章已入库，尚无英文译稿。
 
 ## Chapter 13 source and review
 

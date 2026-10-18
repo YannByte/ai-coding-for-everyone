@@ -160,6 +160,14 @@
       "status": "verified",
       "source": "book/reviews/repository-cleanup-2026-10-18.md",
       "locator": "操作与可核对依据；结论与限制；提交 8d264e5d6374e3fdb8e89c7176666ff1f9c33162"
+    },
+    {
+      "id": "first-conversation-scenario",
+      "claim": "第一章的培训通知、同名文件、日常对话、操作卡点及可能查找结果均为未实测的教学设计；只说明从具体问题开始并根据反馈继续对话的方法，不代表真实读者经历、工具选型或已完成练习。",
+      "kind": "design",
+      "status": "planned",
+      "source": "book/plans/start-with-your-problem.md",
+      "locator": "读者、问题与论点；材料与证据；验收与待补"
     }
   ]
 }

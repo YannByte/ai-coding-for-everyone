@@ -10,7 +10,7 @@ Effectiveness includes correctness, maintainability, human effort, waiting, rewo
 
 ## Current state
 
-The audience and purpose are established. The provisional outline has five parts and nineteen chapters. The formal title, teaching project, and coding tools are undecided. Three Chinese discussion drafts are available: [what an agent knows and forgets](book/zh-CN/06-what-the-agent-knows.md), [reusing established code with an agent](book/zh-CN/09-choosing-libraries-with-an-agent.md) and [working with a stuck agent](book/zh-CN/13-working-with-a-stuck-assistant.md). All are tracked as revising.
+The audience and purpose are established. The provisional outline has five parts and nineteen chapters. The formal title, teaching project, and coding tools are undecided. Four Chinese discussion drafts are available: [starting with a problem and a conversation](book/zh-CN/01-start-with-your-problem.md), [what an agent knows and forgets](book/zh-CN/06-what-the-agent-knows.md), [reusing established code with an agent](book/zh-CN/09-choosing-libraries-with-an-agent.md) and [working with a stuck agent](book/zh-CN/13-working-with-a-stuck-assistant.md). All are tracked as revising.
 
 Chapter 13 has an [English translation](book/en/13-working-with-a-stuck-assistant.md), pending human review. The teaching scenarios have not been tested. No chapter is final, and no runnable exercise or reader trial is complete. The repository retains its original name for now.
 
@@ -18,6 +18,7 @@ Wombat may inform research into coding-agent use, but is not the teaching projec
 
 - [Project scope and open decisions](docs/project.md)
 - [English sample chapter: When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md)
+- [Chinese sample chapter: starting with your problem](book/zh-CN/01-start-with-your-problem.md)
 - [Chinese sample chapter: what an agent knows and forgets](book/zh-CN/06-what-the-agent-knows.md)
 - [Chinese sample chapter: reusing established code with an agent](book/zh-CN/09-choosing-libraries-with-an-agent.md)
 - [Chinese sample chapter: working with a stuck coding assistant](book/zh-CN/13-working-with-a-stuck-assistant.md)
