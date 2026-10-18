@@ -113,19 +113,19 @@
           "kind": "structure",
           "result": "needs-work",
           "report": "book/reviews/what-the-agent-knows-2026-10-18-cleanup-case-structure.md",
-          "manuscript_sha256": "2137116a5f411fe19eb18ec90d2f6df245fb15bddd08a6a1ac0455a6429509a8"
+          "manuscript_sha256": "f7c155b0af2389e5dbe8f2e13305ca5c390438d2facf9a90d5e859027100e4b2"
         },
         {
           "kind": "facts",
           "result": "needs-work",
           "report": "book/reviews/what-the-agent-knows-2026-10-18-cleanup-case-facts.md",
-          "manuscript_sha256": "2137116a5f411fe19eb18ec90d2f6df245fb15bddd08a6a1ac0455a6429509a8"
+          "manuscript_sha256": "f7c155b0af2389e5dbe8f2e13305ca5c390438d2facf9a90d5e859027100e4b2"
         },
         {
           "kind": "language",
           "result": "pass",
           "report": "book/reviews/what-the-agent-knows-2026-10-18-cleanup-case-language.md",
-          "manuscript_sha256": "2137116a5f411fe19eb18ec90d2f6df245fb15bddd08a6a1ac0455a6429509a8"
+          "manuscript_sha256": "f7c155b0af2389e5dbe8f2e13305ca5c390438d2facf9a90d5e859027100e4b2"
         }
       ],
       "blockers": [
