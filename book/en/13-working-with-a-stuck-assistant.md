@@ -1,30 +1,20 @@
 # Chapter 13: When Repeated Fixes Don't Work
 
-> Discussion draft, under revision. The file-listing tool, agent actions, and feedback below are teaching scenarios that have not been tested. This example has not been selected as the book's main project.
+> Discussion draft. The tool, agent actions, and feedback are untested teaching scenarios. This example has not been selected as the book's main project.
 >
-> AI-translated from the [Chinese chapter](../zh-CN/13-working-with-a-stuck-assistant.md) at source commit [`d683396`](https://github.com/YannByte/ai-coding-for-everyone/blob/d683396ba38f59850eb5b4cb1c23c7055d8c6693/book/zh-CN/13-working-with-a-stuck-assistant.md). Edited for English readers, with added explanations for beginners. Human translation review is pending. See [translation status](../../translations/README.md).
+> AI-translated from the [Chinese chapter](../zh-CN/13-working-with-a-stuck-assistant.md) at source commit [`190b17d`](https://github.com/YannByte/ai-coding-for-everyone/blob/190b17dc9f2bc8f402cd2f7b88368ab656a515af/book/zh-CN/13-working-with-a-stuck-assistant.md). Edited for English readers; human review is pending. See [translation status](../../translations/README.md).
 
-You asked a coding agent to fix a tool that lists PDF files. It has tried several fixes, but a file is still missing. You tell it, “It still doesn't work.” It reads the code again and makes another change.
+A coding agent has tried several fixes, but your file list still misses a PDF. You say, “It still doesn't work.” It reads the code again and makes another change.
 
-First, check whether it has run the program with the files that caused the problem.
+First, check whether it has run the program with the files that caused the problem. If it has only read and edited code, it is missing feedback from a running program.
 
-If all it has done is read code, explain possible causes, and edit files, it is missing feedback from a running program. Asking it to keep fixing the problem may produce more changes that nobody has checked.
+A coding agent is an AI tool that can read project files, edit code, run programs, and use the results to continue working. Its abilities depend on its tools, permissions, and setup. You can ask it to investigate, fix, and verify a problem as one task. Provide the goal and files, then use evidence to redirect it when it gets stuck.
 
-A coding agent is an AI tool that can read project files, edit code, run programs, and use the results to continue working. What it can do depends on its tools, permissions, and setup. You can ask it to investigate a problem, fix the code, and check the result as one task.
+## Describe the problem before prescribing a fix
 
-For that to work, describe the problem and agree on what would count as a successful fix. The agent also needs access to the relevant files and a way to run the program. If it gets stuck, look at what it has tried and what happened before deciding how to help.
+The tool should list the PDFs in a chosen folder and all its subfolders. A file exists but is missing from the list. Asking the agent to “change the scan to include subfolders” chooses a cause before checking it.
 
-We'll follow that process with a tool that lists files.
-
-## Describe the problem before choosing a cause
-
-The tool has a straightforward job: list the PDFs in a chosen folder and all its subfolders. A file exists, but it is missing from the list.
-
-It is tempting to say, “Maybe you're only looking in the main folder. Change the scan so it searches every folder inside it too.” Without evidence, that instruction picks a direction too early. The agent may then focus on implementing the change you suggested.
-
-Start with what you know: which file is missing, what the list should contain, and where to find the project and sample files. Here, the project is the folder containing the tool's code and instructions. The sample files are copies of documents you will use to check it. The agent can find the relevant code and investigate the cause.
-
-Suppose you have the sample folder below. The English labels explain the Chinese names used in the original chapter; the indentation shows which files are inside each folder.
+Start by giving it the locations of the project and sample. The project folder holds the code and instructions. The sample contains copies of documents used to check the problem:
 
 ```text
 测试资料/                  (test files)
@@ -35,116 +25,78 @@ Suppose you have the sample folder below. The English labels explain the Chinese
     └── 旧版说明.pdf       (older instructions)
 ```
 
-The labels in parentheses are explanations, not part of the filenames. You do not need to read Chinese to follow the example: the missing file is the older instructions PDF, inside the “previous years” folder.
+The English labels explain the names; they are not part of the filenames. Both editions use the same names. The correct list contains all three PDFs and no PNG. The current list contains only the two PDFs directly in the main folder. It misses `往年资料/旧版说明.pdf`, the older instructions in the subfolder.
 
-The correct list contains all three PDFs and leaves out the PNG image. The current list shows only the two PDFs directly inside the main folder, often called the top level. It misses the older instructions PDF in the subfolder.
+Have the agent run the program with this sample to see whether the same file goes missing. This is called reproducing the problem. If the original set is large, it can make a separate, smaller sample that still shows the problem. Keep the original copies and check what the smaller sample's list should contain.
 
-Reproducing the problem means running the program with the same sample to see whether the same file is missing. When using this approach, prepare copies of your documents first and give the agent the locations of the project and those copies. If the sample is too large, ask it to make a separate, smaller sample that still shows the problem. Keep the original copies and check which files should appear in the smaller sample's list.
+You could ask:
 
-The request below also allows the agent to change tests. An automated test uses code to give a program an input and check its response against an expected result. The agent can write and run tests; you check that they express your requirements.
+> Read the project and reproduce the missing-file problem with this sample. Find the cause, fix it, and check the result. All three PDFs should appear, and the PNG should be excluded. You may change project code and tests. Leave the sample unchanged and don't add other features. If you can't run the program or reproduce the problem, explain what is missing.
 
-Once the files are ready, a request could read:
+A test gives a program an input and checks its response against an expected result. The agent can write and run tests and find the relevant code. You don't need to direct it through each file.
 
-> This tool should list the PDFs in a chosen folder and all its subfolders. At the moment, `测试资料/往年资料/旧版说明.pdf` is missing from the list. Read the project files, find out how to run the tool, and check that this sample produces the same missing-file problem. Then find the cause, fix it, and run the same check again. All three PDFs should appear, and the PNG should be excluded. You may change this project's code and tests. Leave the sample files unchanged and don't add other features for now. If you can't run the program or get the same problem to happen, explain what is blocking you.
+## Let results guide the investigation
 
-The agent now knows what to fix, which files to use, what it may change, and how to check its work. You can leave it to investigate without first mapping out the program or directing it to open each file in turn.
+Access to code does not guarantee that the agent can check the problem. It may lack the sample or software needed to run the program. It may be able to run the scan but unable to operate the interface. Ask it to identify the missing requirements and show any errors.
 
-## Give the agent a way to get feedback
+Installing dependencies, meaning other software packages the program needs, must stay within your authorization. So must opening files outside the project and changing permissions. For anything beyond that scope, the agent should explain the purpose and impact before you decide. Checks already allowed can continue.
 
-Once the agent starts, check whether it can open the sample files and run the tool that has the problem.
+Once it can run the program, let it check the output and choose its next step. Claude Code's documentation describes this cycle of gathering information, acting, and verifying. It also recommends giving the agent checks it can run. [How Claude Code works](https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop), [best practices](https://code.claude.com/docs/en/best-practices)
 
-It may have found the code but not the files that reveal the problem. It may have read the startup instructions but lack the software needed to run the program. Or it may be able to run the file scan without being able to operate the application's interface. Each situation needs a different response.
+Here is a hypothetical investigation:
 
-Ask it to name what is missing and show the error it received. “There's an environment problem” tells you too little to act on. It might need to install dependencies: other software packages that your program needs.
-
-Installing packages, opening files outside the project, and changing access permissions must stay within the authorization you have given. If an action would go beyond that, the agent should explain why it is needed and what it would affect before asking permission. It can continue any checks its current tools and permissions allow.
-
-If the agent can run the program, let it run checks, read the output, and use the results to continue investigating. It needn't stop after every edit and wait for you to copy an error message back into the conversation.
-
-For example, if a run lists only two PDFs, the agent can inspect the scan results next. If the scan already found the third PDF, it can move on to filtering. Each tool result should inform its next action. Look at the records of file reads, program runs, and output to see whether it is doing this. Claude Code's documentation describes a repeating process of gathering context, taking action, and verifying results. Here, we apply that process to a missing file. [How Claude Code uses tool results](https://code.claude.com/docs/en/how-claude-code-works#the-agentic-loop)
-
-If it can check only part of the process, arrange a way to check the rest. For example, it might be able to inspect the scan results but unable to operate the interface. Let it complete the checks it can run, then give you specific steps for checking the interface. Run those steps and report what happened. In its final report, the agent should say which checks it ran, which you ran, and which still need to be done.
-
-Claude Code's official guidance recommends giving the agent checks it can run and looking at the results of those checks. In this example, the sample files and expected list make that check concrete. [Claude Code best practices](https://code.claude.com/docs/en/best-practices)
-
-## Let it investigate, and look at the evidence
-
-The agent should now read the relevant code and trace how the program builds its list from the files in the folder. If tests already exist, it should see whether they would catch this missing file. If the available records aren't enough to locate the problem, it can add temporary logs: records written while the program runs.
-
-You can leave those steps to the agent. When it says it has found the cause, ask it to show the result that led it there.
-
-For this example, the agent might examine three stages: scanning folders to find files, filtering that list to keep only PDFs, and displaying the result. It can then check where the file disappears from the list. One possible investigation would look like this:
-
-| What the agent does | Evidence it finds | What that suggests checking next |
+| What the agent checks | What it finds | Next step |
 | --- | --- | --- |
-| Runs the current program with the sample files | The list contains only two PDFs; the same file is missing | Investigate how files are processed |
-| Inspects the file list produced by the scan | The PDF in the subfolder is already present | Inspect what happens after scanning |
-| Compares the lists before and after filtering and reads the relevant code | A rule used to select PDFs also removes files in subfolders from the list | Check why that rule exists and what needs to change |
-| Corrects the rule and runs the program again | All three PDFs appear; the PNG is excluded | Check that older features still work, then check a copy of the original files |
+| Runs the program with the sample | Only two PDFs appear | Trace how the file list is built |
+| Inspects the scan results | The PDF in the subfolder is present | Check what happens after scanning |
+| Compares lists before and after filtering and reads the relevant code | A rule excludes files in subfolders | Check the rule's purpose, then fix it |
+| Corrects the rule and runs the program again | All three PDFs appear; the PNG is excluded | Check existing features and copies of the files that originally failed |
 
-In this hypothetical investigation, the scan was complete all along. Asking the agent to rewrite it at the outset could have sent it to the wrong part of the program. Your project may have a different cause. Use the results of each check to decide where to look next.
+In this scenario, the scan was complete all along. Rewriting it could have changed the wrong part of the program. Your investigation may find a different cause; follow the results.
 
-You can also distinguish different kinds of report. “It might be the filter” is a guess. “The code has a rule for filtering files” is a finding from reading the code. “When I ran the program, this PDF was in the scan results but missing after filtering” connects the finding to the problem you are trying to solve.
+The agent can add temporary logs, records written while the program runs, if needed. Look for evidence connecting its explanation to the failure. “It might be the filter” is a guess. “This file disappears after filtering when the program runs” gives you something to check. Ask it to save the results and identify the relevant code. If the output is hard to read, have it show the file lists before and after filtering side by side.
 
-Ask the agent to identify the relevant code files, the checks it actually ran, and where the results are saved. If the output is hard to read, ask it to point out where the missing PDF appears before filtering and where it disappears afterward. You can check that comparison without understanding every line of code. If the agent cannot run the program, it should say that its explanation is still untested.
+If it cannot operate the interface, let it finish the checks it can run and give you specific steps for the rest. Run those steps and report what happened. The final report should distinguish checks run by the agent, checks run by you, and checks still pending. An explanation that has not been tested by running the program should be labeled as an inference.
 
-## When it keeps failing, change the task
+## Pause edits when repeated fixes fail
 
-An agent can keep working without getting closer to a fix. If repeated changes do not help, find out where it is stuck.
+If the agent keeps editing without reproducing the failure, have it check the sample and how it runs the program first. If it has reproduced the problem but keeps retrying old approaches, change the task to reviewing evidence. Have it list completed checks, ruled-out causes, remaining guesses, and what the next check would distinguish. Retrying a failed approach needs new evidence.
 
-If it has not seen the same file go missing, ask it to pause the fixes. Have it confirm that it is using the same sample and running the program the same way you did. It could be trying to fix a different problem.
+Check whether its conclusion uses the latest result. If the scan list includes `旧版说明.pdf` but the agent still says it did not scan the subfolder, point out the contradiction. A specific result gives it more to work with than “think harder.”
 
-If it has reproduced the problem but keeps retrying old approaches, you could say:
+If edits spread and break existing features, ask the agent to compare the versions before and after its changes. Identify which edits relate to the problem, then decide which to keep or undo.
 
-> Stop making changes for now. Summarize the checks you have actually run and their results. Separate causes you have ruled out from guesses you have not tested. Check whether recent edits introduced new problems, then suggest what to check next and explain how each possible result would help narrow down the cause. If you want to retry an approach that already failed, explain what new evidence justifies another attempt.
+Before undoing anything, save a recoverable version, including edits not yet recorded in version history. Ask which files would change, how they would be restored, and what other work might be affected. Restoring selected files and undoing a recorded set of changes can have different effects. Keep separate backups of code and data: restoring code will not recover overwritten data.
 
-The agent's next job is to review what it has learned before making another edit. It should explain its next step: “The scan found every file, so I'll inspect the filtering stage next.” A promise to “check again” or “analyze more deeply” leaves the next step unclear. Ask what it will inspect and what each result would tell it.
+## Check that tests still express the requirement
 
-Check whether its explanation agrees with the latest output. Suppose the scan list contains `旧版说明.pdf`, but the agent still says it did not scan the subfolder. Point out that result and ask it to revise its explanation. Asking it to “think harder” adds no new evidence. Identifying which output contradicts which claim gives it something concrete to investigate next.
+The agent may write both the program and its tests, and both may accept the same mistake. This example needs three PDFs. A test might check only the two PDFs in the main folder, or lower the expected count from three to two. It could then pass while the file is still missing.
 
-If the changes spread and break a feature that used to work, ask the agent to compare the versions before and after its edits. Have it identify which changes relate to the current problem, then decide which to keep or undo.
+Agree on the sample and expected result before the fix. The agent can add checks and propose corrections to faulty tests, but it should not quietly relax the requirement. Resolve conflicts by comparing the test, actual behavior, and original requirement.
 
-Before undoing changes, save a copy you can recover, including edits not yet recorded in the project's version history. Ask the agent which files it would change, how it would undo the changes, and what other work might be affected. Restoring selected files and undoing a recorded change can have different effects. Get that explanation before deciding whether to proceed. Keep separate backups of the code and the data it processes; restoring code will not recover overwritten data.
+Ask for a reusable automated test using this sample. It should fail because the file is missing in the faulty version, then pass after the fix. Failure because the program cannot start does not show that the test detects the missing file.
 
-What you ask next depends on where it is stuck. It may need the sample files, help getting the program to run, or a review of what it has already tried.
+Compare the expected and actual lists:
 
-## Check that passing tests still means meeting the requirement
+- `使用说明.pdf`, `申请表.pdf`, and `往年资料/旧版说明.pdf` must all appear.
+- `封面.png` must be absent.
 
-The agent may write both the program and the tests that check it. Those tests are useful only if they check what you need the program to do.
+A count of three is not enough; they must be the right files. The agent writes and runs the test, while you check the requirement it expresses. Running it after later changes to check that existing behavior still works is one form of a regression check.
 
-In this example, all three PDFs must appear. If the agent writes a test that checks only the two top-level PDFs and reports “tests passed,” it has not checked the PDF in the subfolder. If it changes the expected count from three to two to make a failing test pass, it has made the check accept the wrong result.
+The completion report should identify the cause, code changes, checks actually run, saved results, and anything left unverified. Then use your normal workflow to check the formerly missing file and existing features. Decide whether any remaining gaps affect your use of the tool.
 
-Agree on the sample and expected result before the fix. The agent can add checks and propose corrections to existing tests when they are wrong, but it should not quietly relax the requirement. When a test and the requirement conflict, compare the test, the program's actual behavior, and the original requirement together.
+## Leave notes before changing conversations
 
-You can also ask the agent to write an automated test for this sample that you can use again. It should fail because the file is missing in the faulty version, then pass after the fix. If it fails because the program cannot start, that does not show it can detect the missing file.
-
-Ask the agent to show the expected and actual file lists side by side, then compare them with the sample. Check for all three files: `使用说明.pdf`, `申请表.pdf`, and `往年资料/旧版说明.pdf`. The PNG, `封面.png`, should be absent. A count of three is not enough: the list must contain the right files.
-
-The agent writes and runs the test; you check what it requires. After a later code change, it can run the test again to check that existing behavior still works. This is one form of a regression check.
-
-After the fix, you could ask for a completion report like this:
-
-> I ran the program and saw the same missing-file problem. The scan found the PDF in the subfolder, but a filtering rule removed it from the list. I corrected that rule. Running the sample again produces a list with all three PDFs and no PNG. The top-level PDFs still appear as before. I also checked a copy of the files that originally failed, and the file known to be missing now appears. I have not checked every file individually.
-
-This is an example report. A real report should also identify the changes and include the saved results so you can check what it reports.
-
-You can then open the sample that previously failed and go through your normal workflow yourself. Check whether the files you need appear, whether existing features still work, and whether anything the agent left unverified affects your use of the tool.
-
-## Hand over the work when you change conversations
-
-If you need to start a new conversation, switch models, or ask a developer to take over, have the current agent record its progress first. “Tried many times; still broken” gives the next person or agent very little to work with.
-
-Suppose the agent has run the program and seen the same problem, but you stop before it finds the cause. The handoff could read:
+Before starting a new conversation, switching models, or asking a developer to take over, have the agent save its progress in a file. If it has reproduced the problem but not found the cause, the note could read:
 
 ```text
 Goal: List the PDFs in a chosen folder and all its subfolders.
-Sample: The 测试资料 folder. Expect three PDFs and no PNG.
+Sample: 测试资料; expect three PDFs and no PNG.
 Executed: Ran the current program and confirmed that the PDF in the subfolder is missing from the list.
-Confirmed: Running the sample shows the same missing-file problem.
-Unknown: Whether the file is left out during scanning, filtering, or display.
-Next: Read the relevant code and check the file list at each stage to find where the PDF disappears.
+Unknown: Whether the file disappears during scanning, filtering, or display.
+Next: Read the relevant code and inspect the file list at each stage.
 ```
 
-Save these notes in a file the next agent can open. Include the project folder's location, how to run the program, and which saved version you were working on. Record any edits not yet in the version history, failed attempts, and the location of the check results. Ask the next agent to read the notes and compare them with the files before continuing. The notes help it pick up the work, but they may be out of date. [Anthropic's engineering guidance for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
+Add the project location, how to run it, the saved version, edits not yet in version history, failed attempts, and where to find check results. Progress notes and version history can help the next conversation pick up the work. [Anthropic's guidance for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
 
-In the new conversation, give the agent the location of the notes and say: “Read these notes and check that they match the files we have now. Then continue investigating where the PDF disappears from the list. Reuse the existing checks. If the notes and files disagree, tell me before continuing.”
+In the new conversation, provide the note's location. Ask the agent to check that it matches the current files before continuing the unfinished investigation.

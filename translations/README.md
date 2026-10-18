@@ -16,11 +16,11 @@
 | --- | --- |
 | Translation | [When Repeated Fixes Don't Work](../book/en/13-working-with-a-stuck-assistant.md) |
 | Source file | [book/zh-CN/13-working-with-a-stuck-assistant.md](../book/zh-CN/13-working-with-a-stuck-assistant.md) |
-| Source commit | [`d683396ba38f59850eb5b4cb1c23c7055d8c6693`](https://github.com/YannByte/ai-coding-for-everyone/blob/d683396ba38f59850eb5b4cb1c23c7055d8c6693/book/zh-CN/13-working-with-a-stuck-assistant.md) |
-| Review | AI bilingual review of agent actions and task wording completed on October 18, 2026; human translation review and target-reader review pending |
-| Review record | [Current agent-action review](reviews/working-with-a-stuck-assistant-en-agent-focus-2026-10-18.md); [earlier bilingual review](reviews/working-with-a-stuck-assistant-en-r2-2026-10-17.md) |
+| Source commit | [`190b17dc9f2bc8f402cd2f7b88368ab656a515af`](https://github.com/YannByte/ai-coding-for-everyone/blob/190b17dc9f2bc8f402cd2f7b88368ab656a515af/book/zh-CN/13-working-with-a-stuck-assistant.md) |
+| Review | AI bilingual review of the shortened drafts completed on October 18, 2026; human translation review and target-reader review pending |
+| Review record | [Current concise-draft review](reviews/working-with-a-stuck-assistant-en-concise-2026-10-18.md); [previous review](reviews/working-with-a-stuck-assistant-en-agent-focus-2026-10-18.md) |
 
-The English draft preserves the six sections, teaching scenario, expected results, task boundaries, recovery precautions, and source links. File and folder names remain in Chinese with English labels beside them so both editions refer to the same sample. Both drafts now explain key terms, make file comparisons explicit, and distinguish recovery methods. These are editorial clarifications, not new observed outcomes. The handoff note is translated as prose. No runnable exercise or successful trial is implied.
+The English draft preserves the six sections, teaching scenario, expected results, task boundaries, recovery precautions, and source links. File and folder names remain in Chinese with English labels beside them so both editions refer to the same sample. Both drafts remove repeated explanations and long prompts while retaining key terms, explicit file comparisons, and recovery conditions. These are editorial changes, not new observed outcomes. The handoff note is translated as prose. No runnable exercise or successful trial is implied.
 
 Recheck the translation when the Chinese source changes. A repository check does not certify translation fidelity or reader understanding. The repository name is not a finalized English book title.
 
