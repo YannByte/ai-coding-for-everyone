@@ -2,6 +2,45 @@
   "version": 1,
   "units": [
     {
+      "id": "start-with-your-problem",
+      "title": "把眼前的麻烦告诉它（样章讨论稿）",
+      "kind": "argument",
+      "case": null,
+      "part": 1,
+      "status": "revising",
+      "brief": "book/plans/start-with-your-problem.md",
+      "manuscript": "book/zh-CN/01-start-with-your-problem.md",
+      "claims": [
+        "first-conversation-scenario",
+        "agent-tool-feedback-loop"
+      ],
+      "reviews": [
+        {
+          "kind": "structure",
+          "result": "needs-work",
+          "report": "book/reviews/start-with-your-problem-2026-10-19.md",
+          "manuscript_sha256": "5460e153a89b391b31d20259e40d53bd13b2ac357cb12d6142f3276311a6fd7d"
+        },
+        {
+          "kind": "facts",
+          "result": "needs-work",
+          "report": "book/reviews/start-with-your-problem-2026-10-19.md",
+          "manuscript_sha256": "5460e153a89b391b31d20259e40d53bd13b2ac357cb12d6142f3276311a6fd7d"
+        },
+        {
+          "kind": "language",
+          "result": "pass",
+          "report": "book/reviews/start-with-your-problem-2026-10-19.md",
+          "manuscript_sha256": "5460e153a89b391b31d20259e40d53bd13b2ac357cb12d6142f3276311a6fd7d"
+        }
+      ],
+      "blockers": [
+        "选定工具与版本，补齐入门入口，制作公开资料并验证读取、查找和原文核对",
+        "邀请无编程经验读者试读，实际练习另行完成作者和读者试做",
+        "结合第 2、3 章成稿核对从一次查找到可复用工具的衔接"
+      ]
+    },
+    {
       "id": "working-with-a-stuck-assistant",
       "title": "反复改不好，怎样停下来重新判断（样章讨论稿）",
       "kind": "argument",
