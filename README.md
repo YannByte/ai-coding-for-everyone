@@ -8,6 +8,14 @@ Start with a problem you want to solve. Explain the goal, let the agent investig
 
 > Four Chinese discussion drafts are available, all under revision. The teaching scenarios remain untested. No chapter is final, and no runnable exercise or reader trial is complete.
 
+## How AI is used in writing this book
+
+AI is part of the writing process, including organizing material, drafting, and rewriting the text. If you prefer not to read a book written this way, you can choose to skip it.
+
+Many of the ideas, principles, and cautions in this book come from my everyday practice. Sometimes I have only a brief observation or a short note about an experience. My main reason for using AI is to explain the reasoning and conditions behind those notes so readers can understand and apply them.
+
+I remain responsible for editorial decisions, fact-checking, and revisions. Personal experience, teaching scenarios, and external sources are identified separately, and unverified content is marked as such. See the [writing method (Chinese)](docs/writing-method.md#ai-怎样参与本书写作) for the division of work.
+
 ## Start reading
 
 The [English sample chapter, When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md), discusses how to guide an investigation when repeated fixes fail. It is a translation of Chapter 13 and awaits human review.

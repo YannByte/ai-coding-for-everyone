@@ -75,6 +75,17 @@
 | [Agent Skills：Optimizing skill descriptions](https://agentskills.io/skill-creation/optimizing-descriptions)，Designing trigger eval queries | 分别检查该调用与不该调用的任务，区分选用正确与执行成功 | 触发机制依客户端而异；不照搬建议次数和阈值作为读者门槛 |
 | [Evaluating AGENTS.md](https://arxiv.org/abs/2602.11988v3)，v3 摘要；[On the Impact of AGENTS.md Files](https://arxiv.org/abs/2601.20404v2)，v2 摘要 | 提醒作者区分任务成功、执行时间与成本，用实际任务验证规则价值 | 仅核读摘要，未复现实验；研究的任务、配置和指标不同，不合并为统一效果，也不据此宣称规则必然有效或无效 |
 
+## AI 写作与读者说明
+
+2026 年 10 月 31 日核读以下公开资料，用于组织首页的 AI 写作说明。各来源的立场和适用场景不同，不据此推断全体读者的态度。书中观点来自作者实践的说明由作者提供，以下资料不能替代这类实践证据，也不证明 AI 已改善本书的阅读效果。
+
+| 来源与定位 | 关注点与本书取舍 | 限制 |
+| --- | --- | --- |
+| [少数派编辑部：我们如何看待「用 AI 写」和「写 AI」的文章](https://sspai.com/post/99838)，「AI 辅助写作的文章」 | 接受经过核查和编辑、言之有物的 AI 辅助文章，要求披露使用环节；本书说明 AI 参与材料整理、正文起草和改写 | 编辑部对其投稿的观察和标准，不代表所有读者接受 AI 写作 |
+| [Authors Guild：AI Best Practices for Authors](https://authorsguild.org/resource/ai-best-practices-for-authors/)，Recommended Best Practices 第 8 项及 Risks 第 6 项 | 强调向读者披露实质性文本生成，以及作者对书稿的责任；本书提前说明写作方式，保留读者选择 | 对生成式 AI 的立场更谨慎；仅借鉴披露和责任要求，不宣称本书符合该组织的全部建议 |
+| [FAS：Statement on Generative AI Use](https://fas.org/fas-statement-on-generative-ai-use/)，Comply with existing FAS policies、Disclose use | 作者仍须核查输出并对错误负责，披露实际用途；本书把核对与修订责任写明 | FAS 的机构指引，不能推定为通用出版规范，也不表示本书核查已全部完成 |
+| [Dibia：Is This Book AI-Generated?](https://arxiv.org/abs/2609.33950v1)，v1 摘要 | 研究中的低星书评将 AI 写作怀疑与内容浅薄、呈现质量等问题联系；提醒作者关注实际内容质量 | 仅核读预印本摘要，未复现；样本是部分畅销书的低星评论，不能判断书籍实际是否由 AI 生成，也不能代表全体读者 |
+
 ## 写作规范与术语来源
 
 ASD-STE100 的核对版本、范围和本书取舍见 [对照记录](ste100-review.md)。编程术语按 [术语表](terminology.md) 中逐项列出的官方资料核对；其中的新手解释为本项目改写，不冒充官方原文。机器词表保留来源定位，定期随产品与正文变化复核。
