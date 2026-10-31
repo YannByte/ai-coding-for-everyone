@@ -1,36 +1,46 @@
-# Using Coding Agents Effectively (scope description, title pending)
+# Using Coding Agents Effectively
 
-[简体中文](README.zh-CN.md) · [English sample chapter](book/en/13-working-with-a-stuck-assistant.md) · [Chinese outline](book/zh-CN/README.md)
+[简体中文](README.zh-CN.md) · [Start reading](#start-reading) · [Book outline (Chinese)](book/zh-CN/README.md) · [Contributing](CONTRIBUTING.md)
 
-A book in preparation for people with or without programming experience who want to use coding agents to build, check, and maintain useful software.
+A book in preparation for people with or without programming experience who want to use AI to build, check, and maintain software they need. The title is provisional.
 
-A coding agent is an AI tool that can read project files, edit code, and run checks within its permissions. Readers will use existing coding agents to understand codebases, implement features, fix bugs, check changes, and deliver working software. The book explains how to define tasks, provide context, guide execution, recover from problems, and build reusable working habits. It does not teach readers to build an agent system.
+Start with a problem you want to solve. Explain the goal, let the agent investigate, act, and check its work, then judge whether the result meets your needs. When work stalls or goes off course, use the evidence to adjust the task and save useful methods for next time.
 
-Effectiveness includes correctness, maintainability, human effort, waiting, rework, and model usage. Generation speed and token counts alone do not establish improvement.
+> Four Chinese discussion drafts are available, all under revision. The teaching scenarios remain untested. No chapter is final, and no runnable exercise or reader trial is complete.
 
-## Current state
+## Start reading
 
-The audience and purpose are established. The provisional outline has five parts and nineteen chapters. The formal title, teaching project, and coding tools are undecided. Four Chinese discussion drafts are available: [starting with a problem and a conversation](book/zh-CN/01-start-with-your-problem.md), [what an agent knows and forgets](book/zh-CN/06-what-the-agent-knows.md), [reusing established code with an agent](book/zh-CN/09-choosing-libraries-with-an-agent.md) and [working with a stuck agent](book/zh-CN/13-working-with-a-stuck-assistant.md). All are tracked as revising.
+The [English sample chapter, When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md), discusses how to guide an investigation when repeated fixes fail. It is a translation of Chapter 13 and awaits human review.
 
-Chapter 13 has an [English translation](book/en/13-working-with-a-stuck-assistant.md), pending human review. The teaching scenarios have not been tested. No chapter is final, and no runnable exercise or reader trial is complete. The repository retains its original name for now.
+If you read Chinese, start with Chapter 1 or choose a question you are facing:
 
-Wombat may inform research into coding-agent use, but is not the teaching project or a required tool.
+| Question | Chinese discussion draft |
+| --- | --- |
+| How do I start without programming experience? | [Chapter 1: Start with your problem](book/zh-CN/01-start-with-your-problem.md) |
+| Why did the agent miss a requirement I already gave it? | [Chapter 6: What the agent knows and forgets](book/zh-CN/06-what-the-agent-knows.md) |
+| How do I decide whether existing open source code fits? | [Chapter 9: Reuse established code, then fill the gaps](book/zh-CN/09-choosing-libraries-with-an-agent.md) |
+| What can I do when repeated fixes fail? | [Chapter 13: Working with a stuck agent](book/zh-CN/13-working-with-a-stuck-assistant.md) |
 
-- [Project scope and open decisions](docs/project.md)
-- [English sample chapter: When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md)
-- [Chinese sample chapter: starting with your problem](book/zh-CN/01-start-with-your-problem.md)
-- [Chinese sample chapter: what an agent knows and forgets](book/zh-CN/06-what-the-agent-knows.md)
-- [Chinese sample chapter: reusing established code with an agent](book/zh-CN/09-choosing-libraries-with-an-agent.md)
-- [Chinese sample chapter: working with a stuck coding assistant](book/zh-CN/13-working-with-a-stuck-assistant.md)
-- [Outline](book/zh-CN/README.md)
-- [Case status](examples/README.md)
-- [Writing workflow](docs/production.md)
-- [Sources and limits](docs/sources.md)
-- [Translation status](translations/README.md)
-- [Contributing](CONTRIBUTING.md)
+Chinese is the initial manuscript language. A complete English edition is not yet available. See [translation status](translations/README.md) for the source revision and review limits.
 
-Chinese is the initial manuscript language. Chapter 13 has an English discussion draft; a complete English edition is not yet available. See [translation status](translations/README.md) for the source revision and review limits.
+## What the book covers
+
+A coding agent is an AI tool that can read project files, edit code, and run programs within its permissions. It uses the results to continue working on a task. Examples include Codex and Claude Code; capabilities depend on the product, version, and environment. The book focuses on using existing agents for software work; building agent systems is outside its scope.
+
+The provisional outline has five parts and nineteen chapters. It moves from a first working version through agent behavior, project organization, changes and delivery, and reusable working methods. Programming concepts are explained as tasks require them; experienced readers can skip the basics. See the [full outline (Chinese)](book/zh-CN/README.md).
+
+Effectiveness includes correctness, maintainability, human effort, waiting, rework, and model usage. Generation speed and token counts are only part of that picture.
+
+## Project status and contributions
+
+The audience and purpose are established; the outline remains an editorial draft. The teaching project and coding tools are undecided, and the repository retains its original name. See [project scope](docs/project.md) for decisions and open questions, [work status](book/workflow.json) for chapter revisions, and [case status](examples/README.md) for exercise materials.
+
+Feedback on unclear passages, practical questions, and problems that can be reproduced with public materials is welcome. See [Contributing](CONTRIBUTING.md) for how to share feedback and propose changes. For writing and fact-checking, these documents explain the approach in Chinese:
+
+- [Writing method](docs/writing-method.md): explaining decisions, actions, and checks.
+- [Production workflow](docs/production.md): preparing material, reviewing drafts, and testing exercises.
+- [Sources and limits](docs/sources.md): references and the claims they support.
 
 ## License
 
-Original prose, documentation, and teaching assets: [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt). Original code: [MIT](LICENSES/MIT.txt). See [LICENSE.md](LICENSE.md) for scope and attribution. Third-party works retain their own terms.
+Unless a file states otherwise, original prose, documentation, translations, and non-code teaching assets use [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt), and original code uses [MIT](LICENSES/MIT.txt). Third-party works retain their own terms. See [LICENSE.md](LICENSE.md) for scope and attribution requirements.

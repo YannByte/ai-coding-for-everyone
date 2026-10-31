@@ -1,36 +1,44 @@
-# 高效使用 AI 编程助手（方向说明，非正式书名）
+# 高效使用 AI 编程助手
 
-[English](README.md) · [全书脉络](book/zh-CN/README.md) · [项目范围](docs/project.md)
+[English](README.md) · [阅读样章](#从哪里开始读) · [全书脉络](book/zh-CN/README.md) · [参与贡献](CONTRIBUTING.md)
 
-这本书帮助有无编程经验的读者，有效使用 AI 编程助手，做出、检查并维护自己需要的软件。
+一本正在写作的书，面向有无编程经验、希望借助 AI 做出、检查并维护自己所需软件的读者。正式书名待定。
 
-本书所说的 AI 编程助手，是能在授权范围内读取项目、修改代码、运行程序，并根据结果继续处理任务的工具，英文通常称为 coding agent，例如 Codex 和 Claude Code。具体能力取决于产品、版本和运行环境。
+从眼前的一项麻烦开始：说明想解决什么，让助手调查、执行和检查，再核对结果是否合用。遇到跑偏、卡住和返工时，学习怎样根据证据调整任务，把有效的做法留给下一次。
 
-从一项具体任务出发，说明需求、提供材料、让助手执行并核对结果，再处理卡住、跑偏和返工。读者在实际使用中逐步补足知识，形成可复用的工作方法。
+> 当前已有四篇中文样章讨论稿，均在修订中，教学情境尚未实测。尚无定稿章节、可运行练习或读者试做结果。
 
-## 内容安排
+## 从哪里开始读
 
-暂定五部分、十九章：先做出并检查第一版，再理解助手的工作机制，随后学习项目组织、修改与交付，最后形成自己的协作方法。正文可以顺序阅读，也会提供按问题查阅的入口。
+第一次接触 AI 编程助手，可以先读第 1 章；已有使用经验，可以从正在遇到的问题进入。
 
-高效既看结果质量，也看人工投入、等待、返工与模型用量。不会把生成速度或 Token 数量当成唯一标准。
+| 想弄清的问题 | 中文样章 |
+| --- | --- |
+| 不会编程，怎样开始请它帮忙？ | [第 1 章：把眼前的麻烦告诉它](book/zh-CN/01-start-with-your-problem.md) |
+| 说过的要求，为什么又没用上？ | [第 6 章：它现在知道什么，又会忘掉什么](book/zh-CN/06-what-the-agent-knows.md) |
+| 已有开源实现，怎样判断能不能用？ | [第 9 章：先找成熟实现，再让 AI 补上需要的部分](book/zh-CN/09-choosing-libraries-with-an-agent.md) |
+| 改了几轮还是不对，怎样继续？ | [第 13 章：反复改不好，怎样停下来重新判断](book/zh-CN/13-working-with-a-stuck-assistant.md) |
 
-## 当前进度
+第 13 章另有[英文讨论稿：When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md)，待人工校对。中文为初始书稿语言，完整英文版尚未完成；原文版本与审阅情况见[翻译状态](translations/README.md)。
 
-读者与目标已明确，大纲是编辑草案。正式书名、教学项目和采用工具尚未确定。[第 1 章](book/zh-CN/01-start-with-your-problem.md)、[第 6 章](book/zh-CN/06-what-the-agent-knows.md)、[第 9 章](book/zh-CN/09-choosing-libraries-with-an-agent.md) 与 [第 13 章](book/zh-CN/13-working-with-a-stuck-assistant.md) 四篇中文样章已入库，处于修订阶段，教学情境尚未实测。没有定稿章节、可运行练习或读者试做结果。
+## 这本书怎样展开
 
-- [阅读样章：把眼前的麻烦告诉它](book/zh-CN/01-start-with-your-problem.md)
-- [阅读样章：它现在知道什么，又会忘掉什么](book/zh-CN/06-what-the-agent-knows.md)
-- [阅读样章：先找成熟实现，再让 AI 补上需要的部分](book/zh-CN/09-choosing-libraries-with-an-agent.md)
-- [阅读样章：反复改不好，怎样停下来重新判断](book/zh-CN/13-working-with-a-stuck-assistant.md)
-- [英文样章：When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md)
-- [全书脉络](book/zh-CN/README.md)
-- [当前决定与待定事项](docs/project.md)
-- [案例状态](examples/README.md)
-- [写作方法](docs/writing-method.md)
-- [写作工程](docs/production.md)
-- [参考来源](docs/sources.md)
-- [参与贡献](CONTRIBUTING.md)
+本书所说的 AI 编程助手，英文称为 coding agent，是能在授权范围内读取项目、修改代码、运行程序，并根据结果继续处理任务的 AI 工具，例如 Codex 和 Claude Code。具体能力取决于产品、版本和运行环境。本书围绕使用现成助手完成软件任务展开，开发 Agent 系统不在教学范围内。
 
-## 多语言与许可
+暂定五部分、十九章：先做出并检查第一版，再理解助手的工作机制，随后学习项目组织、修改与交付，最后形成自己的协作方法。编程基础随任务需要解释，有经验的读者可以跳读。完整章节安排见[全书脉络](book/zh-CN/README.md)。
 
-中文先行，第 13 章已提供英文讨论稿，待人工校对；完整英文版尚未完成。原文版本和审阅状态见 [翻译状态](translations/README.md)。原创书稿、文档及教学素材采用 CC BY-SA 4.0，原创代码采用 MIT；第三方内容保留原许可。详见 [许可说明](LICENSE.md)。
+高效既看结果是否正确、改动是否便于维护，也看人工投入、等待、返工与模型用量。生成速度或 Token 数量只是其中一部分。
+
+## 项目进度与参与方式
+
+读者与目标已明确，大纲仍是编辑草案。教学项目和采用工具尚未确定，仓库暂保留现有名称。当前决定与待定事项以[项目范围](docs/project.md)为准，章节修订情况见[工作状态](book/workflow.json)，练习材料见[案例状态](examples/README.md)。
+
+欢迎反馈难懂的段落、具体的使用困惑，以及能公开复现的问题。提交方式与材料要求见[参与贡献](CONTRIBUTING.md)。参与写作或核对内容时，可继续阅读：
+
+- [写作方法](docs/writing-method.md)：章节怎样解释判断、操作和检查。
+- [写作流程](docs/production.md)：材料、审阅和试做怎样推进。
+- [参考来源](docs/sources.md)：论述依据与适用限制。
+
+## 许可
+
+原创书稿、文档、译文及非代码教学素材采用 [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt)，原创代码采用 [MIT](LICENSES/MIT.txt)，单独标明许可的文件除外。第三方内容保留原许可。转载或改编请署名、保留来源及许可链接，并说明修改；具体范围与署名要求见[许可说明](LICENSE.md)。
