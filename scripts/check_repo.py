@@ -167,7 +167,7 @@ def main():
     prose = [
         name for name in sorted(files)
         if name.endswith(".md") and not name.endswith("AGENTS.md")
-        and (name == "README.zh-CN.md" or name == "CONTRIBUTING.md"
+        and (name == "README.md" or name == "CONTRIBUTING.md"
              or name.startswith(("book/zh-CN/", "book/plans/", "docs/", "examples/", "translations/")))
         and has_chinese_prose((ROOT / name).read_text(encoding="utf-8"))
     ]

@@ -1,54 +1,52 @@
-# Using Coding Agents Effectively
+# 高效使用 AI 编程助手
 
-[简体中文](README.zh-CN.md) · [Start reading](#start-reading) · [Book outline (Chinese)](book/zh-CN/README.md) · [Contributing](CONTRIBUTING.md)
+[English](README.en.md) · [阅读样章](#从哪里开始读) · [全书脉络](book/zh-CN/README.md) · [参与贡献](CONTRIBUTING.md)
 
-A book in preparation for people with or without programming experience who want to use AI to build, check, and maintain software they need. The title is provisional.
+一本正在写作的书，面向有无编程经验、希望借助 AI 做出、检查并维护自己所需软件的读者。正式书名待定。
 
-Start with a problem you want to solve. Explain the goal, let the agent investigate, act, and check its work, then judge whether the result meets your needs. When work stalls or goes off course, use the evidence to adjust the task and save useful methods for next time.
+从眼前的一项麻烦开始：说明想解决什么，让助手调查、执行和检查，再核对结果是否合用。遇到跑偏、卡住和返工时，学习怎样根据证据调整任务，把有效的做法留给下一次。
 
-> Four Chinese discussion drafts are available, all under revision. The teaching scenarios remain untested. No chapter is final, and no runnable exercise or reader trial is complete.
+> 当前已有四篇中文样章讨论稿，均在修订中，教学情境尚未实测。尚无定稿章节、可运行练习或读者试做结果。
 
-## How AI is used in writing this book
+## 关于 AI 写作
 
-AI is part of the writing process, including organizing material, drafting, and rewriting the text. If you prefer not to read a book written this way, you can choose to skip it.
+这本书使用 AI 参与写作，包括整理材料、起草和改写正文。如果你介意这种写作方式，可以选择不读。
 
-Many of the ideas, principles, and cautions in this book come from my everyday practice. Sometimes I have only a brief observation or a short note about an experience. My main reason for using AI is to explain the reasoning and conditions behind those notes so readers can understand and apply them.
+书中许多观点、原则和需要注意的问题，来自我的日常实践。有时，我记下的只是一句判断或一段简短的经验。使用 AI，主要是希望把这些内容的来龙去脉和适用条件讲清楚，让读者更容易理解和使用。
 
-I remain responsible for editorial decisions, fact-checking, and revisions. Personal experience, teaching scenarios, and external sources are identified separately, and unverified content is marked as such. See the [writing method (Chinese)](docs/writing-method.md#ai-怎样参与本书写作) for the division of work.
+内容取舍、事实核对与修订的责任由我承担。个人经验、教学设定和外部来源会分别说明，尚未验证的内容如实标注。具体分工见[写作方法](docs/writing-method.md#ai-怎样参与本书写作)。
 
-## Start reading
+## 从哪里开始读
 
-The [English sample chapter, When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md), discusses how to guide an investigation when repeated fixes fail. It is a translation of Chapter 13 and awaits human review.
+第一次接触 AI 编程助手，可以先读第 1 章；已有使用经验，可以从正在遇到的问题进入。
 
-If you read Chinese, start with Chapter 1 or choose a question you are facing:
-
-| Question | Chinese discussion draft |
+| 想弄清的问题 | 中文样章 |
 | --- | --- |
-| How do I start without programming experience? | [Chapter 1: Start with your problem](book/zh-CN/01-start-with-your-problem.md) |
-| Why did the agent miss a requirement I already gave it? | [Chapter 6: What the agent knows and forgets](book/zh-CN/06-what-the-agent-knows.md) |
-| How do I decide whether existing open source code fits? | [Chapter 9: Reuse established code, then fill the gaps](book/zh-CN/09-choosing-libraries-with-an-agent.md) |
-| What can I do when repeated fixes fail? | [Chapter 13: Working with a stuck agent](book/zh-CN/13-working-with-a-stuck-assistant.md) |
+| 不会编程，怎样开始请它帮忙？ | [第 1 章：把眼前的麻烦告诉它](book/zh-CN/01-start-with-your-problem.md) |
+| 说过的要求，为什么又没用上？ | [第 6 章：它现在知道什么，又会忘掉什么](book/zh-CN/06-what-the-agent-knows.md) |
+| 已有开源实现，怎样判断能不能用？ | [第 9 章：先找成熟实现，再让 AI 补上需要的部分](book/zh-CN/09-choosing-libraries-with-an-agent.md) |
+| 改了几轮还是不对，怎样继续？ | [第 13 章：反复改不好，怎样停下来重新判断](book/zh-CN/13-working-with-a-stuck-assistant.md) |
 
-Chinese is the initial manuscript language. A complete English edition is not yet available. See [translation status](translations/README.md) for the source revision and review limits.
+第 13 章另有[英文讨论稿：When Repeated Fixes Don't Work](book/en/13-working-with-a-stuck-assistant.md)，待人工校对。本书以中文为主、英文为辅，完整英文版尚未完成；原文版本与审阅情况见[翻译状态](translations/README.md)。
 
-## What the book covers
+## 这本书怎样展开
 
-A coding agent is an AI tool that can read project files, edit code, and run programs within its permissions. It uses the results to continue working on a task. Examples include Codex and Claude Code; capabilities depend on the product, version, and environment. The book focuses on using existing agents for software work; building agent systems is outside its scope.
+本书所说的 AI 编程助手，英文称为 coding agent，是能在授权范围内读取项目、修改代码、运行程序，并根据结果继续处理任务的 AI 工具，例如 Codex 和 Claude Code。具体能力取决于产品、版本和运行环境。本书围绕使用现成助手完成软件任务展开，开发 Agent 系统不在教学范围内。
 
-The provisional outline has five parts and nineteen chapters. It moves from a first working version through agent behavior, project organization, changes and delivery, and reusable working methods. Programming concepts are explained as tasks require them; experienced readers can skip the basics. See the [full outline (Chinese)](book/zh-CN/README.md).
+暂定五部分、十九章：先做出并检查第一版，再理解助手的工作机制，随后学习项目组织、修改与交付，最后形成自己的协作方法。编程基础随任务需要解释，有经验的读者可以跳读。完整章节安排见[全书脉络](book/zh-CN/README.md)。
 
-Effectiveness includes correctness, maintainability, human effort, waiting, rework, and model usage. Generation speed and token counts are only part of that picture.
+高效既看结果是否正确、改动是否便于维护，也看人工投入、等待、返工与模型用量。生成速度或 Token 数量只是其中一部分。
 
-## Project status and contributions
+## 项目进度与参与方式
 
-The audience and purpose are established; the outline remains an editorial draft. The teaching project and coding tools are undecided, and the repository retains its original name. See [project scope](docs/project.md) for decisions and open questions, [work status](book/workflow.json) for chapter revisions, and [case status](examples/README.md) for exercise materials.
+读者与目标已明确，大纲仍是编辑草案。教学项目和采用工具尚未确定，仓库暂保留现有名称。当前决定与待定事项以[项目范围](docs/project.md)为准，章节修订情况见[工作状态](book/workflow.json)，练习材料见[案例状态](examples/README.md)。
 
-Feedback on unclear passages, practical questions, and problems that can be reproduced with public materials is welcome. See [Contributing](CONTRIBUTING.md) for how to share feedback and propose changes. For writing and fact-checking, these documents explain the approach in Chinese:
+欢迎反馈难懂的段落、具体的使用困惑，以及能公开复现的问题。提交方式与材料要求见[参与贡献](CONTRIBUTING.md)。参与写作或核对内容时，可继续阅读：
 
-- [Writing method](docs/writing-method.md): explaining decisions, actions, and checks.
-- [Production workflow](docs/production.md): preparing material, reviewing drafts, and testing exercises.
-- [Sources and limits](docs/sources.md): references and the claims they support.
+- [写作方法](docs/writing-method.md)：章节怎样解释判断、操作和检查。
+- [写作流程](docs/production.md)：材料、审阅和试做怎样推进。
+- [参考来源](docs/sources.md)：论述依据与适用限制。
 
-## License
+## 许可
 
-Unless a file states otherwise, original prose, documentation, translations, and non-code teaching assets use [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt), and original code uses [MIT](LICENSES/MIT.txt). Third-party works retain their own terms. See [LICENSE.md](LICENSE.md) for scope and attribution requirements.
+原创书稿、文档、译文及非代码教学素材采用 [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt)，原创代码采用 [MIT](LICENSES/MIT.txt)，单独标明许可的文件除外。第三方内容保留原许可。转载或改编请署名、保留来源及许可链接，并说明修改；具体范围与署名要求见[许可说明](LICENSE.md)。

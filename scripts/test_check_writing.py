@@ -216,11 +216,24 @@ class RecordChecks(unittest.TestCase):
     def test_entrypoint_returns_failure_for_errors_but_not_advice(self):
         self.write("docs/vocabulary.json", json.dumps({"version": 1, "rules": [SPELLING, PREFERENCE]}))
         self.write("book/workflow.json", json.dumps({"version": 1, "units": []}))
-        self.write("README.zh-CN.md", "# 中文入口\n")
+        self.write("README.md", "# 中文入口\n")
         for text, code in (("Utilize the tool.", 0), ("Use Github.", 1)):
-            self.write("README.md", text)
+            self.write("README.en.md", text)
             with patch.object(check_writing, "ROOT", self.root), patch.object(check_writing, "tracked_and_new_files", return_value=self.files), redirect_stdout(io.StringIO()):
                 self.assertEqual(check_writing.main([]), code)
+
+    def test_default_homepages_use_their_own_language_rules(self):
+        chinese_rule = {**SPELLING, "id": "chinese-product", "language": "zh-CN"}
+        english_rule = {**PREFERENCE, "language": "en"}
+        self.write("docs/vocabulary.json", json.dumps({"version": 1, "rules": [chinese_rule, english_rule]}))
+        self.write("book/workflow.json", json.dumps({"version": 1, "units": []}))
+        self.write("README.md", "请使用 Github。\n")
+        self.write("README.en.md", "Utilize the tool.\n")
+        output = io.StringIO()
+        with patch.object(check_writing, "ROOT", self.root), patch.object(check_writing, "tracked_and_new_files", return_value=self.files), redirect_stdout(output):
+            self.assertEqual(check_writing.main([]), 1)
+        self.assertIn("README.md:1: error [chinese-product]", output.getvalue())
+        self.assertIn("README.en.md:1: advice [plain]", output.getvalue())
 
 
 if __name__ == "__main__":
