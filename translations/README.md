@@ -1,8 +1,10 @@
 # Translation status / 翻译状态
 
+默认使用中文，英文为辅助；语言安排以[项目范围](../docs/project.md)为准。[中文首页](../README.md)提供主要阅读入口，[英文首页](../README.en.md)供英文读者查阅。
+
 | Language | Status |
 | --- | --- |
-| 简体中文 | Scope, provisional five-part, nineteen-chapter outline and Chapters 6, 9, and 13 discussion drafts available; sample scenarios untested |
+| 简体中文 | Default language; scope, provisional five-part, nineteen-chapter outline and Chapters 1, 6, 9, and 13 discussion drafts available; sample scenarios untested |
 | English | Project introduction and Chapter 13 discussion draft available; AI translation revised for natural English and beginner comprehension; human review pending |
 | Other languages | Planned; not yet selected |
 

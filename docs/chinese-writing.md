@@ -47,7 +47,7 @@
 单文件检查：
 
 ```sh
-python3 tools/chinese-writing/scripts/lint_copy_rules.py README.zh-CN.md
+python3 tools/chinese-writing/scripts/lint_copy_rules.py README.md
 ```
 
 合并段落前先检查，不默认批量改写：

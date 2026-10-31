@@ -233,7 +233,7 @@ def main(argv=None):
         targets, translation_errors = translation_records(ROOT, files)
         errors.extend(translation_errors)
         units = read_rows(ROOT, files, "book/workflow.json", "units", errors)
-        targets.update({"README.md": "en", "README.zh-CN.md": "zh-CN"})
+        targets.update({"README.md": "zh-CN", "README.en.md": "en"})
         for unit in units:
             if isinstance(unit, dict) and isinstance(unit.get("manuscript"), str) and unit["manuscript"]:
                 targets[unit["manuscript"]] = "zh-CN"
